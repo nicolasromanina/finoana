@@ -12,6 +12,7 @@ import { SearchDialog } from '@/components/SearchDialog';
 import { BookmarksDialog } from '@/components/BookmarksDialog';
 import { AudioPlayer } from '@/components/AudioPlayer';
 import { ViewModeToggle } from '@/components/ViewModeToggle';
+import { OfflineIndicator } from '@/components/OfflineIndicator';
 import { useIndexedDB } from '@/hooks/useIndexedDB';
 import { useBibleData } from '@/hooks/useBibleData';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
@@ -212,6 +213,7 @@ function BibleApp() {
 
   return (
     <div className="min-h-screen bg-background">
+      <OfflineIndicator />
       <Header
         languages={languages}
         selectedLanguage={selectedLanguage}
