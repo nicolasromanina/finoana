@@ -52,3 +52,53 @@ export interface ParallelVerse {
   languageName: string;
   text: string;
 }
+
+// Reading Plans
+export interface ReadingPlan {
+  id: string;
+  name: string;
+  description: string;
+  duration: number; // days
+  readings: DailyReading[];
+}
+
+export interface DailyReading {
+  day: number;
+  readings: {
+    book: string;
+    chapter: number;
+  }[];
+}
+
+export interface UserReadingPlan {
+  planId: string;
+  startDate: number;
+  completedDays: number[];
+  currentDay: number;
+  notificationsEnabled: boolean;
+  notificationTime: string; // HH:mm
+}
+
+// Highlights & Notes
+export type HighlightColor = 'yellow' | 'green' | 'blue' | 'pink' | 'purple';
+
+export interface VerseHighlight {
+  id: string;
+  language: string;
+  book: string;
+  chapter: number;
+  verse: number;
+  color: HighlightColor;
+  timestamp: number;
+}
+
+export interface VerseNote {
+  id: string;
+  language: string;
+  book: string;
+  chapter: number;
+  verse: number;
+  text: string;
+  timestamp: number;
+  updatedAt: number;
+}

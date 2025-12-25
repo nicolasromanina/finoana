@@ -5,12 +5,14 @@ export interface Translations {
   appName: string;
   loading: string;
   error: string;
+  copyright: string;
   
   // Navigation
   books: string;
   search: string;
   bookmarks: string;
   settings: string;
+  readingPlans: string;
   
   // Testament
   oldTestament: string;
@@ -86,17 +88,64 @@ export interface Translations {
   cancel: string;
   confirm: string;
   apply: string;
+
+  // Reading Plans
+  startPlan: string;
+  continuePlan: string;
+  completedDays: string;
+  todaysReading: string;
+  markAsComplete: string;
+  planProgress: string;
+  day: string;
+  days: string;
+  selectPlan: string;
+  activePlans: string;
+  availablePlans: string;
+  noActivePlans: string;
+  
+  // Notifications
+  enableNotifications: string;
+  notificationTime: string;
+  dailyReminder: string;
+  
+  // Highlights & Notes
+  highlight: string;
+  addNote: string;
+  editNote: string;
+  deleteNote: string;
+  noteText: string;
+  highlightColor: string;
+  removeHighlight: string;
+  yourNotes: string;
+  noNotes: string;
+
+  // Install
+  installApp: string;
+  installInstructions: string;
+  iosInstallStep1: string;
+  iosInstallStep2: string;
+  androidInstall: string;
+  appInstalled: string;
+  
+  // Offline
+  offline: string;
+  online: string;
+  
+  // Compare
+  compareTranslations: string;
 }
 
 const mg: Translations = {
   appName: 'Baiboly',
   loading: 'Manamboatra...',
   error: 'Nisy olana',
+  copyright: '© 2025 NARNIA CHAPEL',
   
   books: 'Boky',
   search: 'Hitady',
   bookmarks: 'Marika',
   settings: 'Fanamboarana',
+  readingPlans: 'Drafitra famakiana',
   
   oldTestament: 'Testamenta Taloha',
   newTestament: 'Testamenta Vaovao',
@@ -162,17 +211,58 @@ const mg: Translations = {
   cancel: 'Hanafoana',
   confirm: 'Hanamarina',
   apply: 'Hampihatra',
+
+  startPlan: 'Hanomboka drafitra',
+  continuePlan: 'Hanohy drafitra',
+  completedDays: 'Andro vita',
+  todaysReading: 'Famakiana androany',
+  markAsComplete: 'Mariho ho vita',
+  planProgress: 'Fandrosoana',
+  day: 'Andro',
+  days: 'andro',
+  selectPlan: 'Mifidiana drafitra',
+  activePlans: 'Drafitra mandeha',
+  availablePlans: 'Drafitra misy',
+  noActivePlans: 'Tsy misy drafitra mandeha',
+  
+  enableNotifications: 'Alefaso ny fampahatsiarovana',
+  notificationTime: 'Ora fampahatsiarovana',
+  dailyReminder: 'Fampahatsiarovana isan\'andro',
+  
+  highlight: 'Ampisongadinina',
+  addNote: 'Hanampy fanamarihana',
+  editNote: 'Hanova fanamarihana',
+  deleteNote: 'Hamafa fanamarihana',
+  noteText: 'Soraty ny fanamarihana',
+  highlightColor: 'Loko',
+  removeHighlight: 'Hanala highlight',
+  yourNotes: 'Ireo fanamarihana',
+  noNotes: 'Tsy mbola misy fanamarihana',
+
+  installApp: 'Hametraka ny application',
+  installInstructions: 'Ahoana ny fametrahana',
+  iosInstallStep1: 'Tsindrio ny bokotra Share',
+  iosInstallStep2: 'Safidio "Add to Home Screen"',
+  androidInstall: 'Tsindrio "Installer"',
+  appInstalled: 'Efa napetraka ny application',
+  
+  offline: 'Tsy misy internet',
+  online: 'Misy internet',
+  
+  compareTranslations: 'Hampitaha dika teny rehetra',
 };
 
 const en: Translations = {
-  appName: 'Bible',
+  appName: 'Baiboly',
   loading: 'Loading...',
   error: 'Error',
+  copyright: '© 2025 NARNIA CHAPEL',
   
   books: 'Books',
   search: 'Search',
   bookmarks: 'Bookmarks',
   settings: 'Settings',
+  readingPlans: 'Reading Plans',
   
   oldTestament: 'Old Testament',
   newTestament: 'New Testament',
@@ -238,17 +328,58 @@ const en: Translations = {
   cancel: 'Cancel',
   confirm: 'Confirm',
   apply: 'Apply',
+
+  startPlan: 'Start Plan',
+  continuePlan: 'Continue Plan',
+  completedDays: 'Days completed',
+  todaysReading: 'Today\'s Reading',
+  markAsComplete: 'Mark as complete',
+  planProgress: 'Progress',
+  day: 'Day',
+  days: 'days',
+  selectPlan: 'Select a plan',
+  activePlans: 'Active Plans',
+  availablePlans: 'Available Plans',
+  noActivePlans: 'No active plans',
+  
+  enableNotifications: 'Enable notifications',
+  notificationTime: 'Notification time',
+  dailyReminder: 'Daily reminder',
+  
+  highlight: 'Highlight',
+  addNote: 'Add note',
+  editNote: 'Edit note',
+  deleteNote: 'Delete note',
+  noteText: 'Write your note',
+  highlightColor: 'Color',
+  removeHighlight: 'Remove highlight',
+  yourNotes: 'Your notes',
+  noNotes: 'No notes yet',
+
+  installApp: 'Install App',
+  installInstructions: 'How to install',
+  iosInstallStep1: 'Tap the Share button',
+  iosInstallStep2: 'Select "Add to Home Screen"',
+  androidInstall: 'Tap "Install"',
+  appInstalled: 'App already installed',
+  
+  offline: 'Offline',
+  online: 'Online',
+  
+  compareTranslations: 'Compare all translations',
 };
 
 const ko: Translations = {
-  appName: '성경',
+  appName: '바이볼리',
   loading: '로딩 중...',
   error: '오류',
+  copyright: '© 2025 NARNIA CHAPEL',
   
   books: '책',
   search: '검색',
   bookmarks: '북마크',
   settings: '설정',
+  readingPlans: '읽기 계획',
   
   oldTestament: '구약',
   newTestament: '신약',
@@ -314,6 +445,45 @@ const ko: Translations = {
   cancel: '취소',
   confirm: '확인',
   apply: '적용',
+
+  startPlan: '계획 시작',
+  continuePlan: '계획 계속',
+  completedDays: '완료된 일수',
+  todaysReading: '오늘의 읽기',
+  markAsComplete: '완료로 표시',
+  planProgress: '진행률',
+  day: '일',
+  days: '일',
+  selectPlan: '계획 선택',
+  activePlans: '활성 계획',
+  availablePlans: '사용 가능한 계획',
+  noActivePlans: '활성 계획 없음',
+  
+  enableNotifications: '알림 활성화',
+  notificationTime: '알림 시간',
+  dailyReminder: '일일 알림',
+  
+  highlight: '하이라이트',
+  addNote: '메모 추가',
+  editNote: '메모 편집',
+  deleteNote: '메모 삭제',
+  noteText: '메모 작성',
+  highlightColor: '색상',
+  removeHighlight: '하이라이트 제거',
+  yourNotes: '내 메모',
+  noNotes: '메모 없음',
+
+  installApp: '앱 설치',
+  installInstructions: '설치 방법',
+  iosInstallStep1: '공유 버튼을 탭하세요',
+  iosInstallStep2: '"홈 화면에 추가" 선택',
+  androidInstall: '"설치" 탭하세요',
+  appInstalled: '앱이 이미 설치됨',
+  
+  offline: '오프라인',
+  online: '온라인',
+  
+  compareTranslations: '모든 번역 비교',
 };
 
 export const translations: Record<UILanguage, Translations> = { mg, en, ko };
