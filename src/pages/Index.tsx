@@ -35,6 +35,7 @@ function BibleApp() {
   const [readingProgress, setReadingProgress] = useLocalStorage<ReadingProgress | null>('readingProgress', null);
   const [searchOpen, setSearchOpen] = useState(false);
   const [bookmarksOpen, setBookmarksOpen] = useState(false);
+  const [readingPlansOpen, setReadingPlansOpen] = useState(false);
 
   const { dbService, isInitialized } = useIndexedDB();
   
@@ -220,6 +221,7 @@ function BibleApp() {
         onLanguageChange={handleLanguageChange}
         onOpenSearch={() => setSearchOpen(true)}
         onOpenBookmarks={() => setBookmarksOpen(true)}
+        onOpenReadingPlans={() => setReadingPlansOpen(true)}
         bookmarksCount={bookmarks.length}
         sidebarContent={sidebarContent}
       />
