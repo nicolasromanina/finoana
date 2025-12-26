@@ -23,8 +23,12 @@ export function VerseOfDay({ onNavigate, books, language }: VerseOfDayProps) {
 
   useEffect(() => {
     const loadVerseOfDay = async () => {
-      if (books.length === 0) return;
-      
+      if (books.length === 0) {
+        setVerseData(null);
+        setLoading(false);
+        return;
+      }
+
       setLoading(true);
       try {
         const api = new BibleApiService();
@@ -32,23 +36,41 @@ export function VerseOfDay({ onNavigate, books, language }: VerseOfDayProps) {
         const dayOfYear = Math.floor(
           (today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) / 86400000
         );
-        
+
         const bookIndex = dayOfYear % books.length;
         const selectedBookMeta = books[bookIndex];
-        
+
         const bookData = await api.fetchBook(language, selectedBookMeta.file);
-        const chapterIndex = today.getDate() % bookData.chapters.length;
-        const chapter = bookData.chapters[chapterIndex];
-        const verseIndex = (today.getDate() + today.getMonth()) % chapter.verses.length;
-        
+        const chapters = bookData?.chapters ?? [];
+        if (chapters.length === 0) {
+          setVerseData(null);
+          return;
+        }
+
+        const chapterIndex = today.getDate() % chapters.length;
+        const chapter = chapters[chapterIndex];
+        const verses = chapter?.verses ?? [];
+        if (verses.length === 0) {
+          setVerseData(null);
+          return;
+        }
+
+        const verseIndex = (today.getDate() + today.getMonth()) % verses.length;
+        const verse = verses[verseIndex];
+        if (!verse) {
+          setVerseData(null);
+          return;
+        }
+
         setVerseData({
           book: bookData.book,
           bookMeta: selectedBookMeta,
           chapter: chapter.chapter,
-          verse: chapter.verses[verseIndex]
+          verse,
         });
       } catch (error) {
         console.error('Error loading verse of day:', error);
+        setVerseData(null);
       } finally {
         setLoading(false);
       }
