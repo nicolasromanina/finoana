@@ -10,6 +10,8 @@ import { ReadingProgressCard } from '@/components/ReadingProgressCard';
 import { LoadingScreen } from '@/components/LoadingScreen';
 import { SearchDialog } from '@/components/SearchDialog';
 import { BookmarksDialog } from '@/components/BookmarksDialog';
+import { ReadingPlansDialog } from '@/components/ReadingPlansDialog';
+import { VerseActionsDialog } from '@/components/VerseActionsDialog';
 import { AudioPlayer } from '@/components/AudioPlayer';
 import { ViewModeToggle } from '@/components/ViewModeToggle';
 import { OfflineIndicator } from '@/components/OfflineIndicator';
@@ -19,11 +21,13 @@ import { useLocalStorage } from '@/hooks/useLocalStorage';
 import { useSearch } from '@/hooks/useSearch';
 import { useTextToSpeech } from '@/hooks/useTextToSpeech';
 import { useParallelReading } from '@/hooks/useParallelReading';
+import { useReadingPlans } from '@/hooks/useReadingPlans';
+import { useHighlightsNotes } from '@/hooks/useHighlightsNotes';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 import { FontSizeProvider } from '@/contexts/FontSizeContext';
 import { LanguageProvider, useLanguage } from '@/contexts/LanguageContext';
 import { AlertCircle, BookOpen } from 'lucide-react';
-import type { BookMetadata, Bookmark, ReadingProgress } from '@/types/bible';
+import type { BookMetadata, Bookmark, ReadingProgress, HighlightColor } from '@/types/bible';
 
 function BibleApp() {
   const { t } = useLanguage();
@@ -36,6 +40,9 @@ function BibleApp() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [bookmarksOpen, setBookmarksOpen] = useState(false);
   const [readingPlansOpen, setReadingPlansOpen] = useState(false);
+  const [verseActionsOpen, setVerseActionsOpen] = useState(false);
+  const [compareModalOpen, setCompareModalOpen] = useState(false);
+  const [actionVerse, setActionVerse] = useState<number | null>(null);
 
   const { dbService, isInitialized } = useIndexedDB();
   
@@ -68,6 +75,34 @@ function BibleApp() {
     selectedBook,
     currentChapter,
     primaryLanguage: selectedLanguage,
+  });
+
+  const {
+    availablePlans,
+    userPlans,
+    startPlan,
+    markDayComplete,
+    toggleNotifications,
+    deletePlan,
+    getTodaysReading,
+    getPlanProgress,
+    getPlanById,
+  } = useReadingPlans({ dbService });
+
+  const {
+    highlights,
+    notes,
+    addHighlight,
+    removeHighlight,
+    addOrUpdateNote,
+    deleteNote,
+    getHighlightForVerse,
+    getNoteForVerse,
+  } = useHighlightsNotes({
+    dbService,
+    language: selectedLanguage,
+    book: selectedBook?.id || '',
+    chapter: currentChapter,
   });
 
   useEffect(() => {
@@ -110,6 +145,11 @@ function BibleApp() {
     setSelectedVerse(prev => prev === verseNumber ? null : verseNumber);
   };
 
+  const handleVerseLongPress = (verseNumber: number) => {
+    setActionVerse(verseNumber);
+    setVerseActionsOpen(true);
+  };
+
   const handleVerseOfDayNavigate = (book: BookMetadata, chapter: number, verse: number) => {
     setSelectedBook(book);
     setCurrentChapter(chapter);
@@ -147,6 +187,14 @@ function BibleApp() {
       b.verse === bookmark.verse
     )));
   }, [setBookmarks]);
+
+  const handleReadingPlanNavigate = useCallback((bookId: string, chapter: number) => {
+    const book = books.find(b => b.id === bookId);
+    if (book) {
+      setSelectedBook(book);
+      setCurrentChapter(chapter);
+    }
+  }, [books]);
 
   const toggleBookmark = () => {
     if (!selectedBook || !selectedVerse || !bookData) return;
@@ -190,6 +238,12 @@ function BibleApp() {
     tts.speak(texts);
   }, [bookData, currentChapter, tts, t]);
 
+  const handleOpenCompare = () => {
+    if (selectedVerse) {
+      setCompareModalOpen(true);
+    }
+  };
+
   if (!isInitialized) {
     return <LoadingScreen />;
   }
@@ -207,6 +261,11 @@ function BibleApp() {
   const verseReference = selectedBook && selectedVerse 
     ? `${bookData?.book || selectedBook.name} ${currentChapter}:${selectedVerse}`
     : undefined;
+
+  const actionVerseData = actionVerse ? currentChapterData?.verses.find(v => v.verse === actionVerse) : null;
+  const actionVerseReference = selectedBook && actionVerse 
+    ? `${bookData?.book || selectedBook.name} ${currentChapter}:${actionVerse}`
+    : '';
 
   const sidebarContent = (
     <Sidebar books={books} selectedBook={selectedBook} onBookChange={handleBookChange} />
@@ -232,17 +291,17 @@ function BibleApp() {
         </aside>
 
         <main className="flex-1 min-h-[calc(100vh-4rem)]">
-          <div className="container max-w-3xl mx-auto px-4 py-6">
+          <div className="container max-w-3xl mx-auto px-3 sm:px-4 py-4 sm:py-6">
             {!selectedBook && (
-              <div className="space-y-6 fade-in">
+              <div className="space-y-4 sm:space-y-6 fade-in">
                 <VerseOfDay books={books} language={selectedLanguage} onNavigate={handleVerseOfDayNavigate} />
                 <ReadingProgressCard progress={readingProgress} books={books} onContinue={handleContinueReading} />
-                <div className="text-center py-12">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-secondary mb-4">
-                    <BookOpen className="w-8 h-8 text-muted-foreground" />
+                <div className="text-center py-8 sm:py-12">
+                  <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-secondary mb-4">
+                    <BookOpen className="w-7 h-7 sm:w-8 sm:h-8 text-muted-foreground" />
                   </div>
-                  <h2 className="text-xl font-semibold mb-2">{t.startReading}</h2>
-                  <p className="text-muted-foreground max-w-sm mx-auto">{t.selectBookHint}</p>
+                  <h2 className="text-lg sm:text-xl font-semibold mb-2">{t.startReading}</h2>
+                  <p className="text-sm sm:text-base text-muted-foreground max-w-sm mx-auto">{t.selectBookHint}</p>
                 </div>
               </div>
             )}
@@ -250,7 +309,7 @@ function BibleApp() {
             {selectedBook && (
               <div className="fade-in">
                 {error && (
-                  <div className="flex items-center gap-3 p-4 rounded-xl bg-destructive/10 border border-destructive/20 text-destructive mb-4">
+                  <div className="flex items-center gap-3 p-3 sm:p-4 rounded-xl bg-destructive/10 border border-destructive/20 text-destructive mb-4 text-sm">
                     <AlertCircle className="h-5 w-5 flex-shrink-0" />
                     <p>{error}</p>
                   </div>
@@ -264,10 +323,10 @@ function BibleApp() {
 
                 {!loading && bookData && currentChapterData && (
                   <>
-                    <h1 className="font-serif text-3xl md:text-4xl font-semibold text-center mb-6">{bookData.book}</h1>
+                    <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-4 sm:mb-6">{bookData.book}</h1>
                     <ChapterNavigation currentChapter={currentChapter} totalChapters={selectedBook.chapters || bookData.chapters.length} onChapterChange={handleChapterChange} />
                     
-                    <div className="flex items-center justify-between gap-4 my-4">
+                    <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 my-4">
                       <AudioPlayer isPlaying={tts.isPlaying} isPaused={tts.isPaused} isSupported={tts.isSupported} currentIndex={tts.currentIndex} verses={currentChapterData.verses} onPlay={handlePlayChapter} onPause={tts.pause} onResume={tts.resume} onStop={tts.stop} />
                       <ViewModeToggle isParallelMode={isParallelMode} onToggle={toggleParallelMode} />
                     </div>
@@ -284,7 +343,15 @@ function BibleApp() {
                         languageNames={languageNames}
                       />
                     ) : (
-                      <VerseViewer verses={currentChapterData.verses} selectedVerse={selectedVerse} onVerseClick={handleVerseClick} highlightedVerses={tts.isPlaying && tts.currentIndex >= 0 ? [currentChapterData.verses[tts.currentIndex]?.verse] : []} />
+                      <VerseViewer 
+                        verses={currentChapterData.verses} 
+                        selectedVerse={selectedVerse} 
+                        onVerseClick={handleVerseClick}
+                        onVerseLongPress={handleVerseLongPress}
+                        highlightedVerses={tts.isPlaying && tts.currentIndex >= 0 ? [currentChapterData.verses[tts.currentIndex]?.verse] : []}
+                        highlights={highlights}
+                        notes={notes}
+                      />
                     )}
 
                     <div className="mt-6 pb-24">
@@ -304,9 +371,50 @@ function BibleApp() {
         </main>
       </div>
 
-      <FloatingActions isVisible={!!selectedVerse} isBookmarked={isBookmarked} onToggleBookmark={toggleBookmark} selectedVerseText={selectedVerseData?.text} verseReference={verseReference} />
+      <FloatingActions 
+        isVisible={!!selectedVerse} 
+        isBookmarked={isBookmarked} 
+        onToggleBookmark={toggleBookmark} 
+        selectedVerseText={selectedVerseData?.text} 
+        verseReference={verseReference}
+      />
+      
       <SearchDialog open={searchOpen} onOpenChange={setSearchOpen} results={results} isSearching={isSearching} searchQuery={searchQuery} onSearch={search} onResultClick={handleSearchResultClick} onClear={clearSearch} />
       <BookmarksDialog open={bookmarksOpen} onOpenChange={setBookmarksOpen} bookmarks={bookmarks} books={books} onDeleteBookmark={handleDeleteBookmark} onNavigate={handleBookmarkNavigate} />
+      
+      <ReadingPlansDialog
+        open={readingPlansOpen}
+        onOpenChange={setReadingPlansOpen}
+        availablePlans={availablePlans}
+        userPlans={userPlans}
+        books={books}
+        onStartPlan={startPlan}
+        onMarkDayComplete={markDayComplete}
+        onToggleNotifications={toggleNotifications}
+        onDeletePlan={deletePlan}
+        onNavigateToReading={handleReadingPlanNavigate}
+        getPlanProgress={getPlanProgress}
+        getTodaysReading={getTodaysReading}
+        getPlanById={getPlanById}
+      />
+
+      {actionVerse && actionVerseData && (
+        <VerseActionsDialog
+          open={verseActionsOpen}
+          onOpenChange={setVerseActionsOpen}
+          verseNumber={actionVerse}
+          verseText={actionVerseData.text}
+          verseReference={actionVerseReference}
+          currentHighlight={getHighlightForVerse(actionVerse)}
+          currentNote={getNoteForVerse(actionVerse)}
+          onAddHighlight={(color: HighlightColor) => addHighlight(actionVerse, color)}
+          onRemoveHighlight={() => removeHighlight(actionVerse)}
+          onSaveNote={(text: string) => addOrUpdateNote(actionVerse, text)}
+          onDeleteNote={() => deleteNote(actionVerse)}
+        />
+      )}
+
+      {/* Compare modal temporarily disabled - needs component update */}
     </div>
   );
 }
