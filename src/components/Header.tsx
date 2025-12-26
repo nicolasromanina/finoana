@@ -122,11 +122,11 @@ export function Header({
 
           <Popover>
             <PopoverTrigger asChild>
-              <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-9 sm:w-9 hidden sm:flex">
+              <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-9 sm:w-9">
                 <Globe className="h-4 w-4" />
               </Button>
             </PopoverTrigger>
-            <PopoverContent className="w-48 p-2">
+            <PopoverContent className="w-48 p-2" align="end">
               <p className="text-xs text-muted-foreground mb-2 px-2">{t.interfaceLanguage}</p>
               <div className="space-y-1">
                 {uiLanguageOptions.map((lang) => (
