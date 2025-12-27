@@ -12,6 +12,8 @@ import { SearchDialog } from '@/components/SearchDialog';
 import { BookmarksDialog } from '@/components/BookmarksDialog';
 import { ReadingPlansDialog } from '@/components/ReadingPlansDialog';
 import { VerseActionsDialog } from '@/components/VerseActionsDialog';
+import { SettingsDialog } from '@/components/SettingsDialog';
+import { OnboardingDialog } from '@/components/OnboardingDialog';
 import { AudioPlayer } from '@/components/AudioPlayer';
 import { ViewModeToggle } from '@/components/ViewModeToggle';
 import { OfflineIndicator } from '@/components/OfflineIndicator';
@@ -41,10 +43,20 @@ function BibleApp() {
   const [bookmarksOpen, setBookmarksOpen] = useState(false);
   const [readingPlansOpen, setReadingPlansOpen] = useState(false);
   const [verseActionsOpen, setVerseActionsOpen] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [onboardingOpen, setOnboardingOpen] = useState(false);
   const [compareModalOpen, setCompareModalOpen] = useState(false);
   const [actionVerse, setActionVerse] = useState<number | null>(null);
 
   const { dbService, isInitialized } = useIndexedDB();
+
+  // Check for first launch onboarding
+  useEffect(() => {
+    const hasOnboarded = localStorage.getItem('hasCompletedOnboarding');
+    if (!hasOnboarded) {
+      setOnboardingOpen(true);
+    }
+  }, []);
   
   const { languages, books, bookData, loading, error } = useBibleData({
     dbService,
@@ -281,6 +293,7 @@ function BibleApp() {
         onOpenSearch={() => setSearchOpen(true)}
         onOpenBookmarks={() => setBookmarksOpen(true)}
         onOpenReadingPlans={() => setReadingPlansOpen(true)}
+        onOpenSettings={() => setSettingsOpen(true)}
         bookmarksCount={bookmarks.length}
         sidebarContent={sidebarContent}
       />
@@ -413,6 +426,22 @@ function BibleApp() {
           onDeleteNote={() => deleteNote(actionVerse)}
         />
       )}
+
+      <SettingsDialog
+        open={settingsOpen}
+        onOpenChange={setSettingsOpen}
+        dbService={dbService}
+        languages={languages}
+        books={books}
+        selectedLanguage={selectedLanguage}
+        onLanguageChange={handleLanguageChange}
+      />
+
+      <OnboardingDialog
+        open={onboardingOpen}
+        onOpenChange={setOnboardingOpen}
+        onComplete={() => setOnboardingOpen(false)}
+      />
 
       {/* Compare modal temporarily disabled - needs component update */}
     </div>

@@ -286,4 +286,47 @@ export class IndexedDbService {
       transaction.oncomplete = () => resolve();
     });
   }
+
+  // Clear all data for cache reset
+  async clearAllData(): Promise<void> {
+    // Clear IndexedDB stores
+    if (this.db) {
+      const stores = [BOOKS_STORE, LANGUAGES_STORE, HIGHLIGHTS_STORE, NOTES_STORE, READING_PLANS_STORE];
+      
+      for (const storeName of stores) {
+        await new Promise<void>((resolve, reject) => {
+          const transaction = this.db!.transaction([storeName], 'readwrite');
+          const store = transaction.objectStore(storeName);
+          const request = store.clear();
+          
+          request.onerror = () => reject(request.error);
+          request.onsuccess = () => resolve();
+        });
+      }
+    }
+
+    // Clear Service Worker caches
+    if ('caches' in window) {
+      const cacheNames = await caches.keys();
+      await Promise.all(cacheNames.map(name => caches.delete(name)));
+    }
+
+    // Unregister service workers
+    if ('serviceWorker' in navigator) {
+      const registrations = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(registrations.map(r => r.unregister()));
+    }
+  }
+
+  // Get storage estimate
+  async getStorageEstimate(): Promise<{ used: number; quota: number } | null> {
+    if ('storage' in navigator && 'estimate' in navigator.storage) {
+      const estimate = await navigator.storage.estimate();
+      return {
+        used: estimate.usage || 0,
+        quota: estimate.quota || 0
+      };
+    }
+    return null;
+  }
 }

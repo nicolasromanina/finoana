@@ -76,6 +76,7 @@ export interface Translations {
   theme: string;
   lightMode: string;
   darkMode: string;
+  themeSystem: string;
   
   // Errors
   failedToLoad: string;
@@ -107,6 +108,8 @@ export interface Translations {
   enableNotifications: string;
   notificationTime: string;
   dailyReminder: string;
+  notificationsEnabled: string;
+  notificationsDisabled: string;
   
   // Highlights & Notes
   highlight: string;
@@ -130,6 +133,24 @@ export interface Translations {
   // Offline
   offline: string;
   online: string;
+  downloadForOffline: string;
+  downloadingData: string;
+  downloadComplete: string;
+  storageUsed: string;
+  resetCache: string;
+  resetCacheConfirm: string;
+  resetCacheSuccess: string;
+  
+  // Onboarding
+  welcomeTitle: string;
+  welcomeSubtitle: string;
+  chooseLanguage: string;
+  chooseTheme: string;
+  installStep: string;
+  letsStart: string;
+  skip: string;
+  nextStep: string;
+  previousStep: string;
   
   // Compare
   compareTranslations: string;
@@ -201,6 +222,7 @@ const mg: Translations = {
   theme: 'Endrika',
   lightMode: 'Mazava',
   darkMode: 'Maizina',
+  themeSystem: 'Araka ny sistema',
   
   failedToLoad: 'Tsy afaka nitondra',
   noDataAvailable: 'Tsy misy data ho an\'ny',
@@ -228,6 +250,8 @@ const mg: Translations = {
   enableNotifications: 'Alefaso ny fampahatsiarovana',
   notificationTime: 'Ora fampahatsiarovana',
   dailyReminder: 'Fampahatsiarovana isan\'andro',
+  notificationsEnabled: 'Fampahatsiarovana alefa',
+  notificationsDisabled: 'Fampahatsiarovana tsy alefa',
   
   highlight: 'Ampisongadinina',
   addNote: 'Hanampy fanamarihana',
@@ -248,6 +272,23 @@ const mg: Translations = {
   
   offline: 'Tsy misy internet',
   online: 'Misy internet',
+  downloadForOffline: 'Haka ny data rehetra offline',
+  downloadingData: 'Maka ny data...',
+  downloadComplete: 'Vita ny fakan-data',
+  storageUsed: 'Habetsahan\'ny data voatahiry',
+  resetCache: 'Hamafa ny cache',
+  resetCacheConfirm: 'Tena hamafa ny data rehetra voatahiry ve ianao?',
+  resetCacheSuccess: 'Voafafa ny cache',
+  
+  welcomeTitle: 'Tongasoa eto amin\'ny Baiboly',
+  welcomeSubtitle: 'Mamakia ny Soratra Masina amin\'ny fiteny samihafa',
+  chooseLanguage: 'Mifidiana ny fiteninao',
+  chooseTheme: 'Mifidiana ny endriky ny application',
+  installStep: 'Apetraho ny application',
+  letsStart: 'Hanomboka',
+  skip: 'Handingana',
+  nextStep: 'Manaraka',
+  previousStep: 'Teo aloha',
   
   compareTranslations: 'Hampitaha dika teny rehetra',
 };
@@ -318,6 +359,7 @@ const en: Translations = {
   theme: 'Theme',
   lightMode: 'Light',
   darkMode: 'Dark',
+  themeSystem: 'System',
   
   failedToLoad: 'Failed to load',
   noDataAvailable: 'No data available for',
@@ -345,6 +387,8 @@ const en: Translations = {
   enableNotifications: 'Enable notifications',
   notificationTime: 'Notification time',
   dailyReminder: 'Daily reminder',
+  notificationsEnabled: 'Notifications enabled',
+  notificationsDisabled: 'Notifications disabled',
   
   highlight: 'Highlight',
   addNote: 'Add note',
@@ -365,6 +409,23 @@ const en: Translations = {
   
   offline: 'Offline',
   online: 'Online',
+  downloadForOffline: 'Download all data for offline',
+  downloadingData: 'Downloading data...',
+  downloadComplete: 'Download complete',
+  storageUsed: 'Storage used',
+  resetCache: 'Reset cache',
+  resetCacheConfirm: 'Are you sure you want to clear all cached data?',
+  resetCacheSuccess: 'Cache cleared successfully',
+  
+  welcomeTitle: 'Welcome to Baiboly',
+  welcomeSubtitle: 'Read the Holy Scriptures in multiple languages',
+  chooseLanguage: 'Choose your language',
+  chooseTheme: 'Choose your theme',
+  installStep: 'Install the app',
+  letsStart: 'Let\'s start',
+  skip: 'Skip',
+  nextStep: 'Next',
+  previousStep: 'Previous',
   
   compareTranslations: 'Compare all translations',
 };
@@ -435,6 +496,7 @@ const ko: Translations = {
   theme: '테마',
   lightMode: '라이트',
   darkMode: '다크',
+  themeSystem: '시스템',
   
   failedToLoad: '로드 실패',
   noDataAvailable: '데이터 없음',
@@ -462,6 +524,8 @@ const ko: Translations = {
   enableNotifications: '알림 활성화',
   notificationTime: '알림 시간',
   dailyReminder: '일일 알림',
+  notificationsEnabled: '알림이 활성화됨',
+  notificationsDisabled: '알림이 비활성화됨',
   
   highlight: '하이라이트',
   addNote: '메모 추가',
@@ -482,6 +546,23 @@ const ko: Translations = {
   
   offline: '오프라인',
   online: '온라인',
+  downloadForOffline: '오프라인용 전체 데이터 다운로드',
+  downloadingData: '데이터 다운로드 중...',
+  downloadComplete: '다운로드 완료',
+  storageUsed: '사용된 저장 공간',
+  resetCache: '캐시 초기화',
+  resetCacheConfirm: '캐시된 모든 데이터를 삭제하시겠습니까?',
+  resetCacheSuccess: '캐시가 성공적으로 삭제됨',
+  
+  welcomeTitle: '바이볼리에 오신 것을 환영합니다',
+  welcomeSubtitle: '여러 언어로 성경을 읽으세요',
+  chooseLanguage: '언어를 선택하세요',
+  chooseTheme: '테마를 선택하세요',
+  installStep: '앱 설치',
+  letsStart: '시작하기',
+  skip: '건너뛰기',
+  nextStep: '다음',
+  previousStep: '이전',
   
   compareTranslations: '모든 번역 비교',
 };
