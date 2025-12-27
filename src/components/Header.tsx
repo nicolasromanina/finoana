@@ -1,7 +1,6 @@
-import { Book, Menu, Moon, Sun, Type, Minus, Plus, Search, Bookmark, Globe, Calendar, Download } from 'lucide-react';
+import { Menu, Moon, Sun, Search, Bookmark, Globe, Calendar, Settings } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/contexts/ThemeContext';
-import { useFontSize } from '@/contexts/FontSizeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { InstallButton } from '@/components/InstallButton';
 import {
@@ -31,6 +30,7 @@ interface HeaderProps {
   onOpenSearch: () => void;
   onOpenBookmarks: () => void;
   onOpenReadingPlans: () => void;
+  onOpenSettings: () => void;
   bookmarksCount: number;
   sidebarContent: React.ReactNode;
 }
@@ -48,12 +48,14 @@ export function Header({
   onOpenSearch,
   onOpenBookmarks,
   onOpenReadingPlans,
+  onOpenSettings,
   bookmarksCount,
   sidebarContent 
 }: HeaderProps) {
-  const { theme, toggleTheme } = useTheme();
-  const { fontSize, increaseFontSize, decreaseFontSize } = useFontSize();
+  const { effectiveTheme, toggleTheme } = useTheme();
   const { uiLanguage, setUILanguage, t } = useLanguage();
+
+  const currentFlag = uiLanguageOptions.find(l => l.code === uiLanguage)?.flag || '🌐';
 
   return (
     <header className="sticky top-0 z-50 glass border-b border-border">
@@ -68,34 +70,70 @@ export function Header({
             </SheetTrigger>
             <SheetContent side="left" className="w-80 p-0">
               {sidebarContent}
-              {/* Mobile language switcher */}
-              <div className="p-4 border-t border-border">
-                <p className="text-xs text-muted-foreground mb-2">{t.interfaceLanguage}</p>
-                <div className="flex gap-1">
-                  {uiLanguageOptions.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => setUILanguage(lang.code)}
-                      className={`flex-1 flex items-center justify-center gap-1 px-2 py-2 rounded-lg text-sm transition-colors ${
-                        uiLanguage === lang.code 
-                          ? 'bg-primary text-primary-foreground' 
-                          : 'bg-secondary hover:bg-secondary/80'
-                      }`}
-                    >
-                      <span>{lang.flag}</span>
-                    </button>
-                  ))}
+              {/* Mobile bottom section */}
+              <div className="p-4 border-t border-border space-y-3">
+                {/* Bible Language in mobile */}
+                <div>
+                  <p className="text-xs text-muted-foreground mb-2">{t.bibleLanguage}</p>
+                  <Select value={selectedLanguage} onValueChange={onLanguageChange}>
+                    <SelectTrigger className="w-full">
+                      <SelectValue placeholder={t.language} />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {languages.map((lang) => (
+                        <SelectItem key={lang.code} value={lang.code}>
+                          {lang.nativeName}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
                 </div>
-                <div className="mt-3">
-                  <InstallButton variant="compact" className="w-full justify-center" />
+
+                {/* UI Language switcher */}
+                <div>
+                  <p className="text-xs text-muted-foreground mb-2">{t.interfaceLanguage}</p>
+                  <div className="flex gap-1">
+                    {uiLanguageOptions.map((lang) => (
+                      <button
+                        key={lang.code}
+                        onClick={() => setUILanguage(lang.code)}
+                        className={`flex-1 flex items-center justify-center gap-1 px-2 py-2 rounded-lg text-sm transition-colors ${
+                          uiLanguage === lang.code 
+                            ? 'bg-primary text-primary-foreground' 
+                            : 'bg-secondary hover:bg-secondary/80'
+                        }`}
+                      >
+                        <span>{lang.flag}</span>
+                      </button>
+                    ))}
+                  </div>
                 </div>
+
+                {/* Settings button in mobile */}
+                <Button variant="secondary" className="w-full gap-2" onClick={onOpenSettings}>
+                  <Settings className="h-4 w-4" />
+                  {t.settings}
+                </Button>
+
+                <InstallButton variant="compact" className="w-full justify-center" />
               </div>
             </SheetContent>
           </Sheet>
 
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-primary flex items-center justify-center">
-              <Book className="h-4 w-4 sm:h-5 sm:w-5 text-primary-foreground" />
+            {/* Favicon-style logo */}
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-primary flex items-center justify-center overflow-hidden">
+              <img 
+                src="/favicon.svg" 
+                alt="Baiboly" 
+                className="w-5 h-5 sm:w-6 sm:h-6"
+                onError={(e) => {
+                  // Fallback to text if image fails
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  target.parentElement!.innerHTML = '<span class="text-primary-foreground font-bold text-sm">B</span>';
+                }}
+              />
             </div>
             <span className="font-semibold text-base sm:text-lg hidden sm:block">{t.appName}</span>
           </div>
@@ -120,10 +158,12 @@ export function Header({
             )}
           </Button>
 
+          {/* Globe with active flag indicator */}
           <Popover>
             <PopoverTrigger asChild>
-              <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-9 sm:w-9">
+              <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-9 sm:w-9 relative">
                 <Globe className="h-4 w-4" />
+                <span className="absolute -bottom-0.5 -right-0.5 text-[10px] leading-none">{currentFlag}</span>
               </Button>
             </PopoverTrigger>
             <PopoverContent className="w-48 p-2" align="end">
@@ -145,8 +185,9 @@ export function Header({
             </PopoverContent>
           </Popover>
 
+          {/* Bible language selector - hidden on mobile */}
           <Select value={selectedLanguage} onValueChange={onLanguageChange}>
-            <SelectTrigger className="w-[80px] sm:w-[110px] h-8 sm:h-9 text-xs sm:text-sm">
+            <SelectTrigger className="w-[80px] sm:w-[110px] h-8 sm:h-9 text-xs sm:text-sm hidden md:flex">
               <SelectValue placeholder={t.language} />
             </SelectTrigger>
             <SelectContent>
@@ -158,27 +199,13 @@ export function Header({
             </SelectContent>
           </Select>
 
-          <Popover>
-            <PopoverTrigger asChild>
-              <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-9 sm:w-9 hidden sm:flex">
-                <Type className="h-4 w-4" />
-              </Button>
-            </PopoverTrigger>
-            <PopoverContent className="w-auto p-2">
-              <div className="flex items-center gap-2">
-                <Button variant="ghost" size="icon" className="h-8 w-8" onClick={decreaseFontSize} disabled={fontSize === 'sm'}>
-                  <Minus className="h-3 w-3" />
-                </Button>
-                <span className="text-sm font-medium w-8 text-center capitalize">{fontSize}</span>
-                <Button variant="ghost" size="icon" className="h-8 w-8" onClick={increaseFontSize} disabled={fontSize === 'xl'}>
-                  <Plus className="h-3 w-3" />
-                </Button>
-              </div>
-            </PopoverContent>
-          </Popover>
+          {/* Settings button - visible on desktop */}
+          <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-9 sm:w-9 hidden sm:flex" onClick={onOpenSettings}>
+            <Settings className="h-4 w-4" />
+          </Button>
 
           <Button variant="ghost" size="icon" onClick={toggleTheme} className="h-8 w-8 sm:h-9 sm:w-9">
-            {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            {effectiveTheme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </Button>
         </div>
       </div>
