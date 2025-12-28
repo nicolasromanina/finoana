@@ -76,6 +76,8 @@ export interface Translations {
   theme: string;
   lightMode: string;
   darkMode: string;
+  nightMode: string;
+  nightModeDescription: string;
   themeSystem: string;
   
   // Errors
@@ -222,6 +224,8 @@ const mg: Translations = {
   theme: 'Endrika',
   lightMode: 'Mazava',
   darkMode: 'Maizina',
+  nightMode: 'Alina',
+  nightModeDescription: 'Manala ny hazavan-jiro manga mba hiarovana ny maso',
   themeSystem: 'Araka ny sistema',
   
   failedToLoad: 'Tsy afaka nitondra',
@@ -359,6 +363,8 @@ const en: Translations = {
   theme: 'Theme',
   lightMode: 'Light',
   darkMode: 'Dark',
+  nightMode: 'Night',
+  nightModeDescription: 'Reduces blue light to protect your eyes',
   themeSystem: 'System',
   
   failedToLoad: 'Failed to load',
@@ -496,6 +502,8 @@ const ko: Translations = {
   theme: '테마',
   lightMode: '라이트',
   darkMode: '다크',
+  nightMode: '야간',
+  nightModeDescription: '눈을 보호하기 위해 블루라이트를 줄입니다',
   themeSystem: '시스템',
   
   failedToLoad: '로드 실패',

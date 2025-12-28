@@ -1,12 +1,13 @@
 import { createContext, useContext, useEffect, useMemo } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 
-type ThemeMode = 'light' | 'dark' | 'system';
+type ThemeMode = 'light' | 'dark' | 'system' | 'night';
 
 interface ThemeContextType {
   themeMode: ThemeMode;
-  effectiveTheme: 'light' | 'dark';
+  effectiveTheme: 'light' | 'dark' | 'night';
   setThemeMode: (mode: ThemeMode) => void;
+  isNightMode: boolean;
   // Legacy support
   theme: 'light' | 'dark';
   toggleTheme: () => void;
@@ -21,15 +22,24 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     if (themeMode === 'system') {
       return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
+    if (themeMode === 'night') {
+      return 'night';
+    }
     return themeMode;
   }, [themeMode]);
 
+  const isNightMode = effectiveTheme === 'night';
+
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', effectiveTheme);
+    
+    // Remove all theme classes first
+    document.documentElement.classList.remove('dark', 'night-mode');
+    
     if (effectiveTheme === 'dark') {
       document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
+    } else if (effectiveTheme === 'night') {
+      document.documentElement.classList.add('night-mode');
     }
   }, [effectiveTheme]);
 
@@ -61,10 +71,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       themeMode, 
       effectiveTheme, 
       setThemeMode,
-      theme: effectiveTheme, 
+      isNightMode,
+      theme: effectiveTheme === 'night' ? 'dark' : effectiveTheme, 
       toggleTheme 
     }}>
       {children}
+      {/* Blue light filter overlay for night mode */}
+      {isNightMode && <div className="night-mode-filter" aria-hidden="true" />}
     </ThemeContext.Provider>
   );
 }
