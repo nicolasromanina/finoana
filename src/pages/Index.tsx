@@ -25,9 +25,8 @@ import { useTextToSpeech } from '@/hooks/useTextToSpeech';
 import { useParallelReading } from '@/hooks/useParallelReading';
 import { useReadingPlans } from '@/hooks/useReadingPlans';
 import { useHighlightsNotes } from '@/hooks/useHighlightsNotes';
-import { ThemeProvider } from '@/contexts/ThemeContext';
-import { FontSizeProvider } from '@/contexts/FontSizeContext';
-import { LanguageProvider, useLanguage } from '@/contexts/LanguageContext';
+import { useTheme } from '@/contexts/ThemeContext';
+import { useLanguage } from '@/contexts/LanguageContext';
 import { AlertCircle, BookOpen } from 'lucide-react';
 import type { BookMetadata, Bookmark, ReadingProgress, HighlightColor } from '@/types/bible';
 
@@ -449,13 +448,5 @@ function BibleApp() {
 }
 
 export default function Index() {
-  return (
-    <ThemeProvider>
-      <FontSizeProvider>
-        <LanguageProvider>
-          <BibleApp />
-        </LanguageProvider>
-      </FontSizeProvider>
-    </ThemeProvider>
-  );
+  return <BibleApp />;
 }
