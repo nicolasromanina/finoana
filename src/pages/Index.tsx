@@ -11,6 +11,7 @@ import { LoadingScreen } from '@/components/LoadingScreen';
 import { SearchDialog } from '@/components/SearchDialog';
 import { BookmarksDialog } from '@/components/BookmarksDialog';
 import { ReadingPlansDialog } from '@/components/ReadingPlansDialog';
+import { ReadingStatsDialog } from '@/components/ReadingStatsDialog';
 import { VerseActionsDialog } from '@/components/VerseActionsDialog';
 import { SettingsDialog } from '@/components/SettingsDialog';
 import { OnboardingDialog } from '@/components/OnboardingDialog';
@@ -25,6 +26,7 @@ import { useTextToSpeech } from '@/hooks/useTextToSpeech';
 import { useParallelReading } from '@/hooks/useParallelReading';
 import { useReadingPlans } from '@/hooks/useReadingPlans';
 import { useHighlightsNotes } from '@/hooks/useHighlightsNotes';
+import { useReadingStats } from '@/hooks/useReadingStats';
 import { useTheme } from '@/contexts/ThemeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { AlertCircle, BookOpen } from 'lucide-react';
@@ -45,6 +47,7 @@ function BibleApp() {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [onboardingOpen, setOnboardingOpen] = useState(false);
   const [compareModalOpen, setCompareModalOpen] = useState(false);
+  const [statsOpen, setStatsOpen] = useState(false);
   const [actionVerse, setActionVerse] = useState<number | null>(null);
 
   const { dbService, isInitialized } = useIndexedDB();
@@ -116,6 +119,16 @@ function BibleApp() {
     chapter: currentChapter,
   });
 
+  const {
+    stats,
+    startSession,
+    endSession,
+    getChaptersThisWeek,
+    getReadingTimeThisWeek,
+    getDailyData,
+    formatTime,
+  } = useReadingStats();
+
   useEffect(() => {
     tts.stop();
   }, [selectedBook, currentChapter]);
@@ -141,16 +154,30 @@ function BibleApp() {
   };
 
   const handleBookChange = (book: BookMetadata) => {
+    // End previous session if exists
+    endSession();
     setSelectedBook(book);
     setCurrentChapter(1);
     setSelectedVerse(null);
   };
 
   const handleChapterChange = (chapter: number) => {
+    // End previous session and start new one
+    endSession();
     setCurrentChapter(chapter);
     setSelectedVerse(null);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  // Start reading session when viewing a chapter
+  useEffect(() => {
+    if (selectedBook && currentChapter && bookData) {
+      startSession(selectedBook.id, currentChapter);
+    }
+    return () => {
+      // Cleanup handled by handleChapterChange/handleBookChange
+    };
+  }, [selectedBook?.id, currentChapter, bookData]);
 
   const handleVerseClick = (verseNumber: number) => {
     setSelectedVerse(prev => prev === verseNumber ? null : verseNumber);
@@ -292,6 +319,7 @@ function BibleApp() {
         onOpenSearch={() => setSearchOpen(true)}
         onOpenBookmarks={() => setBookmarksOpen(true)}
         onOpenReadingPlans={() => setReadingPlansOpen(true)}
+        onOpenStats={() => setStatsOpen(true)}
         onOpenSettings={() => setSettingsOpen(true)}
         bookmarksCount={bookmarks.length}
         sidebarContent={sidebarContent}
@@ -408,6 +436,16 @@ function BibleApp() {
         getPlanProgress={getPlanProgress}
         getTodaysReading={getTodaysReading}
         getPlanById={getPlanById}
+      />
+
+      <ReadingStatsDialog
+        open={statsOpen}
+        onOpenChange={setStatsOpen}
+        stats={stats}
+        chaptersThisWeek={getChaptersThisWeek()}
+        readingTimeThisWeek={getReadingTimeThisWeek()}
+        dailyData={getDailyData()}
+        formatTime={formatTime}
       />
 
       {actionVerse && actionVerseData && (
