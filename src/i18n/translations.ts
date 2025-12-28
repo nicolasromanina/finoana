@@ -156,6 +156,24 @@ export interface Translations {
   
   // Compare
   compareTranslations: string;
+
+  // Statistics
+  readingStatistics: string;
+  thisWeek: string;
+  timeSpent: string;
+  chaptersRead: string;
+  dailyActivity: string;
+  streaks: string;
+  currentStreak: string;
+  longestStreak: string;
+  allTimeStats: string;
+  totalReadingTime: string;
+  totalChapters: string;
+  daysActive: string;
+  weeklyGoal: string;
+  chaptersPerWeek: string;
+  goalReached: string;
+  keepReading: string;
 }
 
 const mg: Translations = {
@@ -295,6 +313,24 @@ const mg: Translations = {
   previousStep: 'Teo aloha',
   
   compareTranslations: 'Hampitaha dika teny rehetra',
+
+  // Statistics
+  readingStatistics: 'Statistika famakiana',
+  thisWeek: 'Ity herinandro ity',
+  timeSpent: 'Fotoana lany',
+  chaptersRead: 'Toko voavaky',
+  dailyActivity: 'Hetsika isan\'andro',
+  streaks: 'Fitohizana',
+  currentStreak: 'Fitohizana ankehitriny',
+  longestStreak: 'Fitohizana lava indrindra',
+  allTimeStats: 'Statistika rehetra',
+  totalReadingTime: 'Fotoana famakiana rehetra',
+  totalChapters: 'Toko rehetra',
+  daysActive: 'Andro niditra',
+  weeklyGoal: 'Tanjona herinandro',
+  chaptersPerWeek: 'Toko isaky ny herinandro',
+  goalReached: 'Tanjona tratra! 🎉',
+  keepReading: 'Tohizo ny famakiana!',
 };
 
 const en: Translations = {
@@ -434,6 +470,24 @@ const en: Translations = {
   previousStep: 'Previous',
   
   compareTranslations: 'Compare all translations',
+
+  // Statistics
+  readingStatistics: 'Reading Statistics',
+  thisWeek: 'This Week',
+  timeSpent: 'Time Spent',
+  chaptersRead: 'Chapters Read',
+  dailyActivity: 'Daily Activity',
+  streaks: 'Streaks',
+  currentStreak: 'Current Streak',
+  longestStreak: 'Longest Streak',
+  allTimeStats: 'All Time Stats',
+  totalReadingTime: 'Total Reading Time',
+  totalChapters: 'Total Chapters',
+  daysActive: 'Days Active',
+  weeklyGoal: 'Weekly Goal',
+  chaptersPerWeek: 'Chapters per week',
+  goalReached: 'Goal reached! 🎉',
+  keepReading: 'Keep reading!',
 };
 
 const ko: Translations = {
@@ -573,6 +627,24 @@ const ko: Translations = {
   previousStep: '이전',
   
   compareTranslations: '모든 번역 비교',
+
+  // Statistics
+  readingStatistics: '독서 통계',
+  thisWeek: '이번 주',
+  timeSpent: '소요 시간',
+  chaptersRead: '읽은 장',
+  dailyActivity: '일일 활동',
+  streaks: '연속',
+  currentStreak: '현재 연속',
+  longestStreak: '최장 연속',
+  allTimeStats: '전체 통계',
+  totalReadingTime: '총 독서 시간',
+  totalChapters: '총 장',
+  daysActive: '활동 일수',
+  weeklyGoal: '주간 목표',
+  chaptersPerWeek: '주당 장',
+  goalReached: '목표 달성! 🎉',
+  keepReading: '계속 읽으세요!',
 };
 
 export const translations: Record<UILanguage, Translations> = { mg, en, ko };
