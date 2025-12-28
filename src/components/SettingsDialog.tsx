@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Settings, Sun, Moon, Monitor, Download, Trash2, Bell, BellOff, Clock, HardDrive, Check } from 'lucide-react';
+import { Settings, Sun, Moon, Monitor, Download, Trash2, Bell, BellOff, Clock, HardDrive, Check, Eye, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Switch } from '@/components/ui/switch';
 import { Slider } from '@/components/ui/slider';
@@ -156,10 +156,10 @@ export function SettingsDialog({
       {/* Theme */}
       <div className="space-y-3">
         <h3 className="text-sm font-medium">{t.theme}</h3>
-        <div className="flex gap-2">
+        <div className="grid grid-cols-2 gap-2">
           <button
             onClick={() => setThemeMode('system')}
-            className={`flex-1 flex flex-col items-center gap-1.5 px-3 py-3 rounded-xl text-sm transition-all ${
+            className={`flex flex-col items-center gap-1.5 px-3 py-3 rounded-xl text-sm transition-all ${
               themeMode === 'system'
                 ? 'bg-primary text-primary-foreground shadow-md'
                 : 'bg-secondary hover:bg-secondary/80'
@@ -170,7 +170,7 @@ export function SettingsDialog({
           </button>
           <button
             onClick={() => setThemeMode('light')}
-            className={`flex-1 flex flex-col items-center gap-1.5 px-3 py-3 rounded-xl text-sm transition-all ${
+            className={`flex flex-col items-center gap-1.5 px-3 py-3 rounded-xl text-sm transition-all ${
               themeMode === 'light'
                 ? 'bg-primary text-primary-foreground shadow-md'
                 : 'bg-secondary hover:bg-secondary/80'
@@ -181,7 +181,7 @@ export function SettingsDialog({
           </button>
           <button
             onClick={() => setThemeMode('dark')}
-            className={`flex-1 flex flex-col items-center gap-1.5 px-3 py-3 rounded-xl text-sm transition-all ${
+            className={`flex flex-col items-center gap-1.5 px-3 py-3 rounded-xl text-sm transition-all ${
               themeMode === 'dark'
                 ? 'bg-primary text-primary-foreground shadow-md'
                 : 'bg-secondary hover:bg-secondary/80'
@@ -190,7 +190,19 @@ export function SettingsDialog({
             <Moon className="h-5 w-5" />
             <span>{t.darkMode}</span>
           </button>
+          <button
+            onClick={() => setThemeMode('night')}
+            className={`flex flex-col items-center gap-1.5 px-3 py-3 rounded-xl text-sm transition-all ${
+              themeMode === 'night'
+                ? 'bg-primary text-primary-foreground shadow-md'
+                : 'bg-secondary hover:bg-secondary/80'
+            }`}
+          >
+            <Eye className="h-5 w-5" />
+            <span>{t.nightMode}</span>
+          </button>
         </div>
+        <p className="text-xs text-muted-foreground">{t.nightModeDescription}</p>
       </div>
 
       <Separator />

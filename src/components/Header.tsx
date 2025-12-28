@@ -70,51 +70,8 @@ export function Header({
             </SheetTrigger>
             <SheetContent side="left" className="w-80 p-0">
               {sidebarContent}
-              {/* Mobile bottom section */}
+              {/* Mobile bottom section - simplified, settings moved to header */}
               <div className="p-4 border-t border-border space-y-3">
-                {/* Bible Language in mobile */}
-                <div>
-                  <p className="text-xs text-muted-foreground mb-2">{t.bibleLanguage}</p>
-                  <Select value={selectedLanguage} onValueChange={onLanguageChange}>
-                    <SelectTrigger className="w-full">
-                      <SelectValue placeholder={t.language} />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {languages.map((lang) => (
-                        <SelectItem key={lang.code} value={lang.code}>
-                          {lang.nativeName}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-
-                {/* UI Language switcher */}
-                <div>
-                  <p className="text-xs text-muted-foreground mb-2">{t.interfaceLanguage}</p>
-                  <div className="flex gap-1">
-                    {uiLanguageOptions.map((lang) => (
-                      <button
-                        key={lang.code}
-                        onClick={() => setUILanguage(lang.code)}
-                        className={`flex-1 flex items-center justify-center gap-1 px-2 py-2 rounded-lg text-sm transition-colors ${
-                          uiLanguage === lang.code 
-                            ? 'bg-primary text-primary-foreground' 
-                            : 'bg-secondary hover:bg-secondary/80'
-                        }`}
-                      >
-                        <span>{lang.flag}</span>
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Settings button in mobile */}
-                <Button variant="secondary" className="w-full gap-2" onClick={onOpenSettings}>
-                  <Settings className="h-4 w-4" />
-                  {t.settings}
-                </Button>
-
                 <InstallButton variant="compact" className="w-full justify-center" />
               </div>
             </SheetContent>
@@ -158,34 +115,7 @@ export function Header({
             )}
           </Button>
 
-          {/* Globe with active flag indicator */}
-          <Popover>
-            <PopoverTrigger asChild>
-              <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-9 sm:w-9 relative">
-                <Globe className="h-4 w-4" />
-                <span className="absolute -bottom-0.5 -right-0.5 text-[10px] leading-none">{currentFlag}</span>
-              </Button>
-            </PopoverTrigger>
-            <PopoverContent className="w-48 p-2" align="end">
-              <p className="text-xs text-muted-foreground mb-2 px-2">{t.interfaceLanguage}</p>
-              <div className="space-y-1">
-                {uiLanguageOptions.map((lang) => (
-                  <button
-                    key={lang.code}
-                    onClick={() => setUILanguage(lang.code)}
-                    className={`w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${
-                      uiLanguage === lang.code ? 'bg-primary text-primary-foreground' : 'hover:bg-secondary'
-                    }`}
-                  >
-                    <span>{lang.flag}</span>
-                    <span>{lang.name}</span>
-                  </button>
-                ))}
-              </div>
-            </PopoverContent>
-          </Popover>
-
-          {/* Bible language selector - hidden on mobile */}
+          {/* Bible language selector - hidden on mobile, now in settings */}
           <Select value={selectedLanguage} onValueChange={onLanguageChange}>
             <SelectTrigger className="w-[80px] sm:w-[110px] h-8 sm:h-9 text-xs sm:text-sm hidden md:flex">
               <SelectValue placeholder={t.language} />
@@ -199,8 +129,8 @@ export function Header({
             </SelectContent>
           </Select>
 
-          {/* Settings button - visible on desktop */}
-          <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-9 sm:w-9 hidden sm:flex" onClick={onOpenSettings}>
+          {/* Settings button - visible on all screens */}
+          <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-9 sm:w-9" onClick={onOpenSettings}>
             <Settings className="h-4 w-4" />
           </Button>
 

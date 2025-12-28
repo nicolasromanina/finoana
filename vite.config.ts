@@ -32,32 +32,73 @@ export default defineConfig(({ mode }) => ({
         ],
       },
       workbox: {
-        globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2,woff,ttf,eot}"],
+        navigateFallback: "/index.html",
+        navigateFallbackDenylist: [/^\/api/],
         runtimeCaching: [
+          // Bible JSON data - Cache First for offline reading
           {
-            urlPattern: /^https:\/\/baiboly\.vercel\.app\/.*/i,
+            urlPattern: /^https:\/\/baiboly\.vercel\.app\/.*\.json$/i,
             handler: "CacheFirst",
+            options: {
+              cacheName: "bible-json-cache",
+              expiration: { 
+                maxEntries: 500, 
+                maxAgeSeconds: 60 * 60 * 24 * 30 // 30 days
+              },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
+          // Bible API calls
+          {
+            urlPattern: /^https:\/\/baiboly\.vercel\.app\/api\/.*/i,
+            handler: "NetworkFirst",
             options: {
               cacheName: "bible-api-cache",
-              expiration: { maxEntries: 500, maxAgeSeconds: 60 * 60 * 24 * 30 },
+              expiration: { 
+                maxEntries: 200, 
+                maxAgeSeconds: 60 * 60 * 24 * 7 // 7 days
+              },
               cacheableResponse: { statuses: [0, 200] },
+              networkTimeoutSeconds: 10,
             },
           },
+          // Google Fonts stylesheets
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
-            handler: "CacheFirst",
+            handler: "StaleWhileRevalidate",
             options: {
-              cacheName: "google-fonts-cache",
-              expiration: { maxEntries: 10, maxAgeSeconds: 60 * 60 * 24 * 365 },
+              cacheName: "google-fonts-stylesheets",
+              expiration: { 
+                maxEntries: 10, 
+                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
+              },
               cacheableResponse: { statuses: [0, 200] },
             },
           },
+          // Google Fonts webfont files
           {
             urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
             handler: "CacheFirst",
             options: {
-              cacheName: "gstatic-fonts-cache",
-              expiration: { maxEntries: 10, maxAgeSeconds: 60 * 60 * 24 * 365 },
+              cacheName: "google-fonts-webfonts",
+              expiration: { 
+                maxEntries: 30, 
+                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
+              },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
+          // Images and static assets
+          {
+            urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp|ico)$/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "images-cache",
+              expiration: { 
+                maxEntries: 100, 
+                maxAgeSeconds: 60 * 60 * 24 * 30 // 30 days
+              },
               cacheableResponse: { statuses: [0, 200] },
             },
           },
