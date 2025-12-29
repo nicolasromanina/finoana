@@ -1,4 +1,4 @@
-export type UILanguage = 'mg' | 'en' | 'ko';
+export type UILanguage = 'mg' | 'en' | 'ko' | 'sw';
 
 export interface Translations {
   // App general
@@ -647,7 +647,164 @@ const ko: Translations = {
   keepReading: '계속 읽으세요!',
 };
 
-export const translations: Record<UILanguage, Translations> = { mg, en, ko };
+const sw: Translations = {
+  appName: 'Biblia',
+  loading: 'Inapakia...',
+  error: 'Hitilafu',
+  copyright: '© 2025 NARNIA CHAPEL',
+  
+  books: 'Vitabu',
+  search: 'Tafuta',
+  bookmarks: 'Alama za kusoma',
+  settings: 'Mipangilio',
+  readingPlans: 'Mipango ya kusoma',
+  
+  oldTestament: 'Agano la Kale',
+  newTestament: 'Agano Jipya',
+  
+  chapter: 'Sura',
+  verse: 'Aya',
+  previous: 'Iliyopita',
+  next: 'Ifuatayo',
+  of: 'ya',
+  startReading: 'Anza kusoma',
+  selectBookHint: 'Chagua kitabu kutoka orodha kuanza safari yako kupitia Maandiko Matakatifu.',
+  continueReading: 'Endelea kusoma',
+  progress: 'Maendeleo',
+  
+  verseOfTheDay: 'Aya ya Leo',
+  readMore: 'Soma zaidi',
+  
+  searchVerses: 'Tafuta aya',
+  searchPlaceholder: 'Tafuta...',
+  searchBooks: 'Tafuta vitabu...',
+  noResults: 'Hakuna matokeo',
+  tryDifferent: 'Jaribu neno lingine',
+  typeToSearch: 'Andika angalau herufi 2 kutafuta',
+  searchAcross: 'Tafuta katika vitabu na aya zote',
+  found: 'Imepatikana',
+  results: 'matokeo',
+  
+  saved: 'Imehifadhiwa',
+  save: 'Hifadhi',
+  noBookmarks: 'Hakuna alama za kusoma bado',
+  clickToSave: 'Bofya aya na uihifadhi kuongeza alama',
+  deleteBookmark: 'Futa alama',
+  copied: 'Imenakiliwa!',
+  copiedToClipboard: 'Aya imenakiliwa kwenye clipboard',
+  copy: 'Nakili',
+  share: 'Shiriki',
+  
+  listenToChapter: 'Sikiliza Sura',
+  playing: 'Inacheza...',
+  
+  parallelReading: 'Kusoma Sambamba',
+  selectTranslations: 'Chagua tafsiri',
+  addTranslation: 'Ongeza tafsiri',
+  removeTranslation: 'Ondoa tafsiri',
+  compareVersions: 'Linganisha matoleo',
+  singleView: 'Moja',
+  parallelView: 'Sambamba',
+  
+  language: 'Lugha',
+  interfaceLanguage: 'Lugha ya kiolesura',
+  bibleLanguage: 'Lugha ya Biblia',
+  fontSize: 'Ukubwa wa herufi',
+  theme: 'Mandhari',
+  lightMode: 'Mwanga',
+  darkMode: 'Giza',
+  nightMode: 'Usiku',
+  nightModeDescription: 'Inapunguza mwanga wa bluu kulinda macho yako',
+  themeSystem: 'Mfumo',
+  
+  failedToLoad: 'Imeshindwa kupakia',
+  noDataAvailable: 'Hakuna data kwa',
+  pageNotFound: 'Ukurasa haujapatikana',
+  returnHome: 'Rudi Nyumbani',
+  
+  close: 'Funga',
+  cancel: 'Ghairi',
+  confirm: 'Thibitisha',
+  apply: 'Tekeleza',
+
+  startPlan: 'Anza Mpango',
+  continuePlan: 'Endelea Mpango',
+  completedDays: 'Siku zilizokamilika',
+  todaysReading: 'Usomaji wa Leo',
+  markAsComplete: 'Weka alama kuwa umekamilika',
+  planProgress: 'Maendeleo',
+  day: 'Siku',
+  days: 'siku',
+  selectPlan: 'Chagua mpango',
+  activePlans: 'Mipango Inayoendelea',
+  availablePlans: 'Mipango Inayopatikana',
+  noActivePlans: 'Hakuna mipango inayoendelea',
+  
+  enableNotifications: 'Washa arifa',
+  notificationTime: 'Wakati wa arifa',
+  dailyReminder: 'Kikumbusho cha kila siku',
+  notificationsEnabled: 'Arifa zimewashwa',
+  notificationsDisabled: 'Arifa zimezimwa',
+  
+  highlight: 'Angazia',
+  addNote: 'Ongeza dokezo',
+  editNote: 'Hariri dokezo',
+  deleteNote: 'Futa dokezo',
+  noteText: 'Andika dokezo lako',
+  highlightColor: 'Rangi',
+  removeHighlight: 'Ondoa kuangazia',
+  yourNotes: 'Madokezo yako',
+  noNotes: 'Hakuna madokezo bado',
+
+  installApp: 'Sakinisha Programu',
+  installInstructions: 'Jinsi ya kusakinisha',
+  iosInstallStep1: 'Gonga kitufe cha Shiriki',
+  iosInstallStep2: 'Chagua "Ongeza kwenye Skrini ya Nyumbani"',
+  androidInstall: 'Gonga "Sakinisha"',
+  appInstalled: 'Programu tayari imesakinishwa',
+  
+  offline: 'Nje ya mtandao',
+  online: 'Mtandaoni',
+  downloadForOffline: 'Pakua data yote kwa nje ya mtandao',
+  downloadingData: 'Inapakua data...',
+  downloadComplete: 'Upakuaji umekamilika',
+  storageUsed: 'Hifadhi iliyotumika',
+  resetCache: 'Weka upya akiba',
+  resetCacheConfirm: 'Una uhakika unataka kufuta data yote iliyohifadhiwa?',
+  resetCacheSuccess: 'Akiba imefutwa kikamilifu',
+  
+  welcomeTitle: 'Karibu kwenye Biblia',
+  welcomeSubtitle: 'Soma Maandiko Matakatifu kwa lugha nyingi',
+  chooseLanguage: 'Chagua lugha yako',
+  chooseTheme: 'Chagua mandhari yako',
+  installStep: 'Sakinisha programu',
+  letsStart: 'Tuanze',
+  skip: 'Ruka',
+  nextStep: 'Ifuatayo',
+  previousStep: 'Iliyopita',
+  
+  compareTranslations: 'Linganisha tafsiri zote',
+
+  // Statistics
+  readingStatistics: 'Takwimu za Kusoma',
+  thisWeek: 'Wiki Hii',
+  timeSpent: 'Muda Uliotumika',
+  chaptersRead: 'Sura Zilizosomwa',
+  dailyActivity: 'Shughuli za Kila Siku',
+  streaks: 'Mfululizo',
+  currentStreak: 'Mfululizo wa Sasa',
+  longestStreak: 'Mfululizo Mrefu Zaidi',
+  allTimeStats: 'Takwimu Zote',
+  totalReadingTime: 'Jumla ya Muda wa Kusoma',
+  totalChapters: 'Jumla ya Sura',
+  daysActive: 'Siku Zinazofanya Kazi',
+  weeklyGoal: 'Lengo la Wiki',
+  chaptersPerWeek: 'Sura kwa wiki',
+  goalReached: 'Lengo limefikiwa! 🎉',
+  keepReading: 'Endelea kusoma!',
+};
+
+export const translations: Record<UILanguage, Translations> = { mg, en, ko, sw };
 
 export function getTranslation(lang: UILanguage): Translations {
   return translations[lang] || translations.en;

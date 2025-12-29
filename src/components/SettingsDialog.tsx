@@ -61,6 +61,7 @@ const uiLanguageOptions: { code: UILanguage; name: string; flag: string }[] = [
   { code: 'mg', name: 'Malagasy', flag: '🇲🇬' },
   { code: 'en', name: 'English', flag: '🇬🇧' },
   { code: 'ko', name: '한국어', flag: '🇰🇷' },
+  { code: 'sw', name: 'Kiswahili', flag: '🇰🇪' },
 ];
 
 export function SettingsDialog({

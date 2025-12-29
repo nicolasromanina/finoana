@@ -12,6 +12,7 @@ import { SearchDialog } from '@/components/SearchDialog';
 import { BookmarksDialog } from '@/components/BookmarksDialog';
 import { ReadingPlansDialog } from '@/components/ReadingPlansDialog';
 import { ReadingStatsDialog } from '@/components/ReadingStatsDialog';
+import { ReadingStatsWidget } from '@/components/ReadingStatsWidget';
 import { VerseActionsDialog } from '@/components/VerseActionsDialog';
 import { SettingsDialog } from '@/components/SettingsDialog';
 import { OnboardingDialog } from '@/components/OnboardingDialog';
@@ -335,6 +336,14 @@ function BibleApp() {
             {!selectedBook && (
               <div className="space-y-4 sm:space-y-6 fade-in">
                 <VerseOfDay books={books} language={selectedLanguage} onNavigate={handleVerseOfDayNavigate} />
+                <ReadingStatsWidget
+                  readingTimeThisWeek={getReadingTimeThisWeek()}
+                  chaptersThisWeek={getChaptersThisWeek()}
+                  currentStreak={stats.currentStreak}
+                  longestStreak={stats.longestStreak}
+                  formatTime={formatTime}
+                  onOpenStats={() => setStatsOpen(true)}
+                />
                 <ReadingProgressCard progress={readingProgress} books={books} onContinue={handleContinueReading} />
                 <div className="text-center py-8 sm:py-12">
                   <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-secondary mb-4">
