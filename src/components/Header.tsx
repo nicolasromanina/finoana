@@ -1,4 +1,4 @@
-import { Menu, Moon, Sun, Search, Bookmark, Globe, Calendar, Settings, BarChart3 } from 'lucide-react';
+import { Menu, Moon, Sun, Search, Bookmark, Globe, Calendar, Settings, BarChart3, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/contexts/ThemeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -31,6 +31,7 @@ interface HeaderProps {
   onOpenBookmarks: () => void;
   onOpenReadingPlans: () => void;
   onOpenStats: () => void;
+  onOpenBadges: () => void;
   onOpenSettings: () => void;
   bookmarksCount: number;
   sidebarContent: React.ReactNode;
@@ -51,6 +52,7 @@ export function Header({
   onOpenBookmarks,
   onOpenReadingPlans,
   onOpenStats,
+  onOpenBadges,
   onOpenSettings,
   bookmarksCount,
   sidebarContent 
@@ -111,6 +113,10 @@ export function Header({
 
           <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-9 sm:w-9" onClick={onOpenStats}>
             <BarChart3 className="h-4 w-4" />
+          </Button>
+
+          <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-9 sm:w-9" onClick={onOpenBadges}>
+            <Trophy className="h-4 w-4" />
           </Button>
 
           <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-9 sm:w-9 relative" onClick={onOpenBookmarks}>

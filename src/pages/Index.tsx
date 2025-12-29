@@ -13,6 +13,7 @@ import { BookmarksDialog } from '@/components/BookmarksDialog';
 import { ReadingPlansDialog } from '@/components/ReadingPlansDialog';
 import { ReadingStatsDialog } from '@/components/ReadingStatsDialog';
 import { ReadingStatsWidget } from '@/components/ReadingStatsWidget';
+import { BadgesDialog } from '@/components/BadgesDialog';
 import { VerseActionsDialog } from '@/components/VerseActionsDialog';
 import { SettingsDialog } from '@/components/SettingsDialog';
 import { OnboardingDialog } from '@/components/OnboardingDialog';
@@ -28,6 +29,7 @@ import { useParallelReading } from '@/hooks/useParallelReading';
 import { useReadingPlans } from '@/hooks/useReadingPlans';
 import { useHighlightsNotes } from '@/hooks/useHighlightsNotes';
 import { useReadingStats } from '@/hooks/useReadingStats';
+import { useBadges } from '@/hooks/useBadges';
 import { useTheme } from '@/contexts/ThemeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { AlertCircle, BookOpen } from 'lucide-react';
@@ -49,6 +51,7 @@ function BibleApp() {
   const [onboardingOpen, setOnboardingOpen] = useState(false);
   const [compareModalOpen, setCompareModalOpen] = useState(false);
   const [statsOpen, setStatsOpen] = useState(false);
+  const [badgesOpen, setBadgesOpen] = useState(false);
   const [actionVerse, setActionVerse] = useState<number | null>(null);
 
   const { dbService, isInitialized } = useIndexedDB();
@@ -129,6 +132,19 @@ function BibleApp() {
     getDailyData,
     formatTime,
   } = useReadingStats();
+
+  const {
+    badges,
+    level,
+    totalPoints,
+    checkAndUnlockBadges,
+    getProgress,
+  } = useBadges();
+
+  // Check badges whenever stats update
+  useEffect(() => {
+    checkAndUnlockBadges(stats);
+  }, [stats, checkAndUnlockBadges]);
 
   useEffect(() => {
     tts.stop();
@@ -321,6 +337,7 @@ function BibleApp() {
         onOpenBookmarks={() => setBookmarksOpen(true)}
         onOpenReadingPlans={() => setReadingPlansOpen(true)}
         onOpenStats={() => setStatsOpen(true)}
+        onOpenBadges={() => setBadgesOpen(true)}
         onOpenSettings={() => setSettingsOpen(true)}
         bookmarksCount={bookmarks.length}
         sidebarContent={sidebarContent}
@@ -455,6 +472,16 @@ function BibleApp() {
         readingTimeThisWeek={getReadingTimeThisWeek()}
         dailyData={getDailyData()}
         formatTime={formatTime}
+      />
+
+      <BadgesDialog
+        open={badgesOpen}
+        onOpenChange={setBadgesOpen}
+        badges={badges}
+        level={level}
+        totalPoints={totalPoints}
+        stats={stats}
+        getProgress={getProgress}
       />
 
       {actionVerse && actionVerseData && (

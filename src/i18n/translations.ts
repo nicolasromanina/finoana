@@ -174,6 +174,13 @@ export interface Translations {
   chaptersPerWeek: string;
   goalReached: string;
   keepReading: string;
+  
+  // Badges
+  badgesRewards: string;
+  level: string;
+  points: string;
+  unlocked: string;
+  pointsToNextLevel: string;
 }
 
 const mg: Translations = {
@@ -331,6 +338,13 @@ const mg: Translations = {
   chaptersPerWeek: 'Toko isaky ny herinandro',
   goalReached: 'Tanjona tratra! 🎉',
   keepReading: 'Tohizo ny famakiana!',
+  
+  // Badges
+  badgesRewards: 'Medaly sy valisoa',
+  level: 'Ambaratonga',
+  points: 'poiny',
+  unlocked: 'voavoha',
+  pointsToNextLevel: 'poiny mila ho amin\'ny ambaratonga manaraka',
 };
 
 const en: Translations = {
@@ -488,6 +502,13 @@ const en: Translations = {
   chaptersPerWeek: 'Chapters per week',
   goalReached: 'Goal reached! 🎉',
   keepReading: 'Keep reading!',
+  
+  // Badges
+  badgesRewards: 'Badges & Rewards',
+  level: 'Level',
+  points: 'points',
+  unlocked: 'unlocked',
+  pointsToNextLevel: 'points to next level',
 };
 
 const ko: Translations = {
@@ -645,6 +666,13 @@ const ko: Translations = {
   chaptersPerWeek: '주당 장',
   goalReached: '목표 달성! 🎉',
   keepReading: '계속 읽으세요!',
+  
+  // Badges
+  badgesRewards: '배지 및 보상',
+  level: '레벨',
+  points: '포인트',
+  unlocked: '잠금 해제됨',
+  pointsToNextLevel: '다음 레벨까지 포인트',
 };
 
 const sw: Translations = {
@@ -802,6 +830,13 @@ const sw: Translations = {
   chaptersPerWeek: 'Sura kwa wiki',
   goalReached: 'Lengo limefikiwa! 🎉',
   keepReading: 'Endelea kusoma!',
+  
+  // Badges
+  badgesRewards: 'Beji na Zawadi',
+  level: 'Kiwango',
+  points: 'pointi',
+  unlocked: 'zimefunguliwa',
+  pointsToNextLevel: 'pointi hadi kiwango kifuatacho',
 };
 
 export const translations: Record<UILanguage, Translations> = { mg, en, ko, sw };

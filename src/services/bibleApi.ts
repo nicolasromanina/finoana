@@ -16,7 +16,8 @@ export class BibleApiService {
     return [
       { code: "mg", name: "Malagasy", nativeName: "Malagasy", booksCount: 66 },
       { code: "en", name: "English", nativeName: "English", booksCount: 66 },
-      { code: "ko", name: "Korean", nativeName: "한국어", booksCount: 66 }
+      { code: "ko", name: "Korean", nativeName: "한국어", booksCount: 66 },
+      { code: "sw", name: "Swahili", nativeName: "Kiswahili", booksCount: 66 }
     ];
   }
 
