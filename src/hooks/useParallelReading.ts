@@ -99,7 +99,7 @@ const bookFilesByLanguage: Record<string, Record<string, string>> = {
   sw: { // AJOUT DU SWAHILI
     gen: 'Mwanzo.json',
     exo: 'Kutoka.json',
-    lev: 'Mambo_ya_Walawi.json',
+    lev: 'Mambo ya Walawi.json',
     num: 'Hesabu.json',
     deu: 'Kumbukumbu_la_Torati.json',
     jos: 'Yoshua.json',
