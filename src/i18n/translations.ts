@@ -305,11 +305,11 @@ const mg: Translations = {
   availablePlans: 'Drafitra misy',
   noActivePlans: 'Tsy misy drafitra mandeha',
   
-  enableNotifications: 'Alefaso ny fampahatsiarovana',
-  notificationTime: 'Ora fampahatsiarovana',
-  dailyReminder: 'Fampahatsiarovana isan\'andro',
-  notificationsEnabled: 'Fampahatsiarovana alefa',
-  notificationsDisabled: 'Fampahatsiarovana tsy alefa',
+  enableNotifications: 'Alefaso ny fampahatsiahivana',
+  notificationTime: 'Ora fampahatsiahivana',
+  dailyReminder: 'Fampahatsiahivana isan\'andro',
+  notificationsEnabled: 'Fampahatsiahivana lasa',
+  notificationsDisabled: 'Fampahatsiahivana tsy alefa',
   
   highlight: 'Ampisongadinina',
   addNote: 'Hanampy fanamarihana',
