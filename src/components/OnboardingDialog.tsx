@@ -17,6 +17,7 @@ const uiLanguageOptions: { code: UILanguage; name: string; flag: string; greetin
   { code: 'mg', name: 'Malagasy', flag: '🇲🇬', greeting: 'Tongasoa!' },
   { code: 'en', name: 'English', flag: '🇬🇧', greeting: 'Welcome!' },
   { code: 'ko', name: '한국어', flag: '🇰🇷', greeting: '환영합니다!' },
+  { code: 'sw', name: 'Kiswahili', flag: '🇰🇪', greeting: 'Karibu!' }
 ];
 
 export function OnboardingDialog({ open, onOpenChange, onComplete }: OnboardingDialogProps) {

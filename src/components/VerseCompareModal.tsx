@@ -19,6 +19,7 @@ const languageFlags: Record<string, string> = {
   mg: '🇲🇬',
   en: '🇬🇧',
   ko: '🇰🇷',
+  sw: 'TZ',
 };
 
 export function VerseCompareModal({

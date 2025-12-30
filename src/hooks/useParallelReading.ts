@@ -19,9 +19,10 @@ const languageNames: Record<string, string> = {
   mg: 'Malagasy',
   en: 'English',
   ko: '한국어',
+  sw: 'Kiswahili',
 };
 
-// Book ID to filename mapping for each language
+// Book ID to filename mapping for each language - AJOUT DU SWAHILI
 const bookFilesByLanguage: Record<string, Record<string, string>> = {
   mg: {
     gen: 'Genesisy.json', exo: 'Eksodosy.json', lev: 'Levitikosy.json',
@@ -59,7 +60,7 @@ const bookFilesByLanguage: Record<string, Record<string, string>> = {
     lam: 'Lamentations.json', eze: 'Ezekiel.json', dan: 'Daniel.json',
     hos: 'Hosea.json', joe: 'Joel.json', amo: 'Amos.json',
     oba: 'Obadiah.json', jon: 'Jonah.json', mic: 'Micah.json',
-    nah: 'Nahum.json', hab: 'Habakkuk.json', zep: 'Zephaniah.json',
+    nah: 'Nahum.json', hab: 'Habakkuk.json', zep: 'Zephania.json',
     hag: 'Haggai.json', zac: 'Zechariah.json', mal: 'Malachi.json',
     mat: 'Matthew.json', mar: 'Mark.json', luk: 'Luke.json',
     joh: 'John.json', act: 'Acts.json', rom: 'Romans.json',
@@ -95,6 +96,74 @@ const bookFilesByLanguage: Record<string, Record<string, string>> = {
     '2pe': '베드로후서.json', '1jo': '요한일서.json', '2jo': '요한이서.json',
     '3jo': '요한삼서.json', jud: '유다서.json', rev: '요한계시록.json',
   },
+  sw: { // AJOUT DU SWAHILI
+    gen: 'Mwanzo.json',
+    exo: 'Kutoka.json',
+    lev: 'Mambo_ya_Walawi.json',
+    num: 'Hesabu.json',
+    deu: 'Kumbukumbu_la_Torati.json',
+    jos: 'Yoshua.json',
+    jdg: 'Waamuzi.json',
+    rut: 'Rute.json',
+    '1sa': '1 Samweli.json',
+    '2sa': '2 Samweli.json',
+    '1ki': '1 Wafalme.json',
+    '2ki': '2 Wafalme.json',
+    '1ch': '1 Mambo ya Nyakati.json',
+    '2ch': '2 Mambo ya Nyakati.json',
+    ezr: 'Ezra.json',
+    neh: 'Nehemia.json',
+    est: 'Esta.json',
+    job: 'Ayubu.json',
+    psa: 'Zaburi.json',
+    pro: 'Methali.json',
+    ecc: 'Mhubiri.json',
+    sos: 'Wimbo Ulio Bora.json',
+    isa: 'Isaya.json',
+    jer: 'Yeremia.json',
+    lam: 'Maombolezo.json',
+    eze: 'Ezekieli.json',
+    dan: 'Danieli.json',
+    hos: 'Hosea.json',
+    joe: 'Yoiweli.json',
+    amo: 'Amosi.json',
+    oba: 'Obadia.json',
+    jon: 'Yona.json',
+    mic: 'Mika.json',
+    nah: 'Nahumu.json',
+    hab: 'Habakuki.json',
+    zep: 'Sefania.json',
+    hag: 'Hagai.json',
+    zac: 'Zekaria.json',
+    mal: 'Malaki.json',
+    mat: 'Mathayo.json',
+    mar: 'Marko.json',
+    luk: 'Luka.json',
+    joh: 'Yohana.json',
+    act: 'Matendo ya Mitume.json',
+    rom: 'Warumi.json',
+    '1co': '1 Wakorintho.json',
+    '2co': '2 Wakorintho.json',
+    gal: 'Wagalatia.json',
+    eph: 'Waefeso.json',
+    php: 'Wafilipi.json',
+    col: 'Wakolosai.json',
+    '1th': '1 Wathesalonike.json',
+    '2th': '2 Wathesalonike.json',
+    '1ti': '1 Timotheo.json',
+    '2ti': '2 Timotheo.json',
+    tit: 'Tito.json',
+    phm: 'Filemoni.json',
+    heb: 'Waebrania.json',
+    jam: 'Yakobo.json',
+    '1pe': '1 Petro.json',
+    '2pe': '2 Petro.json',
+    '1jo': '1 Yohana.json',
+    '2jo': '2 Yohana.json',
+    '3jo': '3 Yohana.json',
+    jud: 'Yuda.json',
+    rev: 'Ufunuo wa Yohana.json',
+  },
 };
 
 function getBookFileName(bookId: string, lang: string): string | null {
@@ -111,8 +180,10 @@ export function useParallelReading({
   const [parallelData, setParallelData] = useState<ParallelData[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isParallelMode, setIsParallelMode] = useState(false);
+  const [loadingLanguages, setLoadingLanguages] = useState<string[]>([]);
 
-  const availableLanguages = ['mg', 'en', 'ko'];
+  // CORRECTION: Ajouter 'sw' aux langues disponibles
+  const availableLanguages = ['mg', 'en', 'ko', 'sw'];
   
   const addLanguage = useCallback((lang: string) => {
     if (!selectedLanguages.includes(lang) && selectedLanguages.length < 4) {
@@ -135,6 +206,7 @@ export function useParallelReading({
     const loadParallelData = async () => {
       if (!dbService || !selectedBook || !isParallelMode || selectedLanguages.length < 2) {
         setParallelData([]);
+        setLoadingLanguages([]);
         return;
       }
 
@@ -143,6 +215,7 @@ export function useParallelReading({
       
       try {
         const booksData: Record<string, Book> = {};
+        const currentlyLoading: string[] = [];
         
         // Fetch book data for each selected language using the correct filename
         for (const lang of selectedLanguages) {
@@ -152,20 +225,31 @@ export function useParallelReading({
             continue;
           }
 
-          let bookData = await dbService.getBook(lang, fileName);
-          
-          if (!bookData) {
-            try {
-              bookData = await apiService.fetchBook(lang, fileName);
-              await dbService.saveBook(lang, fileName, bookData);
-            } catch (err) {
-              console.warn(`Failed to fetch book for language: ${lang}`, err);
-              continue;
+          // Ajouter la langue à la liste de chargement
+          currentlyLoading.push(lang);
+          setLoadingLanguages(prev => [...prev, lang]);
+
+          try {
+            let bookData = await dbService.getBook(lang, fileName);
+            
+            if (!bookData) {
+              try {
+                console.log(`Fetching ${lang} book: ${fileName}`);
+                bookData = await apiService.fetchBook(lang, fileName);
+                await dbService.saveBook(lang, fileName, bookData);
+              } catch (err) {
+                console.warn(`Failed to fetch book for language: ${lang}`, err);
+                // Continuer avec les autres langues
+                continue;
+              }
             }
-          }
-          
-          if (bookData) {
-            booksData[lang] = bookData;
+            
+            if (bookData) {
+              booksData[lang] = bookData;
+            }
+          } finally {
+            // Retirer la langue de la liste de chargement
+            setLoadingLanguages(prev => prev.filter(l => l !== lang));
           }
         }
 
@@ -178,6 +262,8 @@ export function useParallelReading({
           if (chapter) {
             chapterDataByLang[lang] = chapter.verses;
             maxVerses = Math.max(maxVerses, chapter.verses.length);
+          } else {
+            console.warn(`Chapter ${currentChapter} not found in ${selectedBook.id} (${lang})`);
           }
         }
 
@@ -197,7 +283,15 @@ export function useParallelReading({
                 languageName: languageNames[lang] || lang,
                 text: verse.text,
               });
+            } else if (booksData[lang]) {
+              // Le livre existe mais ce verset n'existe pas (peut arriver)
+              translations.push({
+                language: lang,
+                languageName: languageNames[lang] || lang,
+                text: `[Verse ${i} not available in ${languageNames[lang]}]`,
+              });
             }
+            // Si booksData[lang] n'existe pas, on n'ajoute rien
           }
           
           if (translations.length > 0) {
@@ -213,6 +307,7 @@ export function useParallelReading({
         console.error('Error loading parallel data:', error);
       } finally {
         setIsLoading(false);
+        setLoadingLanguages([]);
       }
     };
 
@@ -228,9 +323,10 @@ export function useParallelReading({
 
   return {
     selectedLanguages,
-    availableLanguages,
+    availableLanguages, // Maintenant inclut 'sw'
     parallelData,
     isLoading,
+    loadingLanguages,
     isParallelMode,
     addLanguage,
     removeLanguage,

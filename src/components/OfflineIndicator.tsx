@@ -47,6 +47,10 @@ export function OfflineIndicator() {
       online: '온라인 복귀',
       offline: '오프라인 - 캐시 데이터 사용 중',
     },
+    sw: {
+      online: 'Tumeunganishwa tena mtandaoni',
+      offline: 'Hakuna intaneti - Kutumia data iliyohifadhiwa',
+    },
   };
 
   const text = messages[uiLanguage] || messages.en;

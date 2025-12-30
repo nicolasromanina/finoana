@@ -8,6 +8,7 @@ const languageVoiceMap: Record<string, string[]> = {
   en: ['en-US', 'en-GB', 'en'],
   mg: ['mg', 'mg-MG', 'fr', 'fr-FR'],
   ko: ['ko-KR', 'ko'],
+  sw: ['sw-KE', 'sw-TZ', 'en'],
 };
 
 export function useTextToSpeech({ language }: UseTextToSpeechProps) {
