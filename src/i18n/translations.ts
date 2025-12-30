@@ -283,7 +283,7 @@ const mg: Translations = {
   themeSystem: 'Araka ny sistema',
   
   failedToLoad: 'Tsy afaka nitondra',
-  noDataAvailable: 'Tsy misy data ho an\'ny',
+  noDataAvailable: 'Hamarino ny internet, na alaivo ny boky rehetra ho offline ao amin\'ny paramètre fa mbola tsy misy data ho an\'ny',
   pageNotFound: 'Tsy hita ny pejy',
   returnHome: 'Hiverina amin\'ny fandraisana',
   
@@ -474,7 +474,7 @@ const en: Translations = {
   themeSystem: 'System',
   
   failedToLoad: 'Failed to load',
-  noDataAvailable: 'No data available for',
+  noDataAvailable: 'Check your internet connection, or download all books for offline in settings as there is no data available yet for',
   pageNotFound: 'Page not found',
   returnHome: 'Return to Home',
   
@@ -665,7 +665,7 @@ const ko: Translations = {
   themeSystem: '시스템',
   
   failedToLoad: '로드 실패',
-  noDataAvailable: '데이터 없음',
+  noDataAvailable: '인터넷 연결을 확인하거나 설정에서 오프라인용으로 모든 책을 다운로드하세요. 아직 사용할 수 있는 데이터가 없습니다',
   pageNotFound: '페이지를 찾을 수 없음',
   returnHome: '홈으로 돌아가기',
   
@@ -856,7 +856,7 @@ const sw: Translations = {
   themeSystem: 'Mfumo',
   
   failedToLoad: 'Imeshindwa kupakia',
-  noDataAvailable: 'Hakuna data kwa',
+  noDataAvailable: 'Angalia muunganisho wako wa intaneti, au pakua vitabu vyote kwa ajili ya nje ya mtandao katika mipangilio kwani bado hakuna data inayopatikana kwa',
   pageNotFound: 'Ukurasa haujapatikana',
   returnHome: 'Rudi Nyumbani',
   
