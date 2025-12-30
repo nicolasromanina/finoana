@@ -18,6 +18,7 @@ export interface Translations {
   oldTestament: string;
   newTestament: string;
   
+  
   // Reading
   chapter: string;
   verse: string;

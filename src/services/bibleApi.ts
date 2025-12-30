@@ -37,13 +37,23 @@ export class BibleApiService {
     }
   }
 
-  async fetchBook(language: string, fileName: string): Promise<Book> {
-    const response = await fetch(
-      `${BASE_URL}/${language}/${fileName}`,
-      this.fetchOptions
-    );
-    if (!response.ok) throw new Error(`Failed to fetch book: ${fileName}`);
-    return response.json();
+  async fetchBook(language: string, fileName: string): Promise<Book | null> {
+    try {
+      const response = await fetch(
+        `${BASE_URL}/${language}/${fileName}`,
+        this.fetchOptions
+      );
+      
+      if (!response.ok) {
+        console.warn(`Book ${fileName} not available online`);
+        return null;
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.warn(`Network error fetching ${fileName}`);
+      return null;
+    }
   }
 
   private getDefaultBooksMetadata(): BookMetadata[] {
