@@ -181,6 +181,33 @@ export interface Translations {
   points: string;
   unlocked: string;
   pointsToNextLevel: string;
+  
+  // Advanced Statistics - New translations
+  overview: string;
+  analytics: string;
+  insights: string;
+  productivityScore: string;
+  weeklyPerformance: string;
+  excellent: string;
+  good: string;
+  fair: string;
+  needsImprovement: string;
+  minPerDay: string;
+  streakAnalytics: string;
+  newRecord: string;
+  daysToBeat: string;
+  readingPatterns: string;
+  averageSession: string;
+  peakHours: string;
+  consistency: string;
+  lifetimeStats: string;
+  booksCompleted: string;
+  consistencyRate: string;
+  goalAchieved: string;
+  progressLabel: string;
+  chaptersLeft: string;
+  record: string;
+  
 }
 
 const mg: Translations = {
@@ -345,6 +372,32 @@ const mg: Translations = {
   points: 'poiny',
   unlocked: 'voavoha',
   pointsToNextLevel: 'poiny mila ho amin\'ny ambaratonga manaraka',
+  
+  // Advanced Statistics - Malagasy
+  overview: 'Fijery ankapobeny',
+  analytics: 'Analitika',
+  insights: 'Fahatakarana',
+  productivityScore: 'Score produktivite',
+  weeklyPerformance: 'Performance herinandro',
+  excellent: 'Tsara be',
+  good: 'Tsara',
+  fair: 'Salama',
+  needsImprovement: 'Mila fanatsarana',
+  minPerDay: 'min/andro',
+  streakAnalytics: 'Analitika fitohizana',
+  newRecord: 'Rekordy vaovao!',
+  daysToBeat: 'andro alohan\'ny hahazoana',
+  readingPatterns: 'Modely famakiana',
+  averageSession: 'Session salama',
+  peakHours: 'Ora maro fampiasana',
+  consistency: 'Faharetan-tsaina',
+  lifetimeStats: 'Statistika fiainana manontolo',
+  booksCompleted: 'Boky vita',
+  consistencyRate: 'Tahan\'ny faharetan-tsaina',
+  goalAchieved: 'Tanjon-tanana!',
+  progressLabel: 'Fandrosoana',
+  chaptersLeft: 'toko sisa',
+  record: 'Rekordy',
 };
 
 const en: Translations = {
@@ -509,6 +562,32 @@ const en: Translations = {
   points: 'points',
   unlocked: 'unlocked',
   pointsToNextLevel: 'points to next level',
+  
+  // Advanced Statistics - English
+  overview: 'Overview',
+  analytics: 'Analytics',
+  insights: 'Insights',
+  productivityScore: 'Productivity Score',
+  weeklyPerformance: 'Weekly Performance',
+  excellent: 'Excellent',
+  good: 'Good',
+  fair: 'Fair',
+  needsImprovement: 'Needs Improvement',
+  minPerDay: 'min/day',
+  streakAnalytics: 'Streak Analytics',
+  newRecord: 'New Record!',
+  daysToBeat: 'days to beat',
+  readingPatterns: 'Reading Patterns',
+  averageSession: 'Average Session',
+  peakHours: 'Peak Hours',
+  consistency: 'Consistency',
+  lifetimeStats: 'Lifetime Stats',
+  booksCompleted: 'Books Completed',
+  consistencyRate: 'Consistency Rate',
+  goalAchieved: 'Goal Achieved!',
+  progressLabel: 'Progress',
+  chaptersLeft: 'chapters left',
+  record: 'Record',
 };
 
 const ko: Translations = {
@@ -673,6 +752,32 @@ const ko: Translations = {
   points: '포인트',
   unlocked: '잠금 해제됨',
   pointsToNextLevel: '다음 레벨까지 포인트',
+  
+  // Advanced Statistics - Korean
+  overview: '개요',
+  analytics: '분석',
+  insights: '통찰력',
+  productivityScore: '생산성 점수',
+  weeklyPerformance: '주간 성과',
+  excellent: '훌륭함',
+  good: '좋음',
+  fair: '보통',
+  needsImprovement: '개선 필요',
+  minPerDay: '분/일',
+  streakAnalytics: '연속 기록 분석',
+  newRecord: '신기록!',
+  daysToBeat: '경과 일수',
+  readingPatterns: '독서 패턴',
+  averageSession: '평균 세션',
+  peakHours: '피크 시간',
+  consistency: '일관성',
+  lifetimeStats: '평생 통계',
+  booksCompleted: '완료된 책',
+  consistencyRate: '일관성 비율',
+  goalAchieved: '목표 달성!',
+  progressLabel: '진행 상황',
+  chaptersLeft: '남은 장',
+  record: '기록',
 };
 
 const sw: Translations = {
@@ -837,6 +942,32 @@ const sw: Translations = {
   points: 'pointi',
   unlocked: 'zimefunguliwa',
   pointsToNextLevel: 'pointi hadi kiwango kifuatacho',
+  
+  // Advanced Statistics - Swahili
+  overview: 'Muhtasari',
+  analytics: 'Uchambuzi',
+  insights: 'Uelewa',
+  productivityScore: 'Alama ya Ufanisi',
+  weeklyPerformance: 'Utendaji wa Wiki',
+  excellent: 'Bora',
+  good: 'Nzuri',
+  fair: 'Wastani',
+  needsImprovement: 'Inahitaji Kuboreshwa',
+  minPerDay: 'dakika/siku',
+  streakAnalytics: 'Uchambuzi wa Mfululizo',
+  newRecord: 'Rekodi Mpya!',
+  daysToBeat: 'siku kushinda',
+  readingPatterns: 'Mifumo ya Kusoma',
+  averageSession: 'Kikao cha Wastani',
+  peakHours: 'Saa za Kilele',
+  consistency: 'Uthabiti',
+  lifetimeStats: 'Takwimu za Maisha',
+  booksCompleted: 'Vitabu Vimalizika',
+  consistencyRate: 'Kiwango cha Uthabiti',
+  goalAchieved: 'Lengo Limefikiwa!',
+  progressLabel: 'Maendeleo',
+  chaptersLeft: 'sura zilizobaki',
+  record: 'Rekodi',
 };
 
 export const translations: Record<UILanguage, Translations> = { mg, en, ko, sw };
