@@ -366,7 +366,23 @@ function BibleApp() {
                   <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-secondary mb-4">
                     <BookOpen className="w-7 h-7 sm:w-8 sm:h-8 text-muted-foreground" />
                   </div>
-                  <h2 className="text-lg sm:text-xl font-semibold mb-2">{t.startReading}</h2>
+                  
+                  {/* Bouton "Commencer à lire" */}
+                   <button
+                      onClick={() => {
+                        // Naviguer vers le premier livre (Genèse par exemple)
+                        const firstBook = books.find(book => book.order === 1) || books[0];
+                        if (firstBook) {
+                          setSelectedBook(firstBook);
+                          setCurrentChapter(1);
+                        }
+                      }}
+                      className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground rounded-xl hover:rounded-lg transition-all duration-300 font-semibold text-lg sm:text-xl shadow-lg hover:shadow-xl focus:outline-none focus:ring-3 focus:ring-primary focus:ring-offset-4 focus:ring-offset-background transform hover:scale-[1.02] active:scale-[0.98] mb-4 w-full max-w-xs mx-auto"
+                    >
+                      <BookOpen className="w-5 h-5 sm:w-6 sm:h-6" />
+                      {t.startReading}
+                    </button>
+                  
                   <p className="text-sm sm:text-base text-muted-foreground max-w-sm mx-auto">{t.selectBookHint}</p>
                 </div>
               </div>

@@ -23,6 +23,7 @@ const languageFlags: Record<string, string> = {
   mg: '🇲🇬',
   en: '🇬🇧',
   ko: '🇰🇷',
+  sw: 'SW',
 };
 
 export function ParallelVerseViewer({ 
