@@ -396,7 +396,7 @@ const mg: Translations = {
   lifetimeStats: 'Statistika fotoana rehetra',
   lifetime: 'Fotoana rehetra',
   booksCompleted: 'Boky vita',
-  consistencyRate: 'Tahan\'ny faharetan-tsaina',
+  consistencyRate: 'Tahan\'ny faharetana',
   goalAchieved: 'Tanjon-tanana!',
   progressLabel: 'Fandrosoana',
   chaptersLeft: 'toko sisa',
