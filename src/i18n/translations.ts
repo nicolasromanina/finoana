@@ -203,7 +203,7 @@ const mg: Translations = {
   previous: 'Teo aloha',
   next: 'Manaraka',
   of: 'amin\'ny',
-  startReading: 'Hanomboka mamaky',
+  startReading: 'Hanomboka hamaky',
   selectBookHint: 'Mifidiana boky avy amin\'ny lisitra mba hanombohana ny dia amin\'ny Soratra Masina.',
   continueReading: 'Hanohy mamaky',
   progress: 'Fandrosoana',
