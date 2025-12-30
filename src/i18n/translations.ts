@@ -201,6 +201,7 @@ export interface Translations {
   peakHours: string;
   consistency: string;
   lifetimeStats: string;
+  lifetime: string;
   booksCompleted: string;
   consistencyRate: string;
   goalAchieved: string;
@@ -392,6 +393,7 @@ const mg: Translations = {
   peakHours: 'Ora maro fampiasana',
   consistency: 'Faharetan-tsaina',
   lifetimeStats: 'Statistika fiainana manontolo',
+  lifetime: 'Fiainana manontolo',
   booksCompleted: 'Boky vita',
   consistencyRate: 'Tahan\'ny faharetan-tsaina',
   goalAchieved: 'Tanjon-tanana!',
@@ -582,6 +584,7 @@ const en: Translations = {
   peakHours: 'Peak Hours',
   consistency: 'Consistency',
   lifetimeStats: 'Lifetime Stats',
+  lifetime: 'Lifetime',
   booksCompleted: 'Books Completed',
   consistencyRate: 'Consistency Rate',
   goalAchieved: 'Goal Achieved!',
@@ -772,6 +775,7 @@ const ko: Translations = {
   peakHours: '피크 시간',
   consistency: '일관성',
   lifetimeStats: '평생 통계',
+  lifetime: '평생',
   booksCompleted: '완료된 책',
   consistencyRate: '일관성 비율',
   goalAchieved: '목표 달성!',
@@ -962,6 +966,7 @@ const sw: Translations = {
   peakHours: 'Saa za Kilele',
   consistency: 'Uthabiti',
   lifetimeStats: 'Takwimu za Maisha',
+  lifetime: 'Maisha',
   booksCompleted: 'Vitabu Vimalizika',
   consistencyRate: 'Kiwango cha Uthabiti',
   goalAchieved: 'Lengo Limefikiwa!',

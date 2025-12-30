@@ -100,7 +100,7 @@ export function ReadingStatsWidget({
                   <span className="text-lg font-bold">{chaptersThisWeek}</span>
                   <span className="text-xs text-muted-foreground">/7</span>
                 </div>
-                <div className="text-[10px] uppercase tracking-wider text-muted-foreground">{t.chapters}</div>
+                <div className="text-[10px] uppercase tracking-wider text-muted-foreground">{t.chapter}</div>
               </div>
             </motion.div>
             
@@ -120,7 +120,7 @@ export function ReadingStatsWidget({
                   <Flame className={`h-4 w-4 ${currentStreak > 0 ? 'text-orange-500' : 'text-muted-foreground'}`} />
                 </motion.div>
                 <div className="text-lg font-bold">{currentStreak}</div>
-                <div className="text-[10px] uppercase tracking-wider text-muted-foreground">{t.streak}</div>
+                <div className="text-[10px] uppercase tracking-wider text-muted-foreground">{t.streaks}</div>
               </div>
             </motion.div>
           </div>
