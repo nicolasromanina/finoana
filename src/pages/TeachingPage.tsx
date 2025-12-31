@@ -270,12 +270,12 @@ const Index = () => {
           <div className="flex items-center gap-3">
             <BookOpen className="h-6 w-6 text-gold" />
             <div>
-              <span className="font-semibold">Fahalalana</span>
+              <span className="font-semibold">Finoanabai</span>
               <span className="text-xs text-muted-foreground block">Foto-pinoana Kristiana</span>
             </div>
           </div>
           <Button variant="ghost" asChild><Link to="/courses">Taranja</Link></Button>
-          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Fahalalana. Ho voninahitr'Andriamanitra.</p>
+          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Finoanabai. Ho voninahitr'Andriamanitra.</p>
         </div>
       </footer>
       <div className="fixed bottom-0 left-0 right-0 z-40 bg-background border-t border-border/30 md:hidden">
