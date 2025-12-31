@@ -92,7 +92,7 @@ export function Sidebar({ books, selectedBook, onBookChange }: SidebarProps) {
           </h2>
           
           {/* Bouton pour la route /teaching */}
-          {/* <Link
+          <Link
             to="/teaching"
             className="flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium 
                      bg-secondary hover:bg-secondary/80 transition-colors duration-200
@@ -101,7 +101,7 @@ export function Sidebar({ books, selectedBook, onBookChange }: SidebarProps) {
           >
             <GraduationCap className="h-4 w-4" />
             <span className="hidden sm:inline">{t.teaching || "Teaching"}</span>
-          </Link> */}
+          </Link>
         </div>
         
         <div className="relative">
