@@ -1,0 +1,234 @@
+{
+  "modules": [
+    {
+      "id": 1,
+      "title": "Fampidirana ny Kristolojia",
+      "duration": "40 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "1.1",
+          "title": "Fanamarihana voalohany",
+          "content": "I Jesosy Kristy dia tonga tamin'ny fototry ny tantaran'ny olombelona ho avy amin'ny seza fiandrianan'ny Ray mankany amin'ny kibo vehivavy. Nanao ny maha-olombelona Izy mba hahafahantsika manao ny maha-Andriamanitra. Natao Zanak'olona Izy mba ho tonga Zanak'Andriamanitra isika. Teraka tamin'ny fomba mirakitra Izy, niaina fahantrana ary nitaiza tamin'ny tsy fanjihiana. Tsy nanan-karena na fitaomana Izy, kanefa ny fahendren'ny olombelona tsy mbola nifaninana tamin'ny fahendreny. Tsy mbola nisy niteny tahaka Azy. Ny ankohonany dia tsy hita maso sy tsy manana fahefana. Tamin'ny fahazazany dia nampitahotra mpanjaka Izy. Tamin'ny maha-zazalahy, dia nanaitra ny mpahay teolojia tamin'ny fahalalany sy ny fahendreny, satria nianaran'Andriamanitra Izy. Tamin'ny maha-lehilahy, Izy no nitantana ny zavatra rehetra ary nampiombonana ny onja mirehitra."
+        },
+        {
+          "id": "1.2",
+          "title": "Fanamarihana faharoa",
+          "content": "Na dia tsy nanoratra boky akory aza Izy, dia tsy misy trano famakiam-boky eran-tany azo mitondra ny boky rehetra nosoratana momba Azy. Na dia tsy nanoratra hira akory aza Izy, dia nomena ny lohahevitra ho an'ny hira maro kokoa noho ny hira rehetra novokarin'ny mpanoratra hira. Na dia tsy nanangana oniversite akory aza Izy, dia tsy misy oniversité rehetra afaka mihevitra ny mpianatra tahaka ny an’I Jesosy. Na dia tsy nitantana tafika akory aza Izy, dia tsy misy mpitarika izay manana mpiainga tahaka Azy. Ny lehilahy malaza nisy dia lasa fa Izy mbola velona mandrakizay. Heroda tsy afaka namono Azy. Satana tsy afaka nakaiky Azy hamadika Azy. Ny fahafatesana tsy afaka namono Azy. Ny fasana tsy afaka nitazona Azy. Nanalavitra ny akanjon’ny mpanjaka Izy mba hanaiky ny akanjon’ny mpiasa…"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Ny fisian'i Kristy hatrizay (Pré-existence)",
+      "duration": "60 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "Ny toerany eo ambonin'ny zava-boary rehetra",
+          "content": "I Kristy dia ambonin'ny zavaboary rehetra. Manam-pahefana hamorona ny zavatra rehetra Izy. Mifehy sy mitantana ny zavatra rehetra Izy. Miseho ao amin'ny Testamenta Taloha (ohatra amin'ny alalan'ny Anjely i Jehovah). Izy no ambony indrindra."
+        },
+        {
+          "id": "2.2",
+          "title": "Ny heriny nahariany ny zavatra rehetra",
+          "content": "Ny Baiboly dia manamafy fa tao amin'i Kristy no nahariana ny zavatra rehetra (Kol. 1:16). Tsy misy zavatra na iray azo atao raha tsy Izy (Rom. 11:36; Jao. 1:3)."
+        },
+        {
+          "id": "2.3",
+          "title": "Ny fiandrianany mihazona ny zavatra rehetra",
+          "content": "Ao amin'i Kristy no aharetan'ny zavatra rehetra (Kol. 1:17). Izy no mihazona ny zavatra rehetra amin'ny herin'ny teniny (Heb. 1:3) ary mitantana ny zavatra rehetra (Rom. 11:36)."
+        },
+        {
+          "id": "2.4",
+          "title": "Ny fanatrehany tao amin'ny Testamenta Taloha",
+          "content": "I Kristy dia niseho tamin'ny alalan'ny Anjely i Jehovah (Gen. 22:11; Eks. 3:2; Nom. 22:22-35) ary koa tamin'ny maha-Tompon'ny maro azy (Josa 5:13-15)."
+        },
+        {
+          "id": "2.5",
+          "title": "Ny maha-ambony indrindra azy",
+          "content": "I Kristy dia nisy hatrizay (Jao. 1:1), teraka tamin'ny alalan'ny Virjiny Maria (Jao. 1:14), ary misy mandrakizay. Ny maha-Andriamanitra azy sy ny maha-olombelona azy dia miray ao amin'ny Persona iray."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Ilay Mesia",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "3.1",
+          "title": "Ny faminaniana momba ny Mesia",
+          "content": "Ny Baiboly dia mitanisa faminaniana maro momba ny Mesia, nanomboka tamin'ny Gen. 3:15 ka hatramin'ny Mal. 3:1. Ireo faminaniana ireo dia miresaka momba ny fiaviany, ny maha-Zanak'i Davida azy, ny fahaterahany avy amin'ny Virjiny, ny fijaliany, ny fahafatesany, ary ny fitsanganany amin'ny maty."
+        },
+        {
+          "id": "3.2",
+          "title": "Ny maha-Mpaminany, Mpisorona, Mpitsara, Mpanjaka azy",
+          "content": "I Jesosy Kristy dia manana anjara asa telo lehibe: Mpaminany, Mpisorona ary Mpanjaka. Izy koa dia Mpanao fahagagana, ary nitsangana tamin'ny maty."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Ny maha-Andriamanitra an'i Kristy (Déité)",
+      "duration": "70 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "4.1",
+          "title": "Ny anarany",
+          "content": "I Kristy dia antsoina hoe 'Ny Teny' (Logos), Andriamanitra, Zanak'Andriamanitra, Tompo, ary Iray Masina. Ireo anarana ireo dia manambara ny maha-Andriamanitra azy."
+        },
+        {
+          "id": "4.2",
+          "title": "Ny toetrany",
+          "content": "I Kristy dia mandrakizay, tsy miova, eo amin'ny toerana rehetra, mahalala ny zavatra rehetra, mahefa ny zavatra rehetra, ary tsy takatry ny saina."
+        },
+        {
+          "id": "4.3",
+          "title": "Ny asany",
+          "content": "I Kristy dia namorona ny zavatra rehetra, mitantana ny zavatra rehetra, manam-pahefana eo ambonin'ny zavatra rehetra, mandresy ny fahafatesana, ary mamela ny heloky ny olona."
+        },
+        {
+          "id": "4.4",
+          "title": "Ny fahaterahany avy amin'ny virjiny",
+          "content": "I Jesosy dia nateraka tamin'ny alalan'i Maria Virjiny, izay natsangan'ny Fanahy Masina. Izany dia nahatanteraka ny faminaniana ao amin'ny Isa. 7:14. Ny fahaterahany avy amin'ny virjiny dia manamafy ny maha-olombelona 100% sy Andriamanitra 100% azy."
+        },
+        {
+          "id": "4.5",
+          "title": "Traducianisme sy Créationisme",
+          "content": "Ny teolojia dia miresaka momba ny niandohan'ny fanahin'ny olombelona: ny Traducianisme milaza fa ny fanahy dia miforona miaraka amin'ny vatana ao an-kibo, fa ny Créationisme kosa milaza fa ny fanahy dia noforonina mivantana avy amin'Andriamanitra. Ny fanahin'i Kristy dia tsy azo ampitahaina amin'ny an'ny olombelona hafa satria nateraka avy amin'ny Virjiny."
+        },
+        {
+          "id": "4.6",
+          "title": "Ny tsy fahafahany manota (Impeccabilité)",
+          "content": "I Kristy dia tsy nanota, ary tsy afaka manota satria ny maha-olombelona azy dia miray amin'ny maha-Zanak'Andriamanitra azy. Ny fisainana fa afaka manota Izy dia manambara ny tsy fahatakarana ny fifangaroan'ny toetra roa ao amin'ny Persona iray."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Ny fahagagana nataon'i Kristy",
+      "duration": "40 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "5.1",
+          "title": "Ny tanjon'ny fahagagana",
+          "content": "Ny fahagagana nataon'i Jesosy dia natao mba hanehoana fa Izy no Kristy, Zanak'Andriamanitra, ary mba hananana fiainana amin'ny anarany ny mino Azy (Jao. 20:30-31)."
+        },
+        {
+          "id": "5.2",
+          "title": "Ny karazana fahagagana",
+          "content": "I Kristy dia nanana fahefana amin'ny zava-boary (ohatra, nampiombonana ny onja), nahasitrana ny aretina, nampitombo ny hanina, nahasitrana ny fahajambana, nanome hery ny maty, ary nandresy ny demonia."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Ny fahafatesan'i Kristy",
+      "duration": "80 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "6.1",
+          "title": "Ny manamarika ny fahafatesany",
+          "content": "Ny fahafatesan'i Kristy dia: 1) Araka ny saina nianian'Andriamanitra; 2) Voalohany nomanina talohan'ny nanorenana izao tontolo izao; 3) Anton'ny nahatongavany ho nofo; 4) Fanoloran-tena an-tsitrapo; 5) Fanoloran-tena ho fankatoavana; 6) Fanoloran-tena tonga lafatra; 7) Fanoloran-tena voafaritra ho an'ny olom-boafidy."
+        },
+        {
+          "id": "6.2",
+          "title": "Ny hevitry ny fahafatesany",
+          "content": "Ny fahafatesan'i Kristy dia: 1) Fisoloan-toerana (Izy nijaly ho antsika); 2) Fanavotana (Izy namonjy antsika tamin'ny fahotana); 3) Fampihavanana (Izy nampihavana antsika amin'Andriamanitra); 4) Fampiononam-pahatezerana (Izy naka ny fahatezeran'Andriamanitra ho antsika)."
+        },
+        {
+          "id": "6.3",
+          "title": "Ny maha-zava-dehibe ny fahafatesany",
+          "content": "Ny fahafatesan'i Kristy dia mampiseho ny fahamasinana sy ny fitiavan'Andriamanitra, ivon'ny filazantsara, antoky ny fampihavanana, ary ohatra ho an'ny mpino mba hanarahana ny diany."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Ny fitsanganan'i Kristy tamin'ny maty",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "7.1",
+          "title": "Ny zava-misy ara-tantara",
+          "content": "Ny fitsanganan'i Jesosy tamin'ny maty dia zava-misy ara-tantara izay notarainan'ny vavolombelona maro. Tsy afaka nangalatra ny vatany ny mpianatra, ary ny fahitana azy nitsangana dia nanova azy ireo tanteraka."
+        },
+        {
+          "id": "7.2",
+          "title": "Ny heviny ara-panavotana",
+          "content": "Ny fitsanganana amin'ny maty dia manamafy fa nandresy ny fahafatesana i Kristy, ary manome antoka ny fitsanganana ho an'ny mpino rehetra (1 Kor. 15:20-23)."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Ny fiakarany any an-danitra",
+      "duration": "45 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "8.1",
+          "title": "Ny fiakaran'i Jesosy ara-batana",
+          "content": "Araka ny Asa. 1:9-11, i Jesosy dia niakatra any an-danitra ara-batana eo imason'ny mpianatra. Izany fiakarana izany dia fanehoana ny fandreseny, ny voninahiny, ary ny fanekena ny asany."
+        },
+        {
+          "id": "8.2",
+          "title": "Ny anjara asany ankehitriny any an-danitra",
+          "content": "I Kristy ankehitriny dia mipetraka eo ankavanan'Andriamanitra, mivavaka ho antsika, manomana toerana ho antsika, ary mitantana ny zavatra rehetra."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Ny fiavian'i Kristy indray",
+      "duration": "60 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "9.1",
+          "title": "Ny fampanantenana ny fiaviany indray",
+          "content": "Ny Baiboly dia mampanantena fa i Jesosy Kristy dia ho avy indray amin'ny hery sy voninahitra be (Asa. 1:11; Mat. 24:30). Izany dia antsoina hoe ny Parousia, Epiphancia, na Apokalupsis."
+        },
+        {
+          "id": "9.2",
+          "title": "Ny fotoana sy ny toerana",
+          "content": "Ny fotoana dia tsy fantatra, fa ny toerana dia ho ety an-tany (Zak. 14:4). Ny fiaviany indray dia hiaraka amin'ny fampakarana ny fiangonana (1 Tes. 4:16-17) sy ny fitsarana."
+        },
+        {
+          "id": "9.3",
+          "title": "Ny finoana milenialy",
+          "content": "Misy fomba fijery maro momba ny Faharoa Fiavian'i Kristy sy ny arivo taona (milenialy): Premilenialisma (alohan'ny arivo taona), Postmilenialisma (aorian'ny arivo taona), ary Amilenialisma (tsy ara-batana ny arivo taona)."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Ny maha-olombelona an'i Kristy (Humanité)",
+      "duration": "55 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "10.1",
+          "title": "Ny maha-olombelona azy",
+          "content": "I Jesosy dia nanana vatan'olombelona, niaina ny fahazazana sy ny fitomboana, nijaly, maty, ary voafetra tahaka ny olombelona rehetra. Niankina tamin'ny Fanahy Masina Izy tamin'ny naha-olombelona azy."
+        },
+        {
+          "id": "10.2",
+          "title": "Ny filana ny maha-olombelona azy",
+          "content": "Ny maha-olombelona an'i Kristy dia ilaina ho amin'ny fankatoavany, ny fisoloany toerana antsika, ny maha-mpanelanelana azy, ny hanatanterahana ny andraikitry ny olombelona, ary ny hanome ohatra ho antsika."
+        },
+        {
+          "id": "10.3",
+          "title": "Ny firaisan'ny toetra roa (Hypostatic Union)",
+          "content": "I Jesosy Kristy dia Andriamanitra 100% sy olombelona 100%, miray ao amin'ny Persona iray. Ireo toetra roa ireo dia tsy miova, tsy misaraka, ary tsy mifangaro."
+        }
+      ]
+    }
+  ]
+}

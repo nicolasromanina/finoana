@@ -1,0 +1,160 @@
+{
+  "modules": [
+    {
+      "id": 1,
+      "title": "Fampidirana",
+      "duration": "45 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "1.1",
+          "title": "Ny zava-dehibe sy ny tanjon'ny Eklesiolojia",
+          "content": "Ny Eklesiolojia dia foto-pampianarana lehibe eo amin'ny foto-pinoana kristiana, satria ny Soteriologia (fampianarana momba ny famonjena) dia tsy maintsy mitondra mankany amin'ny Eklesiolojia (fampianarana momba ny fiangonana). Ny ołom-boafidin’Andriamanitra dia tsy novonjeny mba hitoka-monina, fa mba ho ao anatina tena iray, dia ny fiangonana (1Kor 12:13). Ny Eklesiolojia no mampifanavaka ireo firehana protestanta samihafa, izay nipotra avy tamin’ny Reformasiona tamin’ny taonjato faha-16."
+        },
+        {
+          "id": "1.2",
+          "title": "Ny maha-zava-dehibe ny fahatakarana ny fiangonana",
+          "content": "Miankina amin'ny fahazoana sy ny famaritana ny atao hoe Fiangonana ny firafitry sy ny fomba amampanao manamarika ny antokom-pinoana isanisany (ny maha mpikambana, ny fahefana, ny fitondram-piangonana, ny sakramenta, sns.). Ny fiangonana dia efa araka ny fikasan’Andriamanitra hatrizay (Efe 3:10–11), ary manana anjara toerana lehibe ao anatin’ny planin’Andriamanitra mandrakizay."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Inona ny fiangonana?",
+      "duration": "60 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "Oviana no teraka na tonga tamin’ny fisiana ny fiangonana?",
+          "content": "Misy ireo mihevitra fa efa nisy hatramin’ny andron’ny Testamenta Taloha ny fiangonana, ka mamaritra azy ho toy 'ny fiombonan’ny tena mpino rehetra amin’ny fotoana rehetra' (W. Grudem). Ny fiangonana no fahatanterahan’ny Israely araka ny nofo, izay tsy nahomby tamin’ny niantsoana azy ho vahoakan’Andriamanitra. Misy kosa ireo mitana fa vondrona iray vaovao izay tsy mbola nanana fisiana ny fiangonana hatramin’ny andro Pentekosta izay nidinan’ny Fanahy Masina (Asa 2)."
+        },
+        {
+          "id": "2.2",
+          "title": "Ny fifandraisan'ny Israely sy ny fiangonana",
+          "content": "Samy vahoakan’Andriamanitra ny Israely sy ny fiangonana (Eks 19:6 // 1Pet 2:9). Misy fahatanterahan’ireo teny fikasana ireo amin’ny ampahany ankehitriny ao amin’ny fiangonana (ny fahatongavan’i Kristy, ny famelan-keloka, ny fitoeran’ny Fanahy Masina, sns.). Ny fahatanterahany feno kosa dia mbola miandry ny andro ho avy, ary mahakasika manokana ny Israely araka ny nofo."
+        },
+        {
+          "id": "2.3",
+          "title": "Famaritana ny atao hoe fiangonana",
+          "content": "Ny teny grika fototra niandohana dia Ekklesia, izay fitambarana teny roa: Ek- (ivelan’ny) sy kaleo (nantsoina). Ny Ekklesia dia ireo izay 'nantsoina ho ivelan’ny...', izay mampatsiahy antsika ny 1Pet 2:9–10. Amin’ny teny tsotra: ny fiangonana dia ny vondrona na fitambaran’ireo olom-boafidin’Andriamanitra rehetra, dia ireo izay namaly ny antson’ny filazantsara noho ny fahasoavana, ka nibebaka sy nino an’i Jesosy ho Tompo sy Mpamonjy ny tenany."
+        },
+        {
+          "id": "2.4",
+          "title": "Ireo lafiny roa isehoan’ny fiangonana",
+          "content": "Voalohany, ny fiangonana tokana maneran-tany izay tsy voafetran’ny fahafatesana (Mat 16:18). Kristy no Mpanorina sy Lohan’ny fiangonana. Faharoa, ny fiangonana miseho amin’ny endrika ara-batana sy hita maso, amin’ny alalan’ny fikambanan’ny mino ho vondrona isan-toerana voafaritra tsara. Izany no antsoina hoe fiangonana an-toerana."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Ireo fanoharana ny fiangonana",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "3.1",
+          "title": "Ny fiangonana dia trano fanahy sy tempoly masina",
+          "content": "Oharin’i Kristy amina fanorenana ny fiangonany, ka Izy tenany no mpanorina Azy (Mat 16:18). Kristy no vatolampy izay iorenan’ny fiangonana (1Kor 3:11). Ny mino rehetra dia atsangana ho toy ny vato velona, mirafitra ho trano ara-panahy, dia ny fiangonana (1Pet 2:4–5). Izany trano fanahy izany dia Tempoly, satria 'fisoronana masina, hanatitra fanati-panahy'."
+        },
+        {
+          "id": "3.2",
+          "title": "Ny fiangonana dia tenan’i Kristy sy vadin’i Kristy",
+          "content": "Ny 1Kor 12:12–13 no andininy fototra manambara ny maha tenan’i Kristy ny fiangonana. Toy ny vatan’olombelona, dia tena iray ihany ny fiangonana, na dia maro samihafa aza ireo ratsambatana mandrafitra azy. Kristy no Lohan’ny fiangonana (Kol 1:18), ary antsoina ho vadin’i Kristy ny fiangonana (Efe 5:22–24), izay manambara ny fitiavan-dehibe an’i Kristy ho an’ny fiangonana sy ny firaisany aminy."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Ny lamina eo anivon’ny fiangonana",
+      "duration": "55 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "4.1",
+          "title": "Ny fioronan’ny fiangonana an-toerana",
+          "content": "Amin’ny ankapobeny, miainga avy amin’ny asa fitoriana ny filazantsara ny fioronan’ny fiangonana an-toerana vaovao iray. Misy ireo dingana sy fepetra ara-baiboly izay manaritra ny asa fanorenana sy ny fitsanganan’ny fiangonana an-toerana iray, toy ny toriana mazava ny filazantsara, ny fampianarana ny mpino vaovao, ny fanoloran-tena hikambana, ary ny fanendrena ny Loholona."
+        },
+        {
+          "id": "4.2",
+          "title": "Ny maha mpikambana eo anivon’ny fiangonana an-toerana",
+          "content": "Ara-baiboly ny fisian'ny maha mpikambana, toy ny fanisana ireo mpianatra tao Jerosalema (Asa 2:41). Iza no tokony ho mpikambana? Olona nateraka indray, nanambara ampahibemaso ny finoany, ary nanolo-tena hikambana. Misy ny andraikitra manokana sy iombonan’ny mpikambana, toy ny fiaraha-miangona, ny fihazonana ny fahamasinana, ny fitantanana ny raharaha, ary ny fitoriana ny filazantsara."
+        },
+        {
+          "id": "4.3",
+          "title": "Ny fizakan-tenan’ny fiangonana an-toerana sy ny fivondronam-piangonana",
+          "content": "Nomen’Andriamanitra ny fiangonana an-toerana isanisany ny fahefana sy andraikitra hisahana ny raharaha rehetra eo anivony. Tsy misy rafitra ivelan’ny fiangonana an-toerana ka hanana fahefana hanapaka azy. Na izany aza, ny fiangonana an-toerana dia afaka miara-miasa amin’ny fiangonana hafa ao anatin’ny fivondronam-piangonana mba hifampitsinjo sy hiara-misalahy."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Ireo marika nasaina hotandremana",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "5.1",
+          "title": "Ny sakramenta na marika nasain’ny Tompo hotandremana",
+          "content": "Roa ihany ireo marika nasain’ny Tompo hotandreman’ny fiangonana tamin’ny fomba mazava: ny batisa amin’ny rano sy ny fanasan’ny Tompo. Tsy ara-baiboly ny fijery sakramentalista, izany hoe ny fileverana fa ny sakramenta no fitaovana andraisana ny fahasoavana. Ny famonjena dia fahasoavana irery ihany ary raisina amin’ny finoana irery ihany; ny sakramenta kosa dia marika fanehoana ery ivelany izany finoana izany."
+        },
+        {
+          "id": "5.2",
+          "title": "Ny batisa amin’ny rano",
+          "content": "Ny batisa dia fombam-pivavahana izay anitrihana tanteraka ny mpino ao anatin’ny rano amin’ny anaran’ny Ray sy ny Zanaka ary ny Fanahy Masina (Mat 28:19). Ny antony dia fanehoan’ny mpino ampahibemaso ny firaisany amin’i Jesosy Kristy, dia ny fahafatesany sy ny fitsanganany tamin’ny maty (Rom 6:3–4). Ireo izay nateraka indray ka nanambara mazava ny fibebahany sy ny finoany an’i Jesosy no tokony hatao batisa."
+        },
+        {
+          "id": "5.3",
+          "title": "Ny fanasan’ny Tompo",
+          "content": "Ny fanasan’ny Tompo dia fombam-pivavahana izay andraisan’ireo mpino tafangona ny mofo ho fanehoana ny tenan’i Kristy, sy ny kapoaka ho fanehoana ny fanekena vaovao tamin’ny rany, mba hahatsiarovany ny fahafatesan’ny Tompo (1Kor 11:23–26). Tanterahin’ny mpino rehefa tafangona, ary amin’ny fomba mitohy mandra-pihavin’i Jesosy Kristy."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Ny fitondram-piangonana",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "6.1",
+          "title": "Iza no nampandraiketin’ny Tompo ny fitondrana ny fiangonany?",
+          "content": "Ireo Loholona (presbuteros) no nantsoin’Andriamanitra hisahana ny fitondram-piangonana. Karazana olona iray ihany ny atao hoe Loholona, mpitandrina (episkopos), ary mpiandry ondry (poimen, pasitera). Miandry ny ondrin’Andriamanitra ho an’Andriamanitra ireo Loholona, eo ambanin’ny fahefan’i Jesosy Kristy."
+        },
+        {
+          "id": "6.2",
+          "title": "Inona no fenitra maha Loholona?",
+          "content": "Hentitra sady ambony ny fenitra apetraky ny Tenin’Andriamanitra momba ny toetra takina amin’ny Loholona (1Tim 3:1–7; Tit 1:5–9). Ny toe-panahy no tena mamaritra ny lehilahy iray ho antonona, ka tsy maintsy ho fakan-tahaka sy tsy manan-tsiny amin’ny lafim-pianany rehetra. Mazava ny Tenin’Andriamanitra fa natao ho an’ny lehilahy irery ihany ny asan’ny mpitandrina."
+        },
+        {
+          "id": "6.3",
+          "title": "Inona avy no asan’ny Loholona?",
+          "content": "Ny asan’ny Loholona dia ny hitarika, hiandry, hanara-maso, hampianatra, sy hanomana ny ondrin’Andriamanitra (Asa 20:28; 1Pet 5:2–3; Efe 4:11–12). Mifantoka amin’ny lafin’ny ara-panahy ny fanompoany, ary mety hahazo fivelomana avy amin’ny fiangonana raha matibanina amin’ny asa fitandremana (1Tim 5:17–18)."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Ny fanomezam-pahasoavana",
+      "duration": "45 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "7.1",
+          "title": "Samy hafa ny fanomezam-pahasoavana",
+          "content": "Samy hafa sy samihafa ny fanomezam-pahasoavana nomena ny mpino, fa iray ihany ny mpanome, dia Andriamanitra Telo Izay Iray (1Kor 12:4–6). Ny fanomezam-pahasoavana (charisma) dia fahasoavana no nanomezan’Andriamanitra ny fahaiza-manao, tsy nomena ho tombontsoantsika manokana, fa hanompoantsika ny hafa sy hampandrosoana ny fiangonana."
+        },
+        {
+          "id": "7.2",
+          "title": "Ny tanjon’ireo fanomezam-pahasoavana",
+          "content": "Nozarazarain’ny Fanahy Masina ny fanomezam-pahasoavana mba ho tombontsoan’ny maro, ka hampandroso ny tena iray manontolo, dia ny fiangonana (1Kor 12:7). Ny asa fanompoana tanterahin’ny olona masina no mampandroso ara-panahy ny tenan’i Kristy (Efe 4:11–16)."
+        },
+        {
+          "id": "7.3",
+          "title": "Ireo karazana fanomezam-pahasoavana",
+          "content": "Fomba maro no azo isokajiana ireo fanomezam-pahasoavana. Ny Efe 4:11 dia milaza fa ny olona mihitsy no fanomezana voalohany. Ny 1Pet 4:10–11 dia mamintina ireo sehatra roa ankapobeny: ny fitenenana (toy ny fitenenana ny Tenin’Andriamanitra) sy ny fanompoana (toy ny fikarakarana ny filana). Ao anatin’izany no misy ny anjara asan’ny Diakona."
+        }
+      ]
+    }
+  ]
+}

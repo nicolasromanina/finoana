@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
-import { BookOpen, ChevronDown, ChevronRight, Search } from 'lucide-react';
+import { BookOpen, ChevronDown, ChevronRight, Search, GraduationCap } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { cn } from '@/lib/utils';
 import { useLanguage } from '@/contexts/LanguageContext';
 import type { BookMetadata } from '@/types/bible';
+import { Link } from 'react-router-dom';
 
 interface SidebarProps {
   books: BookMetadata[];
@@ -82,11 +83,27 @@ export function Sidebar({ books, selectedBook, onBookChange }: SidebarProps) {
 
   return (
     <div className="h-full flex flex-col bg-sidebar">
+      {/* En-tête avec bouton Teaching */}
       <div className="p-4 border-b border-border">
-        <h2 className="font-semibold text-base mb-3 flex items-center gap-2">
-          <BookOpen className="h-4 w-4 text-primary" />
-          {t.books}
-        </h2>
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="font-semibold text-base flex items-center gap-2">
+            <BookOpen className="h-4 w-4 text-primary" />
+            {t.books}
+          </h2>
+          
+          {/* Bouton pour la route /teaching */}
+          {/* <Link
+            to="/teaching"
+            className="flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium 
+                     bg-secondary hover:bg-secondary/80 transition-colors duration-200
+                     text-secondary-foreground hover:text-secondary-foreground/90"
+            title={t.teaching || "Teaching"}
+          >
+            <GraduationCap className="h-4 w-4" />
+            <span className="hidden sm:inline">{t.teaching || "Teaching"}</span>
+          </Link> */}
+        </div>
+        
         <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
           <Input

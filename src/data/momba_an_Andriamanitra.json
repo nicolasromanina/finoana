@@ -1,0 +1,314 @@
+{
+  "modules": [
+    {
+      "id": 1,
+      "title": "FAMPIDIRANA",
+      "duration": "45 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "1.1",
+          "title": "Ny Teôlôjia Kristiana",
+          "content": "Ny Teôlôjia Kristiana dia fianarana momba an’Andriamanitra ary mifantoka amin’ny fahafantarana Azy. Izany dia manan-danja indrindra satria Andriamanitra no zava-dehibe indrindra, ary ny mahafantatra Azy no fahamarinana mandrakizay (Jao 17:3)."
+        },
+        {
+          "id": "1.2",
+          "title": "Ny fiasan’ny Teôlôjia Kristiana",
+          "content": "Ny Teôlôjia Kristiana dia miorina amin’ny Tenin’Andriamanitra (2 Tim 3:16), mamokatra fahalalana tsara indrindra, fahaiza-manavaka ny tsara indrindra, fahadisoam-panantenana tsara indrindra, fanoloran-tena tsara indrindra, ary fitomboana tsara indrindra ara-panahy."
+        },
+        {
+          "id": "1.3",
+          "title": "Ny ilàn’ny fianarana teôlôjia",
+          "content": "Ny fianarana teôlôjia dia tena ilaina amin’ny fivoriam-panahy. Raha tsy izany, ny Kristiana sy ny Fiangonana dia mitoetra ho zaza ara-panahy, ka mora ahoan’ny fampianarana samihafa."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "NY FISIAN’ANDRIAMANITRA",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "Ny fisian’Andriamanitra",
+          "content": "Ny Baiboly dia manambara mazava sy ampy fa misy Andriamanitra, ary ny olombelona koa dia afaka mahafantatra ny fisiany amin’ny alalan’ny zavaboary ary ny porofo ara-panahy (Rom 1:19-21; Heb 11:6)."
+        },
+        {
+          "id": "2.2",
+          "title": "Ny porofo ivelan’ny Soratra Masina",
+          "content": "Misy porofo maromaro ivelan’ny Soratra Masina manaporofo ny fisian’Andriamanitra, anisan’izany ny porofo ontôlôjika, kôsmôlôjika, telôlôjika, ara-pitondrantena, ary ny porofo avy amin’ny fivavahana sy ny fandrosoan’ny olombelona."
+        },
+        {
+          "id": "2.3",
+          "title": "Ireo mandà ny fisian’Andriamanitra",
+          "content": "Misy olona tsy mino an’Andriamanitra amin’ny lafiny pratikaly na teôrikaly. Misy koa ireo fijery diso momba an’Andriamanitra toy ny fijery fa Andriamanitra dia tsy “persona”, na voafetra, na fanehoana fotsiny ny hevitry ny olona."
+        },
+        {
+          "id": "2.4",
+          "title": "Ireo filôzôfia mitarika any amin’ny ateisma",
+          "content": "Misy filôzôfia maromaro izay manohana ny tsy fisian’Andriamanitra na manova ny fahatakarana ny maha Andriamanitra Azy. Anisan’izany ny monisma materyalista, pantheisma, idealisma subjektif absolu, ary humanisma maoderina."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "NY ANARAN’ANDRIAMANITRA",
+      "duration": "55 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "3.1",
+          "title": "Ny lanjan’ny anarana sy anaram-boninahitra",
+          "content": "Ny anarana sy anaram-boninahitra dia maneho ny toetran’ny olona sy ny toerany. Ny anaran’Andriamanitra koa dia maneho ny toetrany sy ny maha Izy Azy."
+        },
+        {
+          "id": "3.2",
+          "title": "El – Andriamanitra Mahery",
+          "content": "Ny anarana hoe El dia maneho ny hery sy ny tanjakan’Andriamanitra. Mety hilazana Andriamanitra hafa na Ilay Andriamanitra Tokana ihany (Gen 46:3; Sal 68:20)."
+        },
+        {
+          "id": "3.3",
+          "title": "Elohim – Andriamanitra",
+          "content": "Ny anarana hoe Elohim dia ploraly, ary maneho ny maha be sy feno an’Andriamanitra. Mety hilazana Andriamanitra tokana na Andriamanitra maro araka ny fanajana."
+        },
+        {
+          "id": "3.4",
+          "title": "El Shaddai – Andriamanitra Mpahary sy Mpanome",
+          "content": "Ilay anarana hoe El Shaddai dia maneho ny maha Mpahary sy Mpanome fitahiana an’Andriamanitra, ary koa ny maha Mpiaro sy Mpanafay Azy (Gen 17:1; Sal 91:1)."
+        },
+        {
+          "id": "3.5",
+          "title": "El Elyon – Ilay Avo Indrindra",
+          "content": "Ilay anarana hoe El Elyon dia maneho ny fahefana fara-tampony sy ny fiandrianan’Andriamanitra eo amin’ny lanitra sy ny tany (Gen 14:18-22)."
+        },
+        {
+          "id": "3.6",
+          "title": "El Chayyim – Andriamanitra Velona",
+          "content": "Ilay anarana hoe El Chayyim dia maneho fa Andriamanitra dia manana fainana ao Aminy ary loharanon’ny fainana ho an’ny zavaboary rehetra (Deot 5:26; Jer 10:10)."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "NY FAHATANTERAHAN’ANDRIAMANITRA (1)",
+      "duration": "60 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "4.1",
+          "title": "Ny fahatanterahan’Andriamanitra",
+          "content": "Ny fahatanterahan’Andriamanitra dia ireo toetra mampiavaka Azy, izay ilaina amin’ny maha Andriamanitra Azy. Izy ireo dia tsy afaka afindra loatra na afaka afindra kokoa."
+        },
+        {
+          "id": "4.2",
+          "title": "Ny fahaleovantenan’Andriamanitra",
+          "content": "Andriamanitra dia mahaleo tena tanteraka, tsy miankina amin’ny zavatra ivelan’ny tenany, ary manana ny rehetra ilainy ao Aminy ihany (Eks 3:14; Asa 17:25)."
+        },
+        {
+          "id": "4.3",
+          "title": "Ny tsy fiovan’Andriamanitra",
+          "content": "Andriamanitra dia tsy miova mandrakizay amin’ny fahatanterahany, ny fikasany, ary ny fanomezan-tokiny (Sal 102:25-27; Mal 3:6; Jak 1:17)."
+        },
+        {
+          "id": "4.4",
+          "title": "Fanazavana ny tsy fiovan’Andriamanitra",
+          "content": "Na dia miseho ho miova eo amin’ny asany sy ny fihetseham-pony aza Andriamanitra (toy ny hita ao amin’ny Baiboly), dia tsy miova ny toetrany sy ny sitrapony tena izy. Ny fiovana hita dia fanambarana amin’ny fomba mahazaka ny sain’ny olona."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "NY FAHATANTERAHAN’ANDRIAMANITRA (2)",
+      "duration": "65 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "5.1",
+          "title": "Andriamanitra tsy manam-pahataperana",
+          "content": "Andriamanitra dia tsy voafetra amin’ny fotoana (mandrakizay) na ny habaka (lehibe indrindra ary eo amin’ny toerana rehetra)."
+        },
+        {
+          "id": "5.2",
+          "title": "Andriamanitra mandrakizay",
+          "content": "Andriamanitra dia tsy manam-piandohana na fiafarana, ary mihoatra lavitra noho ny fetran’ny fotoana rehetra."
+        },
+        {
+          "id": "5.3",
+          "title": "Andriamanitra lehibe indrindra ary eo amin’ny toerana rehetra",
+          "content": "Andriamanitra dia lehibe indrindra ka tsy voafetra amin’ny habaka, ary eo amin’ny toerana rehetra amin’ny maha Izy Azy iray manontolo."
+        },
+        {
+          "id": "5.4",
+          "title": "Ny maha-tokana sy maha-tsotra an’Andriamanitra",
+          "content": "Andriamanitra dia tokana tanteraka ary tsotra, izany hoe tsy misy ampahany na fizarana ao Aminy. Ny maha Izy Azy dia iray ihany."
+        },
+        {
+          "id": "5.5",
+          "title": "Ny fahalalàn’Andriamanitra ny zavatra rehetra",
+          "content": "Andriamanitra dia mahalala ny zavatra rehetra, na efa nitranga na ho avy, ary mahalala ny tenany tanteraka (Isa 40:13-14; Sal 147:5)."
+        },
+        {
+          "id": "5.6",
+          "title": "Andriamanitra Fanahy",
+          "content": "Andriamanitra dia Fanahy, tsy hita maso, fa manana endrika ara-panahy (Jao 4:24; Rom 1:20). Ny mpino kosa hanana fahafahana mahita Azy any an-danitra."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "NY FITIAVAN’ANDRIAMANITRA SY NY TOETRANY (1)",
+      "duration": "60 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "6.1",
+          "title": "Ny fitiavan’Andriamanitra tsy mivadika (Hesed)",
+          "content": "Ny fitiavan’Andriamanitra dia tsy mivadika, mahatoky, ary marina. Izy no loharanon’ny famindram-po sy ny fahamarinana (Eks 34:6-7)."
+        },
+        {
+          "id": "6.2",
+          "title": "Ny fahatsaran’Andriamanitra",
+          "content": "Andriamanitra dia tsara tanteraka, ary tsy misy tsara afa-tsy avy Aminy. Ny zavaboary rehetra dia antsoina hidera ny hatsarany (Mar 10:18; Sal 34:8)."
+        },
+        {
+          "id": "6.3",
+          "title": "Ny atsaran’ny fitiavan’Andriamanitra",
+          "content": "Andriamanitra dia Fitiavana (1 Jao 4:8). Ny fitiavany dia naseho tamin’ny fifankatiavana eo amin’ny Persona Telo ary tamin’ny nanolorany ny Zanany ho an’ny olombelona (Jao 3:16)."
+        },
+        {
+          "id": "6.4",
+          "title": "Ny atsaran’ny fahasoavan’Andriamanitra",
+          "content": "Ny fahasoavan’Andriamanitra dia fanomezana tsy mendrika ho an’ny olona, naseho indrindra tamin’i Jesosy Kristy (Efe 2:7-9; Jao 1:17)."
+        },
+        {
+          "id": "6.5",
+          "title": "Ny atsaran’ny famindrampon’Andriamanitra",
+          "content": "Andriamanitra dia be famindram-po sy mangoraka, ary naneho izany tamin’ny famonjena nataony tamin’ny alalan’i Kristy (Sal 86:15; 2 Kor 1:3)."
+        },
+        {
+          "id": "6.6",
+          "title": "Ny atsaran’ny faharetàn’Andriamanitra",
+          "content": "Andriamanitra dia mahari-po, manam-paharetana, ary miandry ny olona mba hivavaka sy hiverina Aminy (Eks 34:6; 2 Pet 3:9)."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "NY FAHENDREN’ANDRIAMANITRA SY NY TOETRANY (2)",
+      "duration": "55 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "7.1",
+          "title": "Ny fahendren’Andriamanitra",
+          "content": "Ny fahendren’Andriamanitra dia miseho amin’ny famoronana, ny asam-pamonjena, ary ny fifehezany ny zava-drehetra (Sal 104:24; Efe 1:8)."
+        },
+        {
+          "id": "7.2",
+          "title": "Ny fahendren’Andriamanitra sy ny Fiangonana",
+          "content": "Ny Fiangonana dia voavonjy sy nofidin’Andriamanitra mba hampiseho ny fahendreny eo amin’izao tontolo izao (Efe 1:7-10; 3:10)."
+        },
+        {
+          "id": "7.3",
+          "title": "Ny fahamarinan’Andriamanitra",
+          "content": "Ny fahamarinan’Andriamanitra dia maneho fa marina Izy tanteraka, ary mitazona ny fahamarinana sy ny rariny amin’ny fitsarany (Deot 4:8; Rom 7:12)."
+        },
+        {
+          "id": "7.4",
+          "title": "Ny fahamarinan’Andriamanitra sy ny famonjena",
+          "content": "Ny famonjena dia fanambarana ny fahamasinana sy ny fahamarinan’Andriamanitra, izay niseho tamin’i Kristy (Rom 3:21-26)."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "NY VONINAHITR’ANDRIAMANITRA",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "8.1",
+          "title": "Ny dikany sy ny fanehoany",
+          "content": "Ny voninahitr’Andriamanitra dia ny fanambarana ny tenany amin’ny fahalehibiazany, ny fahatsarany, ary ny fahalavorariany tsy manam-petra. Izany dia hita amin’ny famoronana sy ny asam-pamonjena (1 Tan 16:27; Eks 40:34)."
+        },
+        {
+          "id": "8.2",
+          "title": "Ny fanehoana fara-tampony: ny hazo fijaliana",
+          "content": "Ny hazo fijaliana no fanehoana fara-tampony ny voninahitr’Andriamanitra, izay nasehony ny fitiavany, ny fahefany, ary ny fahamarinany (Jao 13:31-32)."
+        },
+        {
+          "id": "8.3",
+          "title": "Ny anjara asantsika amin’ny voninahiny",
+          "content": "Ny mpino dia manana anjara amin’ny voninahitr’Andriamanitra, ary antsoina haneho izany eo amin’ny fiainany amin’ny alalan’ny fankatoavana, ny fiderana, sy ny fitomboana ara-panahy (Rom 8:18; 2 Kor 3:18)."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "ANDRIAMANITRA TELO IZAY IRAY",
+      "duration": "75 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "9.1",
+          "title": "Fampidirana ny Trinite",
+          "content": "Ny fotopampianarana momba ny Trinite dia maneho fa Andriamanitra dia iray ihany amin’ny maha Andriamanitra Azy, nefa miseho ho Persona telo samihafa: ny Ray, ny Zanaka, ary ny Fanahy Masina (Mat 28:19; 2 Kor 13:14)."
+        },
+        {
+          "id": "9.2",
+          "title": "Ny porofom-Baiboly",
+          "content": "Ny Baiboly dia manambara ny maha iray an’Andriamanitra (Deot 6:4) sy ny fisian’ny Persona telo samihafa (Gen 1:26; Mat 3:16-17). Ny Ray, ny Zanaka, ary ny Fanahy Masina dia samy Andriamanitra (Jao 1:1; Asa 5:3-4)."
+        },
+        {
+          "id": "9.3",
+          "title": "Fampianaran-diso momba ny Trinite",
+          "content": "Nisy fampianaran-diso maromaro nandà na nanova ny fotopampianarana momba ny Trinite, anisan’izany ny monarchianisma, arianisma, unitarianisma, ary tri-teisma."
+        },
+        {
+          "id": "9.4",
+          "title": "Ny maha iray sy ny maha telo",
+          "content": "Andriamanitra dia iray amin’ny maha Izy Azy (essence) fa telo amin’ny maha Persona Azy. Ny Persona telo dia mitovy tanteraka, samy efa nisy hatrizay, ary miara-miasa amin’ny fiombonana tanteraka."
+        },
+        {
+          "id": "9.5",
+          "title": "Trinite imananta sy ekonômika",
+          "content": "Ny Trinite imananta dia ny fiombonana sy ny fifandraisan’ny Persona telo ao anatin’Andriamanitra. Ny Trinite ekonômika kosa dia ny anjara asa samihafa nataon’ny Persona telo tamin’ny asam-pamonjena."
+        },
+        {
+          "id": "9.6",
+          "title": "Ny Trinite sy ny fiainana Kristiana",
+          "content": "Ny fotopampianarana momba ny Trinite dia fototry ny finoana sy ny fiainana Kristiana. Izany dia miorina amin’ny fahafantarana an’Andriamanitra Ray amin’ny alalan’i Kristy noho ny asan’ny Fanahy Masina."
+        },
+        {
+          "id": "9.7",
+          "title": "Ny anjara asan’ny Trinite amin’ny famonjena",
+          "content": "Ny Ray no nikasa sy nanomba ny famonjena, ny Zanaka no nanatanteraka izany, ary ny Fanahy Masina no mampihatra izany eo amin’ny fiainan’ny mpino (1 Pet 1:2; 2 Tes 2:13)."
+        },
+        {
+          "id": "9.8",
+          "title": "Ny taratry ny Trinite amin’ny fiainana",
+          "content": "Ny fifandraisan’ny Persona telo dia modely ho an’ny fiombonana, ny fitiavana, ny fahafoizan-tena, ny fifandraisana mirindra, sy ny fampihavanana eo amin’ny olona sy ny Fiangonana (Jao 17:20-23; Efe 4:1-6)."
+        },
+        {
+          "id": "9.9",
+          "title": "Ny Trinite sy ny fiainam-pianakaviana",
+          "content": "Ny fifandraisan’ny Ray, Zanaka ary Fanahy Masina dia modely ho an’ny fifandraisana ao anatin’ny fianakaviana, izay misy andraikitra samihafa nefa miray tanjaka (Efe 5:22-6:4)."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "KRISTÔLÔJIA (Fampidirana)",
+      "duration": "40 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "10.1",
+          "title": "Fampidirana ny Kristôlôjia",
+          "content": "Ny Kristôlôjia dia fianarana momba an’i Jesosy Kristy, ny maha Andriamanitra sy olombelona Azy, ny asany, ary ny anjara toerany ao amin’ny drafitry ny famonjena. Izany dia fototry ny finoana Kristiana."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "modules": [
+    {
+      "id": 1,
+      "title": "Anthropolojia araka ny Baiboly",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "1.1",
+          "title": "Inona ny hatao hoe anthropolojia araka ny Baiboly?",
+          "content": "Ny teny hoe “Anthropolojia” dia midika hoe “fampianarana momba ny olombelona”: avy amin'ny teny grika anthropos (olombelona) sy logos (fampianarana). Amin'ny lafiny ara-teolojia, miresaka ny fifandraisana misy eo amin’Andriamanitra sy ny olombelona izany. Ny Baiboly manome valin-teny mazava ho an’ireo fanontaniana miverimberina momba ny olombelona."
+        },
+        {
+          "id": "1.2",
+          "title": "Avy aiza ny olombelona?",
+          "content": "Ny fanambaran’Andriamanitra ny fahariana dia 'zava-miafin’ny sitrapony'. Ny olombelona rehetra dia niainga avy tamin’ireo olombelona voalohany: i Adama sy i Eva. Ny antony fisian’ny olombelona dia: 1) Maneho an’Andriamanitra, 2) Miray amin’Andriamanitra sy ny samy olombelona, 3) Manjaka amin’ny voary, 4) Miaina mandrakizay."
+        },
+        {
+          "id": "1.3",
+          "title": "Ny toetra maha-olombelona: Imago Dei",
+          "content": "Araka ny Baiboly, ny olombelona nohariana araka ny endrik’Andriamanitra. Izany endrika izany dia maneho toetra maha-Andriamanitra izay navelany hampiasain’ny olombelona, toy ny fitenenana, ny fahaiza-mamorona, ny fitiavana, ny fahamasinana, ny tsi-fahafatesana, ny fahafaha-misafidy, ary ny feon’ny fieritreretana."
+        },
+        {
+          "id": "1.4",
+          "title": "Dikotomia na Trikotomia?",
+          "content": "Ny olombelona dia mizara ho singa roa (dikotomia): vatana sy fanahy. Ny trikotomia (vatana, fanahy, esprit) dia tsy tena mifanaraka amin’ny fandalinana ny Soratra Masina, izay mampiasa ny teny hoe fanahy sy esprit hilazana zavatra iray ihany na lafiny samy hafa amin’ny zavatra tsy azo tsapain-tanana mitambatra."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Hamartiolojia",
+      "duration": "60 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "Inona no atao hoe ota?",
+          "content": "Ny ota dia fandikana ny lalàn’Andriamanitra eo amin’ny fiainan’ny olombelona, amin’ny ataony, amin’ny teniny, amin’ny fomba fisainany ary amin’ny eritreriny. Misy karazany ny ota: amin’ny eritreritra, amin’ny teny, amin’ny atao, ary ny ota tsy nahy. Ny ota dia mifanohitra mivantana amin’izay rehetra tsara ao amin’Andriamanitra."
+        },
+        {
+          "id": "2.2",
+          "title": "Avy aiza ny fahotana? Ny teodisia",
+          "content": "Tsy avy amin’Andriamanitra ny ota. Ny olombelona sy ny anjely no nanota an-tsitrapo. I Satana no loharanon’ny ratsy voalohany. Ny teodisia dia fandalinana momba ny antony nahafahan’Andriamanitra mamela ny fisian’ny ratsy. Andriamanitra tsara sy mahefa ny zavatra rehetra, ary ao anatin’ny planiny masina no misy ny ratsy, na dia tsy ankasitrahany aza izany."
+        },
+        {
+          "id": "2.3",
+          "title": "Ny vokatry ny fahotana tany am-boalohany (fahotana fototra)",
+          "content": "Ny olombelona dia: 1) Mandova ny fahamelohana araka ny lalàna noho ny otan’i Adama, 2) Mandova fahasimbana na fahalotoana tany am-boalohany izay manjary toetra mpanota ao anaty. Tsy afaka ny hanao izay ankasitrahan’Andriamanitra mihitsy ny olombelona noho izany fahasimbana izany."
+        },
+        {
+          "id": "2.4",
+          "title": "Ny fakam-panahy sy ny fahafahana manota",
+          "content": "I Satana no mpaka fanahy lehibe. Nampiasa ny lainga sy ny fisalasalana hamitaka an’i Eva sy Adama. Ny olombelona nohariana ho zava-boary ara-moraly manana safidy malalaka. Ny fakam-panahy dia mametraka ny olombelona eo am-pisafidy: mankatò an’Andriamanitra na manota. Ny fahafahana manota dia porofon’ny hatsaran’ny fitiavan’Andriamanitra sy ny maha-zava-boary ara-moraly ny olombelona."
+        },
+        {
+          "id": "2.5",
+          "title": "Moa ve misy fahotana sasany lehibe kokoa noho ny fahotana hafa?",
+          "content": "Araka ny lalàna, ny fahotana rehetra dia manameloka antsika eo anatrehan’Andriamanitra. Na izany aza, ny fahotana sasany dia mety manana vokatra ratsy kokoa eo amin’ny fiainana sy ny fifandraisana amin’Andriamanitra, ary mahatezitra kokoa Azy. Tsy midika izany fa misy fahotana tsy ahazoana famelan-keloka."
+        },
+        {
+          "id": "2.6",
+          "title": "Ny fahotana tsy ahazoana famelan-keloka",
+          "content": "Misy fahotana resahina ao amin’ny Baiboly izay atao hoe tsy ahazoana famelan-keloka, toy ny fitenenan-dratsy ny Fanahy Masina. Izany dia fandavana iniana atao ny asan’ny Fanahy Masina ao amin’i Kristy ka miampanga azy ho asan’i Satana. Rehefa tonga amin’ny ambaratonga izany dia efa ho nolaviny ny fomba mahazatra rehetra hitondrana azy hibebaka."
+        },
+        {
+          "id": "2.7",
+          "title": "Faharatsiana faratampony sy faharatsiana tanteraka",
+          "content": "Ny faharatsiana tanteraka dia ny toe-panahy maty ara-panahy nateraky ny ota, izay manamarika ny olombelona rehetra taranak’i Adama. Na izany aza, ny olombelona mpanota dia mbola afaka manao asa tsara marobe ety ivelany noho ny fahasoavana iombonana. Ny fanavotana ao amin’i Kristy ihany no manome fanantenana ny fanavaozana sy ny fanamasinana."
+        },
+        {
+          "id": "2.8",
+          "title": "Jesosy Kristy maty ka nitsangan-ko velona",
+          "content": "Ny fahafatesan’i Kristy dia: 1) Nandoa ny vidin’ny fahotantsika, 2) Nanaisotra ny herin’ny fahotana ao amintsika, 3) Nanome antsika fahafahana hanao izay ankasitrahan’Andriamanitra. Ny fitsanganany tamin’ny maty dia manamarina ny fanavotany sy manome antoka ny fitsanganana ho an’ny mpino. Ny firaisana amin’i Kristy dia fototry ny fanamarinana sy ny fanamasinana."
+        },
+        {
+          "id": "2.9",
+          "title": "Ny kristiana sy ny fahotana",
+          "content": "Rehefa manota ny kristiana: 1) Tsy miova ny satany eo anatrehan’Andriamanitra (voavela heloka), 2) Voaelingelina ny fifanisany amin’Andriamanitra ary simba ny fiainany kristiana, 3) Simba ny fahafahany mitondra voa, 4) Miantraika amin’ny valim-pitiny any an-danitra ny fahotana."
+        },
+        {
+          "id": "2.10",
+          "title": "Miala sy mitafy",
+          "content": "Ny fiovana ao am-po dia ilaina. Tokony hiala amin’ny olona taloha sy hitafy ny olona vaovao ao amin’i Kristy. Ny fomba hiarovana ny fo dia avy ety ivelany (ny zavatra miditra ao am-po) sy avy ao anatiny (ny zavatra mivoaka avy ao am-po). Ny vahaolana lehibe dia ny fitiavan’Andriamanitra sy ny fiankinana amin’ny Fanahy Masina."
+        },
+        {
+          "id": "2.11",
+          "title": "Ny vahaolana: mitia an’Andriamanitra",
+          "content": "Ny fitiavan’Andriamanitra no fototry ny fiovana marina. Tsy afa-manetsika ny fo ny fahamarinana fotsiny, fa ny herin’ny Fanahy Masina amin’ny fitiavana sy fahamarinana. Ny fandrosoana ara-panahy dia mandalo dingana telo: Zaza (fialiana amin’ny fitiavana), Tanora (fiankinana amin’ny fitiavana), Ray (voadim-pitiavana). Ny tanjona dia ny hitovy amin’i Kristy."
+        }
+      ]
+    }
+  ]
+}

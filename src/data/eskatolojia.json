@@ -1,0 +1,216 @@
+{
+  "modules": [
+    {
+      "id": 1,
+      "title": "Fampidirana sy fototra",
+      "duration": "40 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "1.1",
+          "title": "Inona no atao hoe Eskatolojia?",
+          "content": "Ny teny hoe eskatolojia dia manondro ny fandalinana 'ny eschaton,' na ny andro farany. Izy io dia tsy miresaka fotsiny momba ny fisehoan-javatra lehibe toy ny Fiavian'i Kristy Fanindroany, ny Fanjakany, ny fitsarana farany, ary ny Lanitra Vaovao sy ny Tany Vaovao, fa izay rehetra mikasika manokana ny lanitra, ny helo, ny fahafatesana ary ny zava-mitranga manelanelana ny fahafatesana sy ny voninalitra farany. Matetika ny fandalinana ny eskatolojia dia manodidina ny fotoana sy ny antsipirihan'ny Fahoriana Lehibe sy ny Fanjakana Arivo Taona."
+        },
+        {
+          "id": "1.2",
+          "title": "Ny maha-zava-dehibe ny fianarana eskatolojia",
+          "content": "Zava-dehibe ho an'ny mpino ny miniatra izay nambaran'Andriamanitra momba ireo lohahevitra voalaza teo ireo, noho ny ampahany lehibe amin'ny Soratra Masina natokana ho azy ireo sy noho ny soa tsara azo avy amin'ny fianarana ny faminanian'ny Baiboly."
+        },
+        {
+          "id": "1.3",
+          "title": "Ny filaharan'ny zavatra farany (Ordo Eschaton)",
+          "content": "Ny Baiboly dia mametraka izao filaharan'ny fisehoan-javatra lehibe amin'ny andro farany manaraka izao: 1) Fampiakarana ny Fiangonana; 2) Fahoriana 7 taona; 3) Fibebahana sy Famonjena ny Isiraely; 4) Fiavian'i Kristy Fanindroany; 5) Fanjakana Arivo Taona; 6) Fitsarana farany; 7) Lanitra Vaovao sy Tany Vaovao."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Ny fampiakarana sy ny fotoan'ny Fahoriana",
+      "duration": "55 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "Ny fampiakarana mialohan'ny Fahoriana",
+          "content": "Ny fomba fijery 'Mialohan'ny Fahoriana' dia mampianatra fa ny fampiakarana ny fiangonana dia hitranga alohan'ny vanim-potoan'ny Fahoriana fito taona. Mifototra amin'ny finoana fa ny fotoan'ny Fahoriana manontolo dia 'fahatezeran'Andriamanitra,' izay mitaky ny famonjena ny fiangonana alohan'ny Fahoriana mba hahatanteraka ny fampanantenan'Andriamanitra ny amin'ny fanafahana azy amin'ny fahatezerany."
+        },
+        {
+          "id": "2.2",
+          "title": "Ny torinteny teo amin'ny tendrombohitra Oliva",
+          "content": "I Jesosy dia nanao toriteny teo amin'ny tendrombohitra Oliva izay manambara mazava ny fisehoan-javatra lehibe ho avy, indrindra momba ny Isiraely sy ny fotoan'ny fahoriana. Izy io dia mampitandrina ny amin'ny fahavetavetana mandrava, ny fahoriana lehibe, ary ny fiverenany amin'ny hery sy ny voninahitra."
+        },
+        {
+          "id": "2.3",
+          "title": "Ny fomba fijery efatra momba ny fampiakarana",
+          "content": "1) Mialohan'ny Fahoriana; 2) Eo afovoan'ny Fahoriana; 3) Mialoha an'ny fahatezerana; 4) Aorian'ny Fahoriana. Samy manana porofo sy fomba fijery manokana izy ireo, ary misy fomba samihafa ny fandikana ny andinin-tsoratra masina."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Ny Fahoriana 7 taona sy ny fiavian'i Kristy fanindroany",
+      "duration": "60 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "3.1",
+          "title": "Ny fitsaran'ny fahoriana",
+          "content": "Ny Apokalypsy 6-18 dia milazalaza ny fitsarana fito taona izay hiseho amin'ny alalan'ny tombo-kase, ny trompetra, ary ny lovia. Ireo fitsarana ireo dia hiantona ny tontolo tsy mino ary hitondra fahoriana lehibe sy fahatezeran'Andriamanitra."
+        },
+        {
+          "id": "3.2",
+          "title": "Ireo olona manan-danja amin'ny Fahoriana",
+          "content": "Misy vondrona maro hiatrika ny fahoriana: ny mpino tsy voahosotra, ny 144 000 jiosy, ny Antikristy, ny mpaminany sandoka, ary ny vavolombelona roa. Ny mpino voavonjy mandritra ny fahoriana dia ho antsoina hoe 'olo-masina' fa tsy 'fiangonana'."
+        },
+        {
+          "id": "3.3",
+          "title": "Ny fibebahana sy famonjena ny Isiraely",
+          "content": "Amin'ny fiafaran'ny Fahoriana Lehibe, ny Isiraely dia hiala tsy mino ary hibebaka sy hino an'i Jesosy ho Mesiany. Izany dia hitranga araka ny fampanantenana ao amin'ny Testamenta Taloha sy ny Fanekena Vaovao."
+        },
+        {
+          "id": "3.4",
+          "title": "Ny fiavian'i Kristy fanindroany",
+          "content": "I Jesosy dia hiverina amin'ny hery sy ny voninahitra, hitsangana eo amin'ny tendrombohitra Oliva, ary handresy ny fahavalo rehetra ao Haramagedona. Hanomboka ny fanjakany arivo taona eto an-tany Izy."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Ny Fanjakana Arivo Taona sy ny fitsarana farany",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "4.1",
+          "title": "Ny Fanjakana Arivo Taona",
+          "content": "Ny Apokalypsy 20 dia mamaritra ny fanjakana iray arivo taona izay handresen'i Kristy eto an-tany. I Satana dia hatao gadra mandritra izany fotoana izany, ary ny olo-masina dia hiara-manjaka amin'i Kristy. Ny tany dia hiova toetra, ary ny rariny sy ny fiadanana handeha."
+        },
+        {
+          "id": "4.2",
+          "title": "Ny fitsarana farany",
+          "content": "Rehefa tapitra ny arivo taona, ny tsy mino rehetra dia hatsangana amin'ny maty ary hotsaraina eo anatrehan'ny Seza Fotsy Lehibe. Ny sazy azy ireo dia ny handringana mandrakizay ao amin'ny farihy afo."
+        },
+        {
+          "id": "4.3",
+          "title": "Lanitra Vaovao sy Tany Vaovao",
+          "content": "Ny fanantenana farany ho an'ny mpino dia ny hiaina mandrakizay ao amin'ny Lanitra Vaovao sy ny Tany Vaovao, izay tsy hisy fijaliana, fahafatesana, na alahelo intsony. Andriamanitra sy ny Zanak'ondry no ho fahazavany ary hiara-monina amin'ny olony mandrakizay."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Isiraely sy ny fampanantenan'Andriamanitra",
+      "duration": "45 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "5.1",
+          "title": "Ny fanekena tamin'i Abrahama",
+          "content": "I Jehovah dia nanao fanekena tsy misy fepetra sy an-daniny anikiray tamin'i Abrahama, izay nampanantenany tany sy taranaka be, ary fa ny taranany handova ny tany nampanantenaina hatrany amin'ny reniranon'i Eofrata."
+        },
+        {
+          "id": "5.2",
+          "title": "Ny fanekena tamin'i Davida",
+          "content": "Ny fanekena tamin'i Davida dia nampanantenana fa ny taranany hanjaka mandrakizay ary ny seza fiandrianany tsy ho rava. I Jesosy Kristy, ilay taranak'i Davida, no hanatanteraka io fanekena io amin'ny fanjakany arivo taona sy mandrakizay."
+        },
+        {
+          "id": "5.3",
+          "title": "Ny Fanekena Vaovao",
+          "content": "Ny Fanekena Vaovao dia natao tamin'ny Isiraely, izay hanova ny fon'izy ireo, hanome famelan-keloka, ary hahatonga azy ireo hahalala an'Andriamanitra. I Jesosy no Mpanalalana amin'io fanekena io, ary ny fiangonana ankehitriny dia mpandray anjara amin'ny fitahiana ara-panahiny."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Ny fitopolo herinandro (Daniela 9:24-27)",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "6.1",
+          "title": "Famaritana ny faminaniana",
+          "content": "Ny fitopolo herinandro dia fe-potoana 490 taona voatendry ho an'ny Isiraely sy ny tanàna masina Jerosalema. Izany dia mizarazara ho fe-potoana telo: 7 herinandro (49 taona), 62 herinandro (434 taona), ary 1 herinandro (7 taona) farany."
+        },
+        {
+          "id": "6.2",
+          "title": "Ny faminaniana momba ny Mesia",
+          "content": "Ny 69 herinandro voalohany dia manondro ny fotoana hanombohan'ny fanamboarana an'i Jerosalema ka hatramin'ny fahatongavan'ny 'Mesia, ilay Mpanapaka.' I Jesosy dia tonga tamin'ny faran'ny 69 herinandro ka 'novonoina' tamin'ny hazo fijaliana."
+        },
+        {
+          "id": "6.3",
+          "title": "Ny herinandro fahafitopolo (7 taona farany)",
+          "content": "Ny herinandro fahafitopolo dia mbola ho avy ary hitranga mandritra ny Fahoriana Lehibe 7 taona. Izy io dia hisy fanekena ataon'ny Antikristy, ny fijanonan'ny sorona, ary ny fahavetavetana mandrava."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Ny fahafatesana sy ny fotoana manelanelana",
+      "duration": "40 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "7.1",
+          "title": "Karazana fahafatesana",
+          "content": "Misy karazana fahafatesana telo: ara-batana, ara-panahy, ary mandrakizay. Ny fahafatesana mandrakizay dia ny fanesorana amin'ny fanatrehan'Andriamanitra mandrakizay."
+        },
+        {
+          "id": "7.2",
+          "title": "Ny fotoana manelanelana",
+          "content": "Ny fotoana manelanelana dia ny fe-potoana eo anelanelan'ny fahafatesana sy ny fitsanganana amin'ny maty. Ny mpino dia any an-danitra miaraka amin'ny Tompo, fa ny tsy mino dia any amin'ny toerana fijaliana miandry ny fitsarana farany."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Fomba fijery eskatolojika hafa",
+      "duration": "45 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "8.1",
+          "title": "Premilenarisma",
+          "content": "Ny Premilenarisma dia mino fa i Kristy dia hiverina alohan'ny Fanjakana Arivo Taona, ary ny Fiangonana dia hesorina alohan'ny Fahoriana Lehibe."
+        },
+        {
+          "id": "8.2",
+          "title": "Amilenarisma",
+          "content": "Ny Amilenarisma dia manao ny Fanjakana Arivo Taona ho tandindona, fa tsy fe-potoana ara-batana, ary mino fa ankehitriny no fanjakana ara-panahin'i Kristy."
+        },
+        {
+          "id": "8.3",
+          "title": "Postmilenarisma",
+          "content": "Ny Postmilenarisma dia mino fa ny Filazantsara dia handresy eto an-tany, ka ho tonga fiadanana sy fahamarinana alohan'ny hiverenan'i Kristy."
+        },
+        {
+          "id": "8.4",
+          "title": "Preterisma",
+          "content": "Ny Preterisma dia manao ny faminaniana momba ny andro farany ho efa nitranga tamin'ny taonjato voalohany, indrindra tamin'ny fandravana an'i Jerosalema tamin'ny taona 70 AK."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Hermeneotika sy Eskatolojia",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "9.1",
+          "title": "Ny zava-dehiben'ny fandikana araka ny tokony ho izy",
+          "content": "Ny hermeneotika ara-bakiteny, ara-pitsipi-panoratana, ary araka ny hodidina dia zava-dehibe amin'ny fandalinana ny eskatolojia. Tsy maintsy atokana ny fandikana tandindona sy ny fahitana araka ny fomba fijerin'ny mpanoratra."
+        },
+        {
+          "id": "9.2",
+          "title": "Ny fahazavan'ny Soratra Masina",
+          "content": "Ny Soratra Masina dia mazava amin'ny tenany, ary ny faminaniana dia tsy maintsy hadikana araka ny heviny ara-bakiteny raha tsy misy porofo mazava hanohanana fandikana hafa."
+        },
+        {
+          "id": "9.3",
+          "title": "Toromarika amin'ny fandikana faminaniana",
+          "content": "Misy toromarika manampy amin'ny fandikana faminaniana, toy ny 'fijerin'ny masolavitran'ny mpaminany' (prophetic telescoping), ny fahatanterahana tokana, ary ny fampiasana isa sy tandindona."
+        }
+      ]
+    }
+  ]
+}

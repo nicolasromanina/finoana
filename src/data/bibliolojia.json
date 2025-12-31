@@ -1,0 +1,99 @@
+{
+  "modules": [
+    {
+      "id": 1,
+      "title": "Ny Baiboly",
+      "duration": "45 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "1.1",
+          "title": "Fampidirana",
+          "content": "Ny foto-pampianarana momba Ny Baiboly dia taranja iray manan-danja ao anatin’ny foto-pinoana kristiana, izay mikendry ny fandinihana ara-tsiansa sy ara-teolojika ny Baiboly araka ny finoana kristiana. Izy io dia mandinika lalina ny fiavian’ny Soratra Masina, ny dingana sy ny toe-javatra niseho tamin’ny fanoratana azy, ny toetrany sy ny fahefany ara-panahy, ary koa ny fomba nitehirizana sy nampitaina azy nandritra ny tantara. Ankoatra izany, ny fampianarana momba ny Baiboly dia miompana amin’ny fandikana ny Baiboly, na amin’ny lafiny fiteny na amin’ny lafiny hevitra, ary mikatsaka ny famoahana ny heviny marina araka ny foto-kevitra ara-teolojika sy ara-tantara, mba hahafahana mampiasa azy am-pahendrena eo amin’ny fiainam-pinoana sy ny fampianarana kristiana."
+        },
+        {
+          "id": "1.2",
+          "title": "Ny loharano niporan'ny Baiboly",
+          "content": "Ny teny hoe Baiboly dia avy amin’ny teny grika hoe biblos na biblion, izay midika hoe boky. Amin’ny endrika maro, io teny io dia lasa ta biblia, izay midika hoe ireo boky. Izany no antony iantsoana ny Soratra Masina hoe Baiboly. Raha ny firafiny no jerena, ny Baiboly dia tsy boky tokana, fa fitambaran-boky maro. Ireo boky ireo dia samy hafa ny karazany sy ny fotoana nanoratana azy, nefa mitambatra ho asasoratra iray ihany. Ohatra tsotra: toy ny rakibolana na boky fianarana lehibe iray izay ahitana toko maro nosoratan’olona samihafa, nefa atambatra ho boky iray ihany. Toy izany koa ny Baiboly: boky maro no ao anatiny, fa antsoina hoe boky iray satria mitondra hafatra iray ho an’ny mpino."
+        },
+        {
+          "id": "1.3",
+          "title": "Ny fanindriana mandry t@ fanoratana ny Baiboly",
+          "content": "Ny Baiboly dia Tenin’Andriamanitra voasoratra. Izany filaza izany dia tsy avy amin’ny olona fotsiny, fa amafisin’ny Baiboly ao anatiny ihany, satria izy tenany dia milaza fa Tenin’Andriamanitra. Ny fanindriamandrin’Andriamanitra (inspiration) dia manazava ny fomba nanorenan’Andriamanitra ny Soratra Masina. Tsy hoe nanonona mivantana teny tamin’ny mpanoratra fotsiny Andriamanitra, fa nampiasa azy ireo tao anatin’ny fiandrianany tanteraka. Nampiasainy ny fisainan’izy ireo, ny toetrany, ary ny toe-javatra niainany, mba hanoratany ny hafany. Ohatra tsotra: toy ny mpampianatra manome hevitra mazava ho an’ny mpianatra iray hanoratra lahatsoratra. Na dia ny mpianatra aza no manoratra amin’ny fombany sy ny fiteniny, dia mitovy hatrany ny hevitra tian’ny mpampianatra hampitaina. Toy izany koa ny Baiboly: olombelona no nanoratra azy, nefa Andriamanitra no niandohan’ny hafatra."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Ny vokatra ateraky ny fanindriana mandry",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "Ny vokatra ateraky ny fanindriana mandry",
+          "content": "Ny maha avy amin’ny tsindrimandrin’Andriamanitra ny Baiboly dia miteraka vokatra maromaro lehibe: Maha tokana ny hevitry ny lahatsoratra – na dia misy boky sy toko maro aza ao amin’ny Baiboly, dia mitondra hafatra iray mitovy ho an’ny mpino ny soratra tsirairay. Tsy misy fahadisoana – antsoina hoe inerrance, izay midika fa tsy misy hadisoana ao amin’ny Baiboly. Fifanarahan’ny boky sy lahatsoratra rehetra – antsoina hoe cohérence, izany hoe miray sy mifanaraka tsara ny hafatra sy ny foto-kevitra rehetra ao amin’ny Baiboly.Maha-fahefana faratampony – antsoina hoe autorité suprême, izay midika fa ny Baiboly dia fitaovana faratampony amin’ny finoana sy ny fiainana kristiana."
+        },
+        {
+          "id": "2.2",
+          "title": "Ny maha mazava ny hafatry ny Baiboly",
+          "content": "Ny Baiboly dia manana toetra manokana izay mampiseho fa avy amin’Andriamanitra izy: Mazava (clarté) – ny hafatry ny Baiboly dia mazava sy mora takarina, satria niteny Andriamanitra tamin’ny fomba azon’ny olona rehetra fantarina tao amin’ny Soratra Masina. Fahampiana (suffisance) – ny Soratra Masina dia mirakitra ny zavatra rehetra ilaintsika eo amin’ny fiainana sy ny toe-panahy araka ny sitrapon’Andriamanitra. Filàna ny fanazavan’ny Fanahy Masina (illumination) – na dia mazava sy feno aza ny Baiboly, dia ilaina ny fanampian’ny Fanahy Masina mba hahafahana mahatakatra tsara ny hevitra ara-panahy ao anatiny."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Voaporofo ho Tenin'Andriamanitra ny Baiboly",
+      "duration": "45 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "3.1",
+          "title": "Ny porofo ivelany",
+          "content": "Ny porofo ivelany dia ireo zava-misy ivelan’ny Baiboly izay mampiseho ny toetra mahagaga ananan’ny Soratra Masina: Fifanarahan’ny boky 66 ao amin’ny Baiboly – miray sy mifameno tsara ny hafatra. Faharetany – mijoro hatrany amin’ny fotoana rehetra ny Baiboly. Hafatra mitombina foana – manan-kery sy azo itokisana ny hafatra rehetra. Boky maneran-tany – vakiana sy raisina manerana izao tontolo izao. Mendri-pitokisana ara-tantara – maro amin’ireo faminaniana ao amin’ny Baiboly no tanteraka, manamafy ny maha-tenin’Andriamanitra azy."
+        },
+        {
+          "id": "3.2",
+          "title": "Ny porofo anatiny",
+          "content": "Ny porofo anatiny dia ny fanehoana amin-kery ao anatin’ny fon’ny olona ny fahamarinan’ny maha-tenin’Andriamanitra ny Baiboly. Izany dia hita amin’ny asa maherin’ny Tenin’Andriamanitra eo amin’ny fiainan’ny olona. Rehefa mamaky ny Baiboly ny olona, dia ny Baiboly mihitsy no mamaky azy noho ny asan’ny Fanahy Masina."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Ny Kanóna biblika",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "4.1",
+          "title": "Ny Kanóna biblika",
+          "content": "Ny Baiboly dia fitambaran-boky 66: 39 boky no mandrafitra ny Testamenta Taloha, 27 boky no mandrafitra ny Testamenta Vaovao. Ireo boky ireo no mandrafitra ny Kanôna Biblika (Canon biblique), izany hoe ny lisitra ofisialy izay ekena ho avy amin’ny tsindrimandrin’Andriamanitra."
+        },
+        {
+          "id": "4.2",
+          "title": "Ireo fepetra hanekena ny maha avy amin'ny tsindrimandrin'Andriamanitra ireo boky",
+          "content": "Ny fepetra nanekena ny boky ho ao amin’ny Kanôna dia: Apostolicité – nosoratana na voamarina fa nosoratan’ny mpaminany na apostoly marina. Orthodoxie – mifanaraka amin’ny finoana efa natolotra ny fiangonana. Universalité – nekena manerana ny fiangonana sy ny tany rehetra. Ancienneté – nosoratana tamin’ny fotoana tranainy ary naharitra hatramin’ny andron’izy ireo."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Ny fitehirizana sy ny fandikana ny Baiboly",
+      "duration": "45 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "5.1",
+          "title": "Ny fitehirizana sy ny fandikana ny Baiboly",
+          "content": "Ny Baiboly dia nosoratana tamin’ny teny hebreo sy arameana tranainy (Testamenta Taloha) ary tamin’ny teny grika tranainy antsoina hoe koine (Testamenta Vaovao). Ny tsy fisian’ny fahadisoana ao amin’ny Baiboly dia manan-kery amin’ireo soratanana fototra, na dia efa simba na very aza ireo tahiry tany aloha, satria nisy dika mitovy maro novokarina ho fiarovana ny hafatra."
+        },
+        {
+          "id": "5.2",
+          "title": "Ny karazana dikan-tenin'ny Baiboly",
+          "content": "Mikasika ny fandikan-teny: Dikanteny mampifanaraka endrika (équivalence formelle) – manaraka akaiky ny teny fototra amin’ny lahatsoratra voalohany. Dikanteny mampifanaraka hevitra (équivalence dynamique) – miezaka maka ny hevitra tian’ny mpanoratra am-boalohany hambara, fa tsy voatery mitovy tsara ny teny tsirairay. Ka ny dikan-teny mampifanaraka endrika no tsara ho an’ny fianarana sy ny fandinihana lalina, fa ny dikan-teny mampifanaraka hevitra kosa no mety kokoa ho an’ny famakiana sy ny fampiasana andavanandro."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "modules": [
+    {
+      "id": 1,
+      "title": "The Bible",
+      "duration": "45 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "1.1",
+          "title": "Introduction",
+          "content": "The study of the Bible is a significant discipline within Christian theology, which aims to examine the Bible scientifically and theologically according to the Christian faith. It delves deeply into the origin of the Holy Scriptures, the process and circumstances surrounding its writing, its nature and spiritual authority, as well as how it has been preserved and transmitted throughout history. Additionally, the study of the Bible focuses on interpreting the Bible, whether linguistically or conceptually, and seeks to uncover its true meaning according to theological and historical principles, in order to use it wisely in the life of faith and Christian teaching."
+        },
+        {
+          "id": "1.2",
+          "title": "The origin of the Bible's name",
+          "content": "The word 'Bible' comes from the Greek word 'biblos' or 'biblion,' which means 'book.' In many forms, this word became 'ta biblia,' meaning 'the books.' This is why the Holy Scriptures are called the Bible. In its broad sense, the Bible is not a single book but a collection of many books. These books differ in type and the time they were written, yet they come together as one unified work. A simple example: it is like an encyclopedia or a large textbook containing many chapters written by different people, but combined into one book. Similarly, the Bible: it contains many books, but is called one book because it carries one message for believers."
+        },
+        {
+          "id": "1.3",
+          "title": "Divine inspiration in the writing of the Bible",
+          "content": "The Bible is the written Word of God. This statement is not merely from humans but is affirmed by the Bible itself, because it declares itself to be the Word of God. The inspiration of God (inspiration) explains how God established the Holy Scriptures. It does not mean that God dictated words directly to the writers, but He used them within His complete sovereignty. He used their minds, their characteristics, and their circumstances to write His message. A simple example: like a teacher giving clear instructions to a student to write an essay. Even though the student writes in his own style and language, the idea the teacher intends to convey remains exactly the same. Likewise with the Bible: humans wrote it, but God is the source of the message."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The results of divine inspiration",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "The results of divine inspiration",
+          "content": "The divine inspiration of the Bible produces several major results: Unity of the text's meaning – even though there are many books and chapters in the Bible, each writing carries one consistent message for believers. Inerrancy – meaning there are no errors in the Bible. Harmony of all books and writings – called coherence, meaning all the messages and principles in the Bible are unified and consistent. Supreme authority – called supreme authority, meaning the Bible is the ultimate tool in Christian faith and life."
+        },
+        {
+          "id": "2.2",
+          "title": "The clarity of the Bible's message",
+          "content": "The Bible possesses unique characteristics that show it comes from God: Clarity – the message of the Bible is clear and easy to understand, because God spoke in a way that everyone can comprehend in the Holy Scriptures. Sufficiency – the Holy Scriptures contain everything we need for life and spiritual well-being according to God's will. Need for the Holy Spirit's illumination – even though the Bible is clear and complete, the help of the Holy Spirit is needed to properly understand the spiritual meaning within it."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The Bible proven to be the Word of God",
+      "duration": "45 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "3.1",
+          "title": "External proofs",
+          "content": "External proofs are facts outside the Bible that demonstrate the miraculous nature of the Holy Scriptures: Harmony of the 66 books in the Bible – the messages are unified and complement each other well. Endurance – the Bible stands firm through all times. Timeless message – every message is powerful and reliable. A global book – read and accepted worldwide. Historical reliability – many prophecies in the Bible have been fulfilled, confirming it as the Word of God."
+        },
+        {
+          "id": "3.2",
+          "title": "Internal proofs",
+          "content": "Internal proofs are the powerful inner conviction in a person's heart of the truth that the Bible is the Word of God. This is seen in the transformative work of the Word of God in people's lives. When a person reads the Bible, it is the Bible itself, through the work of the Holy Spirit, that reads them."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Biblical Canon",
+      "duration": "50 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "4.1",
+          "title": "The Biblical Canon",
+          "content": "The Bible is a collection of 66 books: 39 books make up the Old Testament, 27 books make up the New Testament. These books constitute the Biblical Canon, meaning the official list accepted as being divinely inspired."
+        },
+        {
+          "id": "4.2",
+          "title": "The criteria for accepting books as divinely inspired",
+          "content": "The criteria for accepting books into the Canon are: Apostolicity – written or confirmed to be written by a true prophet or apostle. Orthodoxy – aligns with the faith already handed down by the church. Universality – accepted by churches everywhere. Antiquity – written in ancient times and enduring until their era."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "The preservation and translation of the Bible",
+      "duration": "45 min",
+      "completed": false,
+      "sections": [
+        {
+          "id": "5.1",
+          "title": "The preservation and translation of the Bible",
+          "content": "The Bible was written in ancient Hebrew and Aramaic (Old Testament) and in ancient Greek called Koine (New Testament). The inerrancy of the Bible applies to the original manuscripts, even though earlier copies may be damaged or lost, because many identical copies were produced to protect the message."
+        },
+        {
+          "id": "5.2",
+          "title": "Types of Bible translations",
+          "content": "Regarding translation: Formal equivalence translation – closely follows the original wording and form of the source text. Dynamic equivalence translation – strives to capture the meaning intended by the original author, without necessarily matching each word exactly. Thus, formal equivalence translations are better for study and deep examination, while dynamic equivalence translations may be more suitable for daily reading and practical use."
+        }
+      ]
+    }
+  ]
+}
