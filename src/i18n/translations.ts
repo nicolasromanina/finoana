@@ -1,6 +1,21 @@
 export type UILanguage = 'mg' | 'en' | 'ko' | 'sw';
 
 export interface Translations {
+  chapters: string;
+  recent: string;
+  sortBy: string;
+  canonical: string;
+  alphabetical: string;
+  popular: string;
+  quickAccess: string;
+  favorites: string;
+  recentlyRead: string;
+  noBooksFound: string;
+  tryDifferentSearch: string;
+  nt: string;
+  nowReading: string;
+  currentSelection: string;
+  ot: string;
   // App general
   appName: string;
   loading: string;
@@ -183,6 +198,7 @@ export interface Translations {
   unlocked: string;
   pointsToNextLevel: string;
   
+  
   // Advanced Statistics - New translations
   overview: string;
   analytics: string;
@@ -209,10 +225,31 @@ export interface Translations {
   progressLabel: string;
   chaptersLeft: string;
   record: string;
-  
+  //teaching
+  teaching: string;
+
+  //
+  filter: string;
+  bookstotal: string;
 }
 
 const mg: Translations = {
+  chapters: 'Toko',
+  recent: 'Vao haingana',
+  sortBy: 'Sivana araka ny',
+  canonical: 'Tantara',
+  alphabetical: 'Abidia',
+  popular: 'Malaza',
+  quickAccess: 'Fidirana haingana',
+  favorites: 'Ankafizina',
+  recentlyRead: 'Novakiana vao haingana',
+  noBooksFound: 'Tsy misy boky hita',
+  tryDifferentSearch: 'Andramo fikarohana hafa',
+  nt: 'TV',
+  nowReading: 'Vakiteny ankehitriny',
+  currentSelection: 'Safidy ankehitriny',
+  ot: 'TT',
+  // App general
   appName: 'Baiboly',
   loading: 'Manamboatra...',
   error: 'Nisy olana',
@@ -400,10 +437,31 @@ const mg: Translations = {
   goalAchieved: 'Tanjon-tanana!',
   progressLabel: 'Fandrosoana',
   chaptersLeft: 'toko sisa',
-  record: 'Rekordy',
+  record: 'Record',
+  //teaching
+  teaching: 'Fampianarana',
+  //
+  filter: 'Sivana',
+  bookstotal: 'Totalin\ny boky',
 };
 
 const en: Translations = {
+  chapters: 'Chapters', 
+  recent: 'Recent',
+  sortBy: 'Sort by',
+  canonical: 'Canonical',
+  alphabetical: 'Alphabetical',
+  popular: 'Popular',
+  quickAccess: 'Quick Access',
+  favorites: 'Favorites',
+  recentlyRead: 'Recently Read',
+  noBooksFound: 'No books found',
+  tryDifferentSearch: 'Try a different search',
+  nt: 'NT',
+  nowReading: 'Now Reading',
+  currentSelection: 'Current Selection',
+  ot: 'OT',
+  // App general
   appName: 'Baiboly',
   loading: 'Loading...',
   error: 'Error',
@@ -592,9 +650,30 @@ const en: Translations = {
   progressLabel: 'Progress',
   chaptersLeft: 'chapters left',
   record: 'Record',
+  //teaching
+  teaching: 'Teaching',
+  //
+  filter: 'Filter',
+  bookstotal: 'books total',
 };
 
 const ko: Translations = {
+  chapters: '장',
+  recent: '최근',
+  sortBy: '정렬 기준',
+  canonical: '정경 순',
+  alphabetical: '알파벳 순',
+  popular: '인기 순',
+  quickAccess: '빠른 접근',
+  favorites: '즐겨찾기',
+  recentlyRead: '최근 읽은 책',
+  noBooksFound: '책을 찾을 수 없음',
+  tryDifferentSearch: '다른 검색어를 시도하세요',
+  nt: '신약',
+  nowReading: '현재 읽는 책',
+  currentSelection: '현재 선택',
+  ot: '구약',
+  // App general
   appName: '바이볼리',
   loading: '로딩 중...',
   error: '오류',
@@ -783,9 +862,30 @@ const ko: Translations = {
   progressLabel: '진행 상황',
   chaptersLeft: '남은 장',
   record: '기록',
+  //teaching
+  teaching: '가르침',
+  //
+  filter: '필터',
+  bookstotal: ''
 };
 
 const sw: Translations = {
+  chapters: 'Sura',
+  recent: 'Hivi karibuni',
+  sortBy: 'Panga kwa',
+  canonical: 'Kawaida',
+  alphabetical: 'Kisortia',
+  popular: 'Maarufu',
+  quickAccess: 'Ufikiaji wa haraka',
+  favorites: 'Vipendwa',
+  recentlyRead: 'Imesomwa hivi karibuni',
+  noBooksFound: 'Hakuna vitabu vilivyopatikana',
+  tryDifferentSearch: 'Jaribu utafutaji tofauti',
+  nt: 'Agano Jipya',
+  nowReading: 'Sasa unasoma',
+  currentSelection: 'Chaguo la sasa',
+  ot: 'Agano la Kale',
+  // App general
   appName: 'Biblia',
   loading: 'Inapakia...',
   error: 'Hitilafu',
@@ -974,6 +1074,12 @@ const sw: Translations = {
   progressLabel: 'Maendeleo',
   chaptersLeft: 'sura zilizobaki',
   record: 'Rekodi',
+  //teaching
+  teaching: 'kufundisha',
+  //
+  filter: 'Sefa',
+  bookstotal: '',
+
 };
 
 export const translations: Record<UILanguage, Translations> = { mg, en, ko, sw };
