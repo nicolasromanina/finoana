@@ -1,5 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Header } from '@/components/Header';
+import { MobileHeader } from '@/components/MobileHeader';
+import { MobileFooter } from '@/components/MobileFooter';
 import { Sidebar } from '@/components/Sidebar';
 import { ChapterNavigation } from '@/components/ChapterNavigation';
 import { VerseViewer } from '@/components/VerseViewer';
@@ -299,6 +301,13 @@ function BibleApp() {
     }
   };
 
+  const handleNavigateHome = () => {
+    setSelectedBook(null);
+    setCurrentChapter(1);
+    setSelectedVerse(null);
+    tts.stop();
+  };
+
   if (!isInitialized) {
     return <LoadingScreen />;
   }
@@ -326,9 +335,13 @@ function BibleApp() {
     <Sidebar books={books} selectedBook={selectedBook} onBookChange={handleBookChange} />
   );
 
+  const isHomePage = !selectedBook;
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-16 lg:pb-0">
       <OfflineIndicator />
+      
+      {/* Desktop Header */}
       <Header
         languages={languages}
         selectedLanguage={selectedLanguage}
@@ -339,6 +352,19 @@ function BibleApp() {
         onOpenStats={() => setStatsOpen(true)}
         onOpenBadges={() => setBadgesOpen(true)}
         onOpenSettings={() => setSettingsOpen(true)}
+        bookmarksCount={bookmarks.length}
+        sidebarContent={sidebarContent}
+        className="hidden lg:block"
+      />
+
+      {/* Mobile Header */}
+      <MobileHeader
+        onOpenMenu={() => {}}
+        onOpenSearch={() => setSearchOpen(true)}
+        onOpenBookmarks={() => setBookmarksOpen(true)}
+        onOpenReadingPlans={() => setReadingPlansOpen(true)}
+        onOpenStats={() => setStatsOpen(true)}
+        onOpenBadges={() => setBadgesOpen(true)}
         bookmarksCount={bookmarks.length}
         sidebarContent={sidebarContent}
       />
@@ -436,7 +462,7 @@ function BibleApp() {
                       />
                     )}
 
-                    <div className="mt-6 pb-24">
+                    <div className="mt-6 pb-24 lg:pb-6">
                       <ChapterNavigation currentChapter={currentChapter} totalChapters={selectedBook.chapters || bookData.chapters.length} onChapterChange={handleChapterChange} />
                     </div>
                   </>
@@ -453,12 +479,33 @@ function BibleApp() {
         </main>
       </div>
 
+      {/* Mobile Footer */}
+      <MobileFooter
+        isHomePage={isHomePage}
+        onNavigateHome={handleNavigateHome}
+        onOpenSearch={() => setSearchOpen(true)}
+        onOpenBookmarks={() => setBookmarksOpen(true)}
+        onOpenReadingPlans={() => setReadingPlansOpen(true)}
+        onOpenStats={() => setStatsOpen(true)}
+        onOpenBadges={() => setBadgesOpen(true)}
+        onOpenSettings={() => setSettingsOpen(true)}
+        selectedVerse={selectedVerse}
+        isPlaying={tts.isPlaying}
+        isPaused={tts.isPaused}
+        onPlay={tts.resume}
+        onPause={tts.pause}
+        onStop={tts.stop}
+        bookmarksCount={bookmarks.length}
+      />
+
+      {/* Desktop Floating Actions */}
       <FloatingActions 
         isVisible={!!selectedVerse} 
         isBookmarked={isBookmarked} 
         onToggleBookmark={toggleBookmark} 
         selectedVerseText={selectedVerseData?.text} 
         verseReference={verseReference}
+        className="hidden lg:flex"
       />
       
       <SearchDialog open={searchOpen} onOpenChange={setSearchOpen} results={results} isSearching={isSearching} searchQuery={searchQuery} onSearch={search} onResultClick={handleSearchResultClick} onClear={clearSearch} />

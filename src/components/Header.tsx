@@ -35,6 +35,7 @@ interface HeaderProps {
   onOpenSettings: () => void;
   bookmarksCount: number;
   sidebarContent: React.ReactNode;
+  className?: string;
 }
 
 const uiLanguageOptions: { code: UILanguage; name: string; flag: string }[] = [
@@ -55,7 +56,8 @@ export function Header({
   onOpenBadges,
   onOpenSettings,
   bookmarksCount,
-  sidebarContent 
+  sidebarContent,
+  className = ''
 }: HeaderProps) {
   const { effectiveTheme, toggleTheme } = useTheme();
   const { uiLanguage, setUILanguage, t } = useLanguage();
@@ -63,7 +65,7 @@ export function Header({
   const currentFlag = uiLanguageOptions.find(l => l.code === uiLanguage)?.flag || '🌐';
 
   return (
-    <header className="sticky top-0 z-50 glass border-b border-border">
+    <header className={`sticky top-0 z-50 glass border-b border-border ${className}`}>
       <div className="container mx-auto px-2 sm:px-4 h-14 sm:h-16 flex items-center justify-between">
         {/* Left: Logo & Mobile Menu */}
         <div className="flex items-center gap-2">
