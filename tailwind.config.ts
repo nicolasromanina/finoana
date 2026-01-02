@@ -16,7 +16,11 @@ export default {
       fontFamily: {
         sans: ['DM Sans', 'system-ui', 'sans-serif'],
         serif: ['Crimson Pro', 'Georgia', 'serif'],
-        korean: ['Noto Sans KR', 'DM Sans', 'sans-serif'],
+        korean: [ 'Apple SD Gothic Neo', 
+          'Malgun Gothic', 
+          'Nanum Gothic', 
+          'Noto Sans KR', 
+          'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

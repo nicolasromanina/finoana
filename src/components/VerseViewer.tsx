@@ -244,7 +244,7 @@ export function VerseViewer({
                     <div className="mt-3 p-3 rounded-lg bg-secondary/30 border border-border/50">
                       <div className="flex items-center gap-2 mb-1">
                         <MessageSquare className="h-3.5 w-3.5 text-primary" />
-                        <span className="text-xs font-medium text-muted-foreground">{t.note||''}</span>
+                        <span className="text-xs font-medium text-muted-foreground">Note</span>
                       </div>
                       <p className="text-sm text-muted-foreground line-clamp-2">{note.content}</p>
                     </div>
@@ -305,39 +305,41 @@ export function VerseViewer({
             </div>
           );
         })}
+
+        {/* CSS Animations */}
+        <style jsx>{`
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translateY(10px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          
+          .animate-pulse-subtle {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          }
+          
+          @keyframes pulse {
+            0%, 100% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0.8;
+            }
+          }
+          
+          .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+        `}</style>
       </div>
-      <style>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        
-        .animate-pulse-subtle {
-          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-        
-        @keyframes pulse {
-          0%, 100% {
-            opacity: 1;
-          }
-          50% {
-            opacity: 0.8;
-          }
-        }
-        
-        .line-clamp-2 {
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-      `}</style>
     </TooltipProvider>
   );
 }
