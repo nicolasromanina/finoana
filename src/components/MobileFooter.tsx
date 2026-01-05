@@ -8,7 +8,8 @@ import {
   BarChart3,
   Trophy,
   Moon,
-  Sun
+  Sun,
+  MessageCircle // Icône de chat ajoutée
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/contexts/ThemeContext';
@@ -17,6 +18,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { useNavigate } from 'react-router-dom'; // Import pour la navigation
 
 interface MobileFooterProps {
   isHomePage: boolean;
@@ -54,6 +56,12 @@ export function MobileFooter({
   bookmarksCount
 }: MobileFooterProps) {
   const { effectiveTheme, toggleTheme } = useTheme();
+  const navigate = useNavigate(); // Hook pour la navigation
+
+  // Fonction pour naviguer vers l'interface de chat
+  const navigateToChat = () => {
+    navigate('/chat/interface');
+  };
 
   return (
     <footer className="fixed bottom-0 left-0 right-0 z-50 lg:hidden border-t border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -75,6 +83,18 @@ export function MobileFooter({
           onClick={onOpenSearch}
         >
           <Search className="h-5 w-5" />
+        </Button>
+
+        {/* Bouton Chat IA */}
+        <Button 
+          variant="ghost" 
+          size="icon" 
+          className="h-12 w-12 rounded-full relative"
+          onClick={navigateToChat}
+        >
+          <MessageCircle className="h-5 w-5" />
+          {/* Optionnel: Indicateur de nouveaux messages */}
+          {/* <span className="absolute -top-1 -right-1 h-3 w-3 rounded-full bg-primary border-2 border-background" /> */}
         </Button>
 
         {/* Main Action Button - Changes based on context */}
