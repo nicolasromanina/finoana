@@ -1,11 +1,3 @@
-// Improved Index Component
-// Improvements: 
-// - Added more fluid animations with framer-motion for smoother entrances.
-// - Improved responsiveness with better mobile layouts.
-// - Minimalist design: Reduced visual clutter, focused on core elements with subtle shadows and gradients.
-// - Added lazy loading for featured courses.
-// - Enhanced accessibility with ARIA labels and better focus states.
-
 import { useEffect, useState, lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -20,7 +12,8 @@ import {
   Search,
   TrendingUp,
   Users,
-  Award
+  Award,
+  Bot // Icône d'IA ajoutée
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SearchDialog from "@/components/SearchDialog copy";
@@ -130,6 +123,19 @@ const Index = () => {
               >
                 <Search className="h-4 w-4" />
                 Tadiavo
+              </Button>
+              {/* Bouton IA ajouté ici */}
+              <Button
+                variant="secondary"
+                size="lg"
+                asChild
+                className="group bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white"
+              >
+                <Link to="/chat/mode" className="flex items-center">
+                  <Bot className="mr-2 h-5 w-5" />
+                  Hianatra miaraka amin'ny IA
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
               </Button>
             </motion.div>
             <div className="grid grid-cols-3 gap-4 mt-8 md:hidden">
@@ -259,9 +265,23 @@ const Index = () => {
             <Sparkles className="h-12 w-12 text-gold mx-auto mb-6" />
             <h2 className="text-4xl font-bold mb-4">Efa vonona hanomboka?</h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Midira amin'ny dian'ny fahalalana.</p>
-            <Button variant="default" size="lg" asChild>
-              <Link to="/courses">Manomboka izao <ArrowRight className="ml-2 h-4 w-4" /></Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="default" size="lg" asChild>
+                <Link to="/courses">Manomboka izao <ArrowRight className="ml-2 h-4 w-4" /></Link>
+              </Button>
+              {/* Bouton IA dans la section finale */}
+              <Button
+                variant="outline"
+                size="lg"
+                asChild
+                className="border-blue-400 text-blue-600 hover:bg-blue-50"
+              >
+                <Link to="/chat/mode" className="flex items-center">
+                  <Bot className="mr-2 h-5 w-5" />
+                  Hianatra miaraka amin'ny IA
+                </Link>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -274,7 +294,10 @@ const Index = () => {
               <span className="text-xs text-muted-foreground block">Foto-pinoana Kristiana</span>
             </div>
           </div>
-          <Button variant="ghost" asChild><Link to="/courses">Taranja</Link></Button>
+          <div className="flex items-center gap-4">
+            <Button variant="ghost" asChild><Link to="/courses">Taranja</Link></Button>
+            <Button variant="ghost" asChild><Link to="/chat/mode">IA</Link></Button>
+          </div>
           <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Finoanabai. Ho voninahitr'Andriamanitra.</p>
         </div>
       </footer>
@@ -283,6 +306,8 @@ const Index = () => {
           <Button variant="ghost" asChild className="flex-col"><Link to="/"><BookOpen className="h-5 w-5 mb-1" /><span className="text-xs">Faharoa</span></Link></Button>
           <Button variant="ghost" className="flex-col" onClick={() => setIsSearchOpen(true)}><Search className="h-5 w-5 mb-1" /><span className="text-xs">Tadiavo</span></Button>
           <Button variant="ghost" asChild className="flex-col"><Link to="/courses"><Layers className="h-5 w-5 mb-1" /><span className="text-xs">Taranja</span></Link></Button>
+          {/* Bouton IA dans la barre mobile */}
+          <Button variant="ghost" asChild className="flex-col"><Link to="/chat/mode"><Bot className="h-5 w-5 mb-1" /><span className="text-xs">IA</span></Link></Button>
         </div>
       </div>
       <SearchDialog open={isSearchOpen} onOpenChange={setIsSearchOpen} />
