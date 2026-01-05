@@ -49,14 +49,14 @@ const QUICK_ACTIONS_MG = [
   {
     id: 'tulip',
     title: 'TULIP Kalvinista',
-    description: 'Points telona sy roa Kalvinisma',
+    description: 'Points telo sy roa Kalvinisma',
     icon: Zap,
     color: 'purple',
   },
   {
     id: 'predestination',
     title: 'Predestination',
-    description: 'Fisafidiana izy Andriamanitra',
+    description: 'Fisafidianan\'Andriamanitra',
     icon: HelpCircle,
     color: 'emerald',
   },

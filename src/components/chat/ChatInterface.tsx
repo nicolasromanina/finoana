@@ -255,7 +255,7 @@ export function ChatInterface({ mode, onBack }: ChatInterfaceProps) {
                   {mode.includes('teaching')
                     ? mode.includes('fr')
                       ? 'Explorez les Écritures'
-                      : 'Hadinona ny Soratra Masina'
+                      : 'Hitrandraka ny Soratra Masina'
                     : mode.includes('fr')
                     ? 'Conseil Biblique Personnalisé'
                     : 'Torolalana Baiboly manokana'}
