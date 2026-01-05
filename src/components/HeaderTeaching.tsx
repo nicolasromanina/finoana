@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { BookOpen, Menu, X, Search, Home } from "lucide-react";
+import { BookOpen, Menu, X, Search, Home, MessageSquare } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import SearchDialog from "./SearchDialog copy";
@@ -83,11 +83,29 @@ const Header = () => {
             >
               Lesona
             </Link>
-      
           </nav>
 
           {/* Right Actions */}
           <div className="flex items-center gap-2">
+            {/* Chat Button */}
+            <Link to="/chat/mode">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="hidden sm:flex items-center gap-2 text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-200"
+              >
+                <MessageSquare className="h-4 w-4" />
+                <span className="text-sm">Chat</span>
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="sm:hidden text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-200"
+              >
+                <MessageSquare className="h-4 w-4" />
+              </Button>
+            </Link>
+
             {/* Search Button */}
             <button
               onClick={() => setIsSearchOpen(true)}
@@ -145,17 +163,17 @@ const Header = () => {
                 Ireo Taranja
               </Link>
               <Link
-                to="/"
+                to="/chat/mode"
                 className={cn(
                   "px-4 py-3 text-sm font-medium rounded-lg transition-colors flex items-center gap-2",
-                  isActive("/")
-                    ? "bg-primary/10 text-primary border-l-4 border-primary"
+                  isActive("/chat/mode")
+                    ? "bg-gold/10 text-gold"
                     : "text-foreground hover:bg-secondary"
                 )}
                 onClick={() => setIsMenuOpen(false)}
               >
-                <BookOpen className="h-4 w-4" />
-                Baiboly
+                <MessageSquare className="h-4 w-4" />
+                Chat
               </Link>
             </nav>
           </div>

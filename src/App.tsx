@@ -12,6 +12,9 @@ import NotFound from "./pages/NotFound";
 import TeachingPage from "./pages/TeachingPage";
 import Courses from "./pages/Courses";
 import CourseDetail from "./pages/CourseDetail";
+import { ModeSelectorWrapper } from "./pages/ModeSelectorWrapper";
+import { ChatInterfaceWrapper } from "./pages/ChatInterfaceWrapper";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -29,6 +32,8 @@ const App = () => (
                 <Route path="/teaching" element={<TeachingPage />} />
                 <Route path="/courses" element={<Courses />} />
                 <Route path="/course/:courseId" element={<CourseDetail />} />
+                <Route path="/chat/mode" element={<ModeSelectorWrapper />} />
+                <Route path="/chat/interface" element={<ChatInterfaceWrapper />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
