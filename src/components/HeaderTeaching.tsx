@@ -173,7 +173,7 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 <MessageSquare className="h-4 w-4" />
-                Chat
+                Assistant
               </Link>
             </nav>
           </div>
